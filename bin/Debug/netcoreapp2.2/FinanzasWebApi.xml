@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FinanzasWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:FinanzasWebApi.Controllers.CacheSaldosController.Get(System.Int32,System.Int32)">
+            <summary>
+            Devuelve los saldos y acumulados de todas las cuentas en cache en un periodo
+            </summary>
+            <param name="mes"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.CacheSaldosController.Get(System.String,System.Int32,System.Int32)">
+            <summary>
+            Devuelve el saldo y acumulado de una cuenta en un periodo si esta en cache
+            </summary>
+            <param name="cuenta"></param>
+            <param name="mes"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.solvenciaFinanciera(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Solvencia Financiera)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.capitalDeTrabajo(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Capital  de trabajo)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.indiceDeLiquidezGneral(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Indice de liquidez Genaral)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.liquidezDeTesoreria(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Liquidez de Tesorería)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.activosLiquidos(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Activos Liquidos)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.indiceDeDeudaORazonDeEndeudamiento(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Indice de deuda o Razon de Endeudamiento)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.indiceDeDisponibilidad(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Indice de disponibilidad)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.mesActual(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de la Razon (Indice de disponibilidad)
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.RazonesFinancierasController.GetRazonesYear(System.String)">
+            <summary>
+            Devuelve un Listado de Razones Financieras en un año
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.ReporteIngresosGastosController.Ingresos(System.String,System.Int32)">
+            <summary>
+            Devuelve los Ingresos para el plan de Gastos en Ingresos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.ReporteIngresosGastosController.IngresosTotal(System.String)">
+            <summary>
+            Devuelve una lista con el real y el plan por meses en el año de los Ingresos para el plan de Gastos en Ingresos
+            </summary>
+            <param name="años"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.ReporteIngresosGastosController.Egresos(System.String,System.Int32)">
+            <summary>
+            Devuelve los Egresos para el plan de Gastos en Ingresos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.ReporteIngresosGastosController.EgresosTotal(System.String)">
+            <summary>
+            Devuelve una lista con el real y el plan por meses en el año de los Egresos para el plan de Gastos en Ingresos
+            </summary>
+            <param name="años"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.ReporteIngresosGastosController.Utilidad(System.String,System.Int32)">
+            <summary>
+            Devuelve los Egresos para el plan de Gastos en Ingresos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.ReporteIngresosGastosController.UtilidadesTotal(System.String)">
+            <summary>
+            Devuelve una lista con el real y el plan por meses en el año de los Egresos para el plan de Gastos en Ingresos
+            </summary>
+            <param name="años"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.UpdateCacheController.Get(System.Int32,System.Int32)">
+            <summary>
+            Devuelve los saldos y acumulados de todas las cuentas en cache en un periodo
+            </summary>
+            <param name="mes"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.UpdateCacheController.Get(System.String,System.Int32,System.Int32)">
+            <summary>
+            Devuelve el saldo y acumulado de una cuenta en un periodo si esta en cache
+            </summary>
+            <param name="cuenta"></param>
+            <param name="mes"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableTI(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor Total del Inventario
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableAC(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el Valor de los Activos Circulantes
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableALP(System.Int32,System.Int32)">
+            <summary>
+            Devuelve los Activos a Largo Plazo
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableAFT(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de los Activos Fijos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableAFD(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de los Activos Diferidos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableOA(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de Otros Activos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableTA(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor del Total de Activos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariablePC(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor los Pasivos Circulantes
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariablePLP(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor los Pasivos A Largo Plazo
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariablePD(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor los Pasivos Diferidos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableOP(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor los Otros Pasivos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableTP(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor los Totales de Pasivos
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableEC(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de Efectivo en Caja
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableEB(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor de Efectivo en Banco
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Controllers.VariablesFinancierasController.VariableTPN(System.Int32,System.Int32)">
+            <summary>
+            Devuelve el valor del Patrimonio Neto Total
+            </summary>
+            <param name="años"></param>
+            <param name="meses"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FinanzasWebApi.Helpers.FixText">
+            <summary>
+            Arreglar Nombres para URL
+            </summary>
+        </member>
+        <member name="M:FinanzasWebApi.Helper.ObtenerPlanGI.ObtenerIngresos(System.Int32,System.Int32)">
+            <summary>
+            Devuelve los ingresos en un mes y un año
+            </summary>
+            <param name="year"></param>
+            <param name="mes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FinanzasWebApi.Helper.ObtenerValuesEnVariablesEstadoFinanciero.ObtenerVentas(System.Int32,System.Int32)">
+            <summary>
+            Devuelve los ingresos de las Ventas en un mes y un año
+            </summary>
+            <param name="year"></param>
+            <param name="mes"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

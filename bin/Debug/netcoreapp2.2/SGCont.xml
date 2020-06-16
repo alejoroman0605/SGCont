@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SGCont</name>
+    </assembly>
+    <members>
+        <member name="M:SGCont.Controllers.AccountController.Usuarios">
+            <summary>
+            Devuelve el listado de usuarios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.Perfil(System.String)">
+            <summary>
+            Devuelve los datos del usuario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.Roles">
+            <summary>
+            Devuelve el listado de roles leido desde un fichero json.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.AddUsuario(SGCont.Dtos.Register)">
+            <summary>
+            Crea un nuevo usuario
+            </summary>
+            <param name="register">Objeto que contiene {nombres: string, apellidos:string, usuario:string, contraseña: string, confirmacion-contraseña:string}</param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.EditarUsuario(SGCont.Dtos.EditarUsuario)">
+            <summary>
+            Edita el nombre y los apellidos de un usuario
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.ResetPassword(SGCont.Dtos.ResetPassword)">
+            <summary>
+            Resetea la contraseña de un usuario
+            </summary>
+            <param name="resetPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.ChangePassword(SGCont.Dtos.ChangePassword)">
+            <summary>
+            Cambiar la contraseña por el usuario
+            </summary>
+            <param name="changePassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.CambiarEstadoUsuario(System.String)">
+            <summary>
+            Cambia el estado de un usuario en activo o no
+            </summary>
+            <param name="idUsuario">Id del usuario al que se le va a cambiar el estado</param>
+            <returns></returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.CambiarRoles(SGCont.Dtos.CambiarRolesDto)">
+            <summary>
+            Reemplaza el listado de roles de un usuario por uno nuevo
+            </summary>
+            <param name="idUsuario">Id del usuario al que se le van a cambiar los roles</param>
+            <param name="roles">Listado de nuevos roles</param>
+            <returns>Un objeto con {Resultado: bool, Mensaje:string}</returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.Login(SGCont.Dtos.Login)">
+            <summary>
+            Autentica un usuario
+            </summary>
+            <param name="login">Objeto que contiene {usuario:string, contraseña:string}</param>
+            <returns>Si es correcta la autenticacion retorna un JWT, sino un mensaje de error</returns>
+        </member>
+        <member name="M:SGCont.Controllers.AccountController.BuildToken(System.String,System.String,System.DateTime,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Contruye un JWT para la autenticacion
+            </summary>
+            <param name="userName"></param>
+            <param name="email"></param>
+            <param name="expiration"></param>
+            <param name="roles"></param>
+            <returns>Un JWT en forma de string</returns>
+        </member>
+    </members>
+</doc>

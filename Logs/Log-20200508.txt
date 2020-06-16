@@ -1,0 +1,1793 @@
+2020-05-08T00:03:04.2178378-04:00  [INF] Tarea ejecutada: 08/05/2020 0:03:04 (412a6825)
+2020-05-08T00:08:05.5529298-04:00  [INF] Tarea ejecutada: 08/05/2020 0:08:05 (1a5434ab)
+2020-05-08T00:13:06.7806068-04:00  [INF] Tarea ejecutada: 08/05/2020 0:13:06 (606c65f3)
+2020-05-08T13:41:35.7508642-04:00  [INF] Tarea ejecutada: 08/05/2020 13:41:35 (c67b193c)
+2020-05-08T13:41:37.1502536-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T13:41:37.1505284-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T13:41:37.1505948-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T13:41:37.1506443-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T13:41:45.7052941-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2017%3A37%3A19%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 17:37:19 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (07fef27d)
+2020-05-08T13:41:45.7133522-04:00  [INF] Tarea ejecutada: 08/05/2020 13:41:45 (0a2c9f7a)
+2020-05-08T13:41:45.7673276-04:00  [INF] Tarea ejecutada: 08/05/2020 13:41:45 (0a2c9f7a)
+2020-05-08T13:41:45.8516729-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.1919687-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days < 0)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.1938322-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.2826699-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days >= 0) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 6))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.2829810-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.2899113-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days > 7) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 23))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.2902657-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.2966358-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:42:48.2969201-04:00 0HLVJESMOJA1A:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T13:46:47.2198591-04:00  [INF] Tarea ejecutada: 08/05/2020 13:46:47 (d7dc0aea)
+2020-05-08T13:51:48.3816858-04:00  [INF] Tarea ejecutada: 08/05/2020 13:51:48 (9b2a3d29)
+2020-05-08T13:56:49.6682576-04:00  [INF] Tarea ejecutada: 08/05/2020 13:56:49 (6ae4dba2)
+2020-05-08T14:01:50.8150226-04:00  [INF] Tarea ejecutada: 08/05/2020 14:01:50 (300a0f59)
+2020-05-08T14:06:52.0112189-04:00  [INF] Tarea ejecutada: 08/05/2020 14:06:52 (633ab83d)
+2020-05-08T14:10:04.3150100-04:00  [INF] Tarea ejecutada: 08/05/2020 14:10:04 (9beb5006)
+2020-05-08T14:10:05.4728604-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:10:05.4729903-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:10:05.4730361-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:10:05.4730839-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:10:11.1606783-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A05%3A45%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:05:45 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (fa766089)
+2020-05-08T14:10:11.1669773-04:00  [INF] Tarea ejecutada: 08/05/2020 14:10:11 (98b4ceb1)
+2020-05-08T14:10:11.2158309-04:00  [INF] Tarea ejecutada: 08/05/2020 14:10:11 (98b4ceb1)
+2020-05-08T14:10:11.3047314-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:11:53.1484050-04:00  [FTL] Unable to start Kestrel. (fc6a528d)
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto) ---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String shutdownMessage)
+2020-05-08T14:12:20.7824282-04:00  [INF] Tarea ejecutada: 08/05/2020 14:12:20 (dbfacaf9)
+2020-05-08T14:12:22.8274687-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:12:22.8305265-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:12:22.8332220-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:12:22.8360027-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:12:28.9788177-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A08%3A03%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:08:03 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (dc0f185d)
+2020-05-08T14:12:28.9898115-04:00  [INF] Tarea ejecutada: 08/05/2020 14:12:28 (6b39e975)
+2020-05-08T14:12:29.0504651-04:00  [INF] Tarea ejecutada: 08/05/2020 14:12:29 (3bd60aae)
+2020-05-08T14:12:29.1302993-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:13:42.9474970-04:00  [INF] Tarea ejecutada: 08/05/2020 14:13:42 (0398c47c)
+2020-05-08T14:13:44.0737217-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:13:44.0739099-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:13:44.0739448-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:13:44.0739682-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:13:49.6799904-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A09%3A24%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:09:24 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (f025d1da)
+2020-05-08T14:13:49.6861170-04:00  [INF] Tarea ejecutada: 08/05/2020 14:13:49 (8a1ad182)
+2020-05-08T14:13:49.7359420-04:00  [INF] Tarea ejecutada: 08/05/2020 14:13:49 (8a1ad182)
+2020-05-08T14:13:49.8314840-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:18:50.9760813-04:00  [INF] Tarea ejecutada: 08/05/2020 14:18:50 (3ee77c40)
+2020-05-08T14:19:58.2782062-04:00 0HLVJFEMSN4V1:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: entity
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at ContratacionWebApi.Controllers.DictContratosController.POST(Dictaminador dictaminador) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\DictContratosController.cs:line 42
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-08T14:20:04.8158913-04:00 0HLVJFEMSN4V1:00000006 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: entity
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at ContratacionWebApi.Controllers.DictContratosController.POST(Dictaminador dictaminador) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\DictContratosController.cs:line 42
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-08T14:22:40.1178946-04:00  [INF] Tarea ejecutada: 08/05/2020 14:22:40 (d8d20f9c)
+2020-05-08T14:22:41.6893182-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:22:41.6916254-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:22:41.6943760-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:22:41.6973528-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:22:47.9764094-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A18%3A22%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:18:22 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (352950f1)
+2020-05-08T14:22:47.9878613-04:00  [INF] Tarea ejecutada: 08/05/2020 14:22:47 (4aa2733b)
+2020-05-08T14:22:48.0511215-04:00  [INF] Tarea ejecutada: 08/05/2020 14:22:48 (604c9e8f)
+2020-05-08T14:22:48.1342822-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:24:55.7995189-04:00  [INF] Tarea ejecutada: 08/05/2020 14:24:55 (c33748ab)
+2020-05-08T14:24:57.2678567-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:24:57.2701736-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:24:57.2725571-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:24:57.2747560-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:25:03.2941376-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A20%3A37%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:20:37 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (55d90fe7)
+2020-05-08T14:25:03.3054869-04:00  [INF] Tarea ejecutada: 08/05/2020 14:25:03 (3903027c)
+2020-05-08T14:25:03.3670225-04:00  [INF] Tarea ejecutada: 08/05/2020 14:25:03 (3903027c)
+2020-05-08T14:25:03.4439518-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:25:36.0885384-04:00  [INF] Tarea ejecutada: 08/05/2020 14:25:36 (b9497937)
+2020-05-08T14:25:37.2105216-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:25:37.2108567-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:25:37.2109187-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:25:37.2109380-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:25:44.6919418-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A21%3A19%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:21:19 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (c83b02d2)
+2020-05-08T14:25:44.7004055-04:00  [INF] Tarea ejecutada: 08/05/2020 14:25:44 (e5e6e0a5)
+2020-05-08T14:25:44.7513456-04:00  [INF] Tarea ejecutada: 08/05/2020 14:25:44 (e5e6e0a5)
+2020-05-08T14:25:44.8673518-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:26:20.2305869-04:00 0HLVJFKR1P154:00000010 [ERR] Failed executing DbCommand ("98"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"AdminContratos\"
+WHERE \"Id\" = @p0;" (627a98df)
+Npgsql.PostgresException (0x80004005): 23503: update o delete en «Documentos» viola la llave foránea «FK_cont_especialidades_Documentos_DocumentoId» en la tabla «cont_especialidades»
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext() in C:\projects\npgsql\src\Npgsql\NpgsqlConnector.cs:line 1032
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming) in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 489
+   at Npgsql.NpgsqlDataReader.NextResult() in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 332
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1218
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1130
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+2020-05-08T14:26:20.2591188-04:00 0HLVJFKR1P154:00000010 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: update o delete en «Documentos» viola la llave foránea «FK_cont_especialidades_Documentos_DocumentoId» en la tabla «cont_especialidades»
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext() in C:\projects\npgsql\src\Npgsql\NpgsqlConnector.cs:line 1032
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming) in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 489
+   at Npgsql.NpgsqlDataReader.NextResult() in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 332
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1218
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1130
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: update o delete en «Documentos» viola la llave foránea «FK_cont_especialidades_Documentos_DocumentoId» en la tabla «cont_especialidades»
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext() in C:\projects\npgsql\src\Npgsql\NpgsqlConnector.cs:line 1032
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming) in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 489
+   at Npgsql.NpgsqlDataReader.NextResult() in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 332
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1218
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1130
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ContratacionWebApi.Controllers.AdminContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\AdminContratosController.cs:line 82
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+2020-05-08T14:26:20.3604063-04:00 0HLVJFKR1P154:00000010 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: update o delete en «Documentos» viola la llave foránea «FK_cont_especialidades_Documentos_DocumentoId» en la tabla «cont_especialidades»
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext() in C:\projects\npgsql\src\Npgsql\NpgsqlConnector.cs:line 1032
+--- End of stack trace from previous location where exception was thrown ---
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming) in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 489
+   at Npgsql.NpgsqlDataReader.NextResult() in C:\projects\npgsql\src\Npgsql\NpgsqlDataReader.cs:line 332
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1218
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\npgsql\src\Npgsql\NpgsqlCommand.cs:line 1130
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ContratacionWebApi.Controllers.AdminContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\AdminContratosController.cs:line 82
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-08T14:30:46.6046795-04:00  [INF] Tarea ejecutada: 08/05/2020 14:30:46 (b6efacc2)
+2020-05-08T14:35:47.6870399-04:00  [INF] Tarea ejecutada: 08/05/2020 14:35:47 (be536a7c)
+2020-05-08T14:40:48.9855036-04:00  [INF] Tarea ejecutada: 08/05/2020 14:40:48 (01d996c6)
+2020-05-08T14:43:47.7071233-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days < 0)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7102585-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7293217-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days >= 0) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 6))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7297589-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7374539-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days > 7) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 23))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7378499-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7454772-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:43:47.7458435-04:00 0HLVJFKR1P15D:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:45:50.2592609-04:00  [INF] Tarea ejecutada: 08/05/2020 14:45:50 (a55d0a4d)
+2020-05-08T14:50:40.3334950-04:00  [FTL] Unable to start Kestrel. (fc6a528d)
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto) ---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String shutdownMessage)
+2020-05-08T14:50:51.6108008-04:00  [INF] Tarea ejecutada: 08/05/2020 14:50:51 (c99bffca)
+2020-05-08T14:51:16.1323081-04:00  [INF] Tarea ejecutada: 08/05/2020 14:51:16 (4408ee76)
+2020-05-08T14:51:17.9104281-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:51:17.9129650-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:51:17.9147743-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:51:17.9168440-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:51:23.8760807-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A46%3A58%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:46:58 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (92a529c3)
+2020-05-08T14:51:23.8854388-04:00  [INF] Tarea ejecutada: 08/05/2020 14:51:23 (bb155dc9)
+2020-05-08T14:51:23.9621773-04:00  [INF] Tarea ejecutada: 08/05/2020 14:51:23 (bb155dc9)
+2020-05-08T14:51:24.0469418-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.8342665-04:00 0HLVJG37LFH90:00000002 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days < 0)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.8382749-04:00 0HLVJG37LFH90:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.8457913-04:00 0HLVJG37LFH92:00000002 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days < 0)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.8494587-04:00 0HLVJG37LFH92:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9551007-04:00 0HLVJG37LFH8U:00000001 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days >= 0) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 6))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9574711-04:00 0HLVJG37LFH8U:00000001 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9643632-04:00 0HLVJG37LFH8V:00000002 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days >= 0) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 6))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9670922-04:00 0HLVJG37LFH8V:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9708190-04:00 0HLVJG37LFH92:00000002 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days > 7) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 23))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9732135-04:00 0HLVJG37LFH92:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9799484-04:00 0HLVJG37LFH91:00000002 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days > 7) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 23))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9827836-04:00 0HLVJG37LFH91:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9857131-04:00 0HLVJG37LFH8V:00000002 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9884170-04:00 0HLVJG37LFH8V:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9958036-04:00 0HLVJG37LFH91:00000002 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:51:39.9985267-04:00 0HLVJG37LFH91:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T14:58:03.7808411-04:00  [INF] Tarea ejecutada: 08/05/2020 14:58:03 (b7e6c249)
+2020-05-08T14:58:04.9096158-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:58:04.9098034-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:58:04.9098376-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:58:04.9098554-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T14:58:10.7333620-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A53%3A45%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:53:45 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (ba807c99)
+2020-05-08T14:58:10.7403172-04:00  [INF] Tarea ejecutada: 08/05/2020 14:58:10 (b5e94826)
+2020-05-08T14:58:10.7853024-04:00  [INF] Tarea ejecutada: 08/05/2020 14:58:10 (b5e94826)
+2020-05-08T14:58:10.8700533-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T15:01:18.5668585-04:00  [INF] Tarea ejecutada: 08/05/2020 15:01:18 (443d2f85)
+2020-05-08T15:01:19.7466006-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T15:01:19.7468079-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T15:01:19.7468644-04:00  [WRN] No type was specified for the decimal column '"n_importe_anx"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T15:01:19.7468841-04:00  [WRN] No type was specified for the decimal column '"n_importemo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
+2020-05-08T15:01:25.3521803-04:00  [ERR] error con cuenta 816,  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2015 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR: The requested URL could not be retrieved</title>
+<style type="text/css"><!--
+ /*
+ * Copyright (C) 1996-2015 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id=ERR_ACCESS_DENIED>
+<div id="titles">
+<h1>ERROR</h1>
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="localhost:5001">localhost:5001</a></p>
+
+<blockquote id="error">
+<p><b>Access Denied.</b></p>
+</blockquote>
+
+<p>Access control configuration prevents your request from being allowed at this time. Please contact your service provider if you feel this is incorrect.</p>
+
+<p>Your cache administrator is <a href="mailto:webmaster?subject=CacheErrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%20proxy.une.cu%0D%0AErrPage%3A%20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeStamp%3A%20Fri,%2008%20May%202020%2018%3A56%3A59%20GMT%0D%0A%0D%0AClientIP%3A%20172.19.13.189%0D%0A%0D%0AHTTP%20Request%3A%0D%0ACONNECT%20%2F%20HTTP%2F1.1%0AVia%3A%201.1%20proxyDesarrollo.cteag.une.cu%20(squid%2F3.3.8)%0D%0AX-Forwarded-For%3A%20172.19.170.31%0D%0ACache-Control%3A%20max-age%3D259200%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">webmaster</a>.</p>
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Generated Fri, 08 May 2020 18:56:59 GMT by proxy.une.cu (squid/3.5.12)</p>
+<!-- ERR_ACCESS_DENIED -->
+</div>
+</body></html>
+ (7748ff9c)
+2020-05-08T15:01:25.3581856-04:00  [INF] Tarea ejecutada: 08/05/2020 15:01:25 (9b2017e9)
+2020-05-08T15:01:25.4021858-04:00  [INF] Tarea ejecutada: 08/05/2020 15:01:25 (9b2017e9)
+2020-05-08T15:01:25.4848025-04:00  [WRN] The LINQ expression '"GroupBy([c.IdcomprobanteNavigation], _Include(queryContext, [c], new [] {[c.IdcomprobanteNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdusuarioNavigation], [c.IdcomprobanteNavigation.ConComprobanteoperacion.IdperiodoNavigation], [c.IdcuentaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation], [c.IdcuentaNavigation.IdaperturaNavigation.IdmascaraNavigation]}, (queryContext, entity, included) => { ... }))"' could not be translated and will be evaluated locally. (011792c6)
+2020-05-08T15:06:26.6525180-04:00  [INF] Tarea ejecutada: 08/05/2020 15:06:26 (8aec1a1c)
+2020-05-08T15:11:27.8309085-04:00  [INF] Tarea ejecutada: 08/05/2020 15:11:27 (067cb9fc)
+2020-05-08T15:16:28.9215667-04:00  [INF] Tarea ejecutada: 08/05/2020 15:16:28 (95617777)
+2020-05-08T15:21:30.1638631-04:00  [INF] Tarea ejecutada: 08/05/2020 15:21:30 (c06d148e)
+2020-05-08T15:26:35.8782498-04:00  [INF] Tarea ejecutada: 08/05/2020 15:26:35 (6866903e)

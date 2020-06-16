@@ -1,0 +1,10 @@
+[
+    {
+        "name": "administracion",
+        "title": "Admistración",
+        "icon": "mdi-settings",
+        "roles": [
+            "administrador"
+        ]
+    }
+]
