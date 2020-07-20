@@ -20,8 +20,8 @@ namespace SGCont.Data {
                     Id = "f42559a2-2776-4e9b-9ba1-268597eff72b",
                         UserName = "admin",
                         NormalizedUserName = "ADMIN",
-                        Email = "admin@opplat.cu",
-                        NormalizedEmail = "ADMIN@OPPLAT.CU",
+                        Email = "admin@contratacion.cu",
+                        NormalizedEmail = "ADMIN@SGCONT.CU",
                         PasswordHash = "AQAAAAEAACcQAAAAEP4OedI6m26WUn/2C4AcBkzdT6SnL/6E+xakQ/9mGAkqqp3t9PwyIR6l9obLouKIVg==",
                         SecurityStamp = "43VMKYQKNTENYZVJNU2TII26X23H5PGV",
                         ConcurrencyStamp = "36fd2616-8e8a-4cc6-8a5a-52d963207836",
@@ -36,6 +36,12 @@ namespace SGCont.Data {
                     RoleId = "1"
                 }
             );
+            modelBuilder.Entity<EspExternoId_ContratoId> ()
+                .HasKey (x => new { x.ContratoId, x.EspecialistaExternoId });
+
+            modelBuilder.ForNpgsqlUseIdentityColumns ();
+            modelBuilder.Entity<ContratoId_DepartamentoId> ().HasKey (x => new { x.ContratoId, x.DepartamentoId });
+            base.OnModelCreating (modelBuilder);
         }
 
         public DbSet<Usuario> Usuarios { get; set; }

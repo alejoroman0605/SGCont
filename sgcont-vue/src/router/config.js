@@ -215,4 +215,71 @@ export const protectedRoute = [
       component: () => import(/* webpackChunkName: "table" */ '@/views/auth/PerfilDeUsuario.vue'),
     }],
   },
+  // Contratacion
+  {
+    name: 'Contratacion',
+    path: '/contratacion',
+    component: DefaultLayout,
+    redirect: '/contratacion/dashboard',
+    meta: {
+      title: 'Contratos',
+      group: 'contratacion',
+    },
+    children: [
+      {
+        path: '/contratacion/dashboard',
+        name: 'Dashboard',
+        meta: {
+          title: 'Cuadro de mando',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/Dashboard.vue'),
+      },
+      {
+        path: '/contratacion/ContratosCliente',
+        name: 'ContratosCliente',
+        meta: {
+          title: 'ContratosCliente',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/ContratosCliente.vue'),
+      },
+      {
+        path: '/contratacion/ContratosPrestador',
+        name: 'ContratosPrestador',
+        meta: {
+          title: 'ContratosPrestador',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/ContratosPrestador.vue'),
+      },
+      {
+        path: '/contratacion/OfertasClientes',
+        name: 'OfertasClientes',
+        meta: {
+          title: 'OfertasClientes',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/OfertasClientes.vue'),
+      },
+      {
+        path: '/contratacion/OfertasPrestador',
+        name: 'OfertasPrestador',
+        meta: {
+          title: 'OfertasPrestador',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/OfertasPrestador.vue'),
+      },
+      {
+        path: '/contratacion/Config',
+        name: 'Config',
+        meta: {
+          title: 'Config',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/Config.vue'),
+      },
+    ],
+  },
 ];

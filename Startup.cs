@@ -138,7 +138,7 @@ namespace SGCont {
             });
             // app.UseSpa(builder =>
             // {
-            //     builder.Options.SourcePath = "../sgcont-vue/dist";
+            //     builder.Options.SourcePath = "../contratacion-vue/dist";
 
             // });
         }

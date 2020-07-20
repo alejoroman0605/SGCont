@@ -1,0 +1,90 @@
+[
+    {
+        "title": "Contratos",
+        "group": "contratacion",
+        "icon": "mdi-note-multiple-outline",
+        "cant": 0,
+        "name": "Contratos",
+        "component": "Contratos",
+        "roles": [
+            "administrador",
+            "contratacion"
+        ],
+        "items": [
+            {
+                "title": "Como Cliente",
+                "group": "contratacion",
+                "icon": "mdi-note-multiple",
+                "cant": 0,
+                "component": "ContratosCliente",
+                "name": "ContratosCliente",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            },
+            {
+                "title": "Como Prestador",
+                "group": "contratacion",
+                "icon": "mdi-note-multiple",
+                "cant": 0,
+                "component": "ContratosPrestador",
+                "name": "ContratosPrestador",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Ofertas",
+        "group": "contratacion",
+        "icon": "mdi-note-multiple",
+        "cant": 0,
+        "component": "Ofertas",
+        "name": "Ofertas",
+        "roles": [
+            "administrador",
+            "contratacion"
+        ],
+        "items": [
+            {
+                "title": "Como Cliente",
+                "group": "contratacion",
+                "icon": "mdi-note-multiple",
+                "cant": 0,
+                "component": "OfertasClientes",
+                "name": "OfertasClientes",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            },
+            {
+                "title": "Como Prestador",
+                "group": "contratacion",
+                "icon": "mdi-note-multiple",
+                "cant": 0,
+                "component": "OfertasPrestador",
+                "name": "OfertasPrestador",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Configuraciones",
+        "group": "contratacion",
+        "icon": "mdi-cogs",
+        "cant": 0,
+        "component": "Config",
+        "name": "Config",
+        "roles": [
+            "administrador",
+            "contratacion"
+        ]
+    }
+]
