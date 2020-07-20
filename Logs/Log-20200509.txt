@@ -2349,7 +2349,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 
 2020-05-09T10:06:25.3175845-04:00 0HLVK48KAIO4H:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 31
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 31
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2382,7 +2382,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2020-05-09T10:06:25.5817894-04:00 0HLVK48KAIO4H:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-09T10:07:03.8486372-04:00 0HLVK48KAIO4J:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 31
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 31
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2406,7 +2406,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-09T10:07:11.3588590-04:00 0HLVK48KAIO4J:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 31
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 31
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2592,7 +2592,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 
 2020-05-09T10:19:13.2401081-04:00 0HLVK4FPBTE9B:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.AdminContratosController.GetAll() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\AdminContratosController.cs:line 25
+   at SGCont.Controllers.AdminContratosController.GetAll() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\AdminContratosController.cs:line 25
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2616,7 +2616,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-09T10:19:22.5370331-04:00 0HLVK4FPBTE9B:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.AdminContratosController.GetAll() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\AdminContratosController.cs:line 25
+   at SGCont.Controllers.AdminContratosController.GetAll() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\AdminContratosController.cs:line 25
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2729,8 +2729,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-09T10:54:38.1461354-04:00 0HLVK53DNR8UV:00000001 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-09T10:54:38.1463966-04:00 0HLVK53DNR8UV:00000001 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-09T10:54:46.6455515-04:00 0HLVK53DNR8UP:00000017 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -2762,8 +2762,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-09T10:54:46.6457079-04:00 0HLVK53DNR8UP:00000017 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-09T10:54:46.6493790-04:00 0HLVK53DNR8UP:00000017 [ERR] Connection id ""0HLVK53DNR8UP"", Request id ""0HLVK53DNR8UP:00000017"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>RhWebApi</name>
+        <name>SGCont</name>
     </assembly>
     <members>
-        <member name="P:RhWebApi.Models.DetallesMandato.Horas">
+        <member name="P:SGCont.Models.DetallesMandato.Horas">
             <summary>
             Campo a guardar con las horas trabajadas
             http://stackoverflow.com/questions/8503132/how-do-i-map-timespan-with-greater-than-24-hours-to-sql-server-code-first

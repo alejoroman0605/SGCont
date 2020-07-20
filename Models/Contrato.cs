@@ -3,33 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-// using RhWebApi.Models;
+// using SGCont.Models;
 
-namespace SGCont.Models
- {
+namespace SGCont.Models {
     public class Contrato {
         public int Id { get; set; }
         public string Nombre { get; set; }
         public Tipo Tipo { get; set; }
         //Trabajador
         public int AdminContratoId { get; set; }
-        // public Trabajador AdminContrato { get; set; }
+        public Trabajador AdminContrato { get; set; }
         public int EntidadId { get; set; }
         public virtual Entidad Entidad { get; set; }
         public string ObjetoDeContrato { get; set; }
         public string Numero { get; set; }
-
-        [Display (Name = "Monto CUP")]
-        [DataType (DataType.Currency)]
-        public decimal? MontoCup { get; set; }
-
-        [Display (Name = "Monto CUC")]
-        [DataType (DataType.Currency)]
-        public decimal? MontoCuc { get; set; }
-
-        [Display (Name = "Monto USD")]
-        [DataType (DataType.Currency)]
-        public decimal? MontoUsd { get; set; }
+        public ICollection<Monto> Montos { get; set; }
 
         [DataType (DataType.Date)]
         [Display (Name = "Fecha de Llegada")]

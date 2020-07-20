@@ -370,7 +370,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
 2020-05-17T12:55:05.7236694-04:00 0HLVQGC4Q2GDR:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-17T12:55:05.7429690-04:00 0HLVQGC4Q2GDR:00000005 [WRN] The LINQ expression '"where ((([c].FechaDeVenOferta - DateTime.Now).Days >= 0) AndAlso (([c].FechaDeVenOferta - DateTime.Now).Days <= 6))"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-17T12:55:05.7434720-04:00 0HLVQGC4Q2GDR:00000005 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
-2020-05-17T12:55:05.7461802-04:00 0HLVQGC4Q2GDN:0000000E [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:55:05.7461802-04:00 0HLVQGC4Q2GDN:0000000E [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -526,7 +526,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T12:55:05.8187562-04:00 0HLVQGC4Q2GDP:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:55:05.8187562-04:00 0HLVQGC4Q2GDP:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -741,7 +741,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-17T12:57:14.1833861-04:00 0HLVQGC4Q2GE1:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:57:14.1833861-04:00 0HLVQGC4Q2GE1:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -801,7 +801,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-17T12:57:14.1880107-04:00 0HLVQGC4Q2GDS:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:57:14.1880107-04:00 0HLVQGC4Q2GDS:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1091,7 +1091,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T12:59:08.0428078-04:00 0HLVQGC4Q2GE3:00000015 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:59:08.0428078-04:00 0HLVQGC4Q2GE3:00000015 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1153,7 +1153,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-17T12:59:08.0441179-04:00 0HLVQGC4Q2GE5:00000018 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:59:08.0441179-04:00 0HLVQGC4Q2GE5:00000018 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1414,7 +1414,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T12:59:27.3178734-04:00 0HLVQGC4Q2GE8:0000000C [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:59:27.3178734-04:00 0HLVQGC4Q2GE8:0000000C [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1591,7 +1591,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T12:59:27.3517213-04:00 0HLVQGC4Q2GEA:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:59:27.3517213-04:00 0HLVQGC4Q2GEA:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1756,7 +1756,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T12:59:52.8996989-04:00 0HLVQGC4Q2GE4:00000019 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:59:52.8996989-04:00 0HLVQGC4Q2GE4:00000019 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1943,7 +1943,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-17T12:59:52.9570000-04:00 0HLVQGC4Q2GE7:00000020 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T12:59:52.9570000-04:00 0HLVQGC4Q2GE7:00000020 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -2124,7 +2124,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:02:18.9672394-04:00 0HLVQGC4Q2GEE:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:02:18.9672394-04:00 0HLVQGC4Q2GEE:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -2288,7 +2288,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:02:19.0041368-04:00 0HLVQGC4Q2GE2:0000001E [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:02:19.0041368-04:00 0HLVQGC4Q2GE2:0000001E [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -2484,7 +2484,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:03:09.2482902-04:00 0HLVQGC4Q2GEF:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:03:09.2482902-04:00 0HLVQGC4Q2GEF:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -2541,7 +2541,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-17T13:03:09.2495896-04:00 0HLVQGC4Q2GEH:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:03:09.2495896-04:00 0HLVQGC4Q2GEH:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -2810,7 +2810,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:03:23.4603810-04:00 0HLVQGC4Q2GEG:00000016 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:03:23.4603810-04:00 0HLVQGC4Q2GEG:00000016 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -2996,7 +2996,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-17T13:03:23.5107626-04:00 0HLVQGC4Q2GE9:00000045 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:03:23.5107626-04:00 0HLVQGC4Q2GE9:00000045 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3169,7 +3169,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:03:41.1305921-04:00 0HLVQGC4Q2GEJ:00000009 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:03:41.1305921-04:00 0HLVQGC4Q2GEJ:00000009 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3325,7 +3325,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-17T13:03:41.1383485-04:00 0HLVQGC4Q2GEJ:00000009 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
-2020-05-17T13:03:41.1398285-04:00 0HLVQGC4Q2GEK:00000012 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:03:41.1398285-04:00 0HLVQGC4Q2GEK:00000012 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3567,7 +3567,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:04:20.0971345-04:00 0HLVQGC4Q2GEM:00000023 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:04:20.0971345-04:00 0HLVQGC4Q2GEM:00000023 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3619,7 +3619,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
    at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
-2020-05-17T13:04:20.0972942-04:00 0HLVQGC4Q2GEP:0000000B [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:04:20.0972942-04:00 0HLVQGC4Q2GEP:0000000B [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3888,7 +3888,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:04:39.3100677-04:00 0HLVQGC4Q2GEU:00000008 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:04:39.3100677-04:00 0HLVQGC4Q2GEU:00000008 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4050,7 +4050,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:04:39.3331976-04:00 0HLVQGC4Q2GES:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:04:39.3331976-04:00 0HLVQGC4Q2GES:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4329,7 +4329,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:07:29.8594399-04:00 0HLVQGJ3P5VQI:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:07:29.8594399-04:00 0HLVQGJ3P5VQI:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4364,7 +4364,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
-2020-05-17T13:07:29.8605307-04:00 0HLVQGJ3P5VQH:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:07:29.8605307-04:00 0HLVQGJ3P5VQH:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4718,7 +4718,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:08:32.1211549-04:00 0HLVQGJMAM2P5:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:08:32.1211549-04:00 0HLVQGJMAM2P5:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4753,7 +4753,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
-2020-05-17T13:08:32.1220175-04:00 0HLVQGJMAM2P1:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:08:32.1220175-04:00 0HLVQGJMAM2P1:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -5050,7 +5050,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:09:42.9254865-04:00 0HLVQGJMAM2P7:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:09:42.9254865-04:00 0HLVQGJMAM2P7:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -5102,7 +5102,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
    at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
-2020-05-17T13:09:42.9272672-04:00 0HLVQGJMAM2P3:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:09:42.9272672-04:00 0HLVQGJMAM2P3:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -5368,7 +5368,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:10:08.7867781-04:00 0HLVQGJMAM2P0:0000001B [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:10:08.7867781-04:00 0HLVQGJMAM2P0:0000001B [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -5529,7 +5529,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:10:08.8200266-04:00 0HLVQGJMAM2P6:00000009 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:10:08.8200266-04:00 0HLVQGJMAM2P6:00000009 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -5727,7 +5727,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:10:50.4620717-04:00 0HLVQGJMAM2P2:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:10:50.4620717-04:00 0HLVQGJMAM2P2:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -5781,7 +5781,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
    at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
-2020-05-17T13:10:50.4621848-04:00 0HLVQGJMAM2PA:00000016 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:10:50.4621848-04:00 0HLVQGJMAM2PA:00000016 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -6066,7 +6066,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:11:45.2496612-04:00 0HLVQGJMAM2P9:00000009 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:11:45.2496612-04:00 0HLVQGJMAM2P9:00000009 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -6115,7 +6115,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
    at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
-2020-05-17T13:11:45.2505194-04:00 0HLVQGJMAM2PB:00000008 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:11:45.2505194-04:00 0HLVQGJMAM2PB:00000008 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -6379,7 +6379,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:11:51.6157503-04:00 0HLVQGJMAM2PC:00000017 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:11:51.6157503-04:00 0HLVQGJMAM2PC:00000017 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -6538,7 +6538,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:11:51.6348796-04:00 0HLVQGJMAM2P4:00000034 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:11:51.6348796-04:00 0HLVQGJMAM2P4:00000034 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -6735,7 +6735,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
    at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
-2020-05-17T13:16:02.6147842-04:00 0HLVQGJMAM2PK:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:16:02.6147842-04:00 0HLVQGJMAM2PK:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -6792,7 +6792,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-17T13:16:02.6166151-04:00 0HLVQGJMAM2PL:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:16:02.6166151-04:00 0HLVQGJMAM2PL:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -7061,7 +7061,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:17:30.8932336-04:00 0HLVQGJMAM2PM:00000017 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:17:30.8932336-04:00 0HLVQGJMAM2PM:00000017 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -7220,7 +7220,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:17:30.9132217-04:00 0HLVQGJMAM2PI:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:17:30.9132217-04:00 0HLVQGJMAM2PI:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -7418,7 +7418,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:21:42.5137439-04:00 0HLVQGJMAM2Q0:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:21:42.5137439-04:00 0HLVQGJMAM2Q0:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -7467,7 +7467,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
    at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
-2020-05-17T13:21:42.5162583-04:00 0HLVQGJMAM2PV:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:21:42.5162583-04:00 0HLVQGJMAM2PV:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -7733,7 +7733,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:22:24.5963177-04:00 0HLVQGJMAM2PT:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:22:24.5963177-04:00 0HLVQGJMAM2PT:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -7912,7 +7912,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
    at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-2020-05-17T13:22:24.6162636-04:00 0HLVQGJMAM2PU:00000018 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:22:24.6162636-04:00 0HLVQGJMAM2PU:00000018 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8111,7 +8111,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:23:37.5730779-04:00 0HLVQGJMAM2Q2:00000012 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:23:37.5730779-04:00 0HLVQGJMAM2Q2:00000012 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8164,7 +8164,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Entidad.Cod
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
-2020-05-17T13:23:37.5741648-04:00 0HLVQGJMAM2PS:00000022 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:23:37.5741648-04:00 0HLVQGJMAM2PS:00000022 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8428,7 +8428,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:23:40.0665303-04:00 0HLVQGJMAM2Q1:00000034 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:23:40.0665303-04:00 0HLVQGJMAM2Q1:00000034 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8595,7 +8595,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:24:36.4705758-04:00 0HLVQGJMAM2Q5:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:24:36.4705758-04:00 0HLVQGJMAM2Q5:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8639,7 +8639,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
-2020-05-17T13:24:36.4743657-04:00 0HLVQGJMAM2Q5:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:24:36.4743657-04:00 0HLVQGJMAM2Q5:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8689,7 +8689,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
    at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at ContratacionWebApi.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\EntidadesController.cs:line 66
+   at SGCont.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\EntidadesController.cs:line 66
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -8734,7 +8734,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
    at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at ContratacionWebApi.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\EntidadesController.cs:line 66
+   at SGCont.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\EntidadesController.cs:line 66
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -8782,7 +8782,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:24:51.4639600-04:00 0HLVQGJMAM2Q5:0000000F [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:24:51.4639600-04:00 0HLVQGJMAM2Q5:0000000F [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8826,7 +8826,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
-2020-05-17T13:24:51.4680136-04:00 0HLVQGJMAM2Q5:0000000F [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:24:51.4680136-04:00 0HLVQGJMAM2Q5:0000000F [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -8876,7 +8876,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
    at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at ContratacionWebApi.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\EntidadesController.cs:line 66
+   at SGCont.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\EntidadesController.cs:line 66
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -8925,7 +8925,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
    at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at ContratacionWebApi.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\EntidadesController.cs:line 66
+   at SGCont.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\EntidadesController.cs:line 66
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -8975,7 +8975,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded) in C:\projects\npgsql-entityframeworkcore-postgresql\src\EFCore.PG\Storage\Internal\NpgsqlExecutionStrategy.cs:line 28
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:27:09.0275205-04:00 0HLVQGJMAM2QA:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:27:09.0275205-04:00 0HLVQGJMAM2QA:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -9146,7 +9146,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-05-17T13:28:02.9638957-04:00 0HLVQGJMAM2QF:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:28:02.9638957-04:00 0HLVQGJMAM2QF:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -9190,7 +9190,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
-2020-05-17T13:28:02.9684684-04:00 0HLVQGJMAM2QF:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T13:28:02.9684684-04:00 0HLVQGJMAM2QF:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -9240,7 +9240,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
    at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at ContratacionWebApi.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\EntidadesController.cs:line 66
+   at SGCont.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\EntidadesController.cs:line 66
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -9290,7 +9290,7 @@ Npgsql.PostgresException (0x80004005): 42703: no existe la columna e.Codigo
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
    at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at ContratacionWebApi.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\EntidadesController.cs:line 66
+   at SGCont.Controllers.EntidadesController.POST(Entidad entidad) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\EntidadesController.cs:line 66
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -9588,7 +9588,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-17T15:17:20.9399336-04:00 0HLVQIRLPKO00:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T15:17:20.9399336-04:00 0HLVQIRLPKO00:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidOperationException: Nullable object must have a value.
    at lambda_method(Closure , QueryContext , TransparentIdentifier`2 )
    at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ProjectionShaper.TypedProjectionShaper`3.Shape(QueryContext queryContext, ValueBuffer& valueBuffer)
@@ -9915,7 +9915,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-17T15:25:29.6904717-04:00 0HLVQJ07EOC9D:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-17T15:25:29.6904717-04:00 0HLVQJ07EOC9D:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidOperationException: Nullable object must have a value.
    at lambda_method(Closure , QueryContext , TransparentIdentifier`2 )
    at Microsoft.EntityFrameworkCore.Query.ExpressionVisitors.Internal.ProjectionShaper.TypedProjectionShaper`3.Shape(QueryContext queryContext, ValueBuffer& valueBuffer)

@@ -3195,7 +3195,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-05-05T21:04:59.3675519-04:00 0HLVHB5VJDI0M:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.InvalidOperationException: Cannot consume scoped service 'ContratacionWebApi.Data.ContratacionDbContext' from singleton 'SGCont.Utils.MenuLoader'.
+System.InvalidOperationException: Cannot consume scoped service 'SGCont.Data.SGContDbContext ' from singleton 'SGCont.Utils.MenuLoader'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScoped(ScopedCallSite scopedCallSite, CallSiteValidatorState state)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
@@ -3325,7 +3325,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-05-05T21:40:45.7907675-04:00 0HLVHBPV9I18M:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.InvalidOperationException: Cannot consume scoped service 'ContratacionWebApi.Data.ContratacionDbContext' from singleton 'SGCont.Utils.MenuLoader'.
+System.InvalidOperationException: Cannot consume scoped service 'SGCont.Data.SGContDbContext ' from singleton 'SGCont.Utils.MenuLoader'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScoped(ScopedCallSite scopedCallSite, CallSiteValidatorState state)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
@@ -3367,7 +3367,7 @@ System.InvalidOperationException: Cannot consume scoped service 'ContratacionWeb
 2020-05-05T21:40:46.1103889-04:00 0HLVHBPV9I18J:00000003 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-05T21:40:46.1106783-04:00 0HLVHBPV9I18J:00000003 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-05T21:40:55.5118781-04:00 0HLVHBPV9I18M:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.InvalidOperationException: Cannot consume scoped service 'ContratacionWebApi.Data.ContratacionDbContext' from singleton 'SGCont.Utils.MenuLoader'.
+System.InvalidOperationException: Cannot consume scoped service 'SGCont.Data.SGContDbContext ' from singleton 'SGCont.Utils.MenuLoader'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScoped(ScopedCallSite scopedCallSite, CallSiteValidatorState state)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
@@ -3401,7 +3401,7 @@ System.InvalidOperationException: Cannot consume scoped service 'ContratacionWeb
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-05T21:41:05.1527300-04:00 0HLVHBPV9I18M:00000018 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.InvalidOperationException: Cannot consume scoped service 'ContratacionWebApi.Data.ContratacionDbContext' from singleton 'SGCont.Utils.MenuLoader'.
+System.InvalidOperationException: Cannot consume scoped service 'SGCont.Data.SGContDbContext ' from singleton 'SGCont.Utils.MenuLoader'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScoped(ScopedCallSite scopedCallSite, CallSiteValidatorState state)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
@@ -3785,7 +3785,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-05-05T21:42:01.9289424-04:00 0HLVHBQM1CU7B:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.InvalidOperationException: Cannot consume scoped service 'ContratacionWebApi.Data.ContratacionDbContext' from singleton 'SGCont.Utils.MenuLoader'.
+System.InvalidOperationException: Cannot consume scoped service 'SGCont.Data.SGContDbContext ' from singleton 'SGCont.Utils.MenuLoader'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScoped(ScopedCallSite scopedCallSite, CallSiteValidatorState state)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
@@ -4169,7 +4169,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-05-05T21:43:51.6837233-04:00 0HLVHBRMO5JHQ:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.InvalidOperationException: Cannot consume scoped service 'ContratacionWebApi.Data.ContratacionDbContext' from singleton 'SGCont.Utils.MenuLoader'.
+System.InvalidOperationException: Cannot consume scoped service 'SGCont.Data.SGContDbContext ' from singleton 'SGCont.Utils.MenuLoader'.
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScoped(ScopedCallSite scopedCallSite, CallSiteValidatorState state)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)

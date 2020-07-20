@@ -1170,8 +1170,8 @@ System.AggregateException: One or more errors occurred. (Se ha intentado una ope
 2020-05-02T21:59:09.6045778-04:00 0HLVF0M39TV0Q:00000004 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-02T21:59:09.6048946-04:00 0HLVF0M39TV0Q:00000004 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-02T22:20:38.1388169-04:00 0HLVF0M39TV1C:0000003D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1203,8 +1203,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-02T22:20:38.1389472-04:00 0HLVF0M39TV1C:0000003D [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T22:20:38.1546165-04:00 0HLVF0M39TV1C:0000003D [ERR] Connection id ""0HLVF0M39TV1C"", Request id ""0HLVF0M39TV1C:0000003D"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1237,8 +1237,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-02T22:20:40.4104984-04:00 0HLVF0M39TV1B:00000050 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1271,8 +1271,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
 2020-05-02T22:20:40.4105897-04:00 0HLVF0M39TV1B:00000050 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T22:20:40.4131565-04:00 0HLVF0M39TV1B:00000050 [ERR] Connection id ""0HLVF0M39TV1B"", Request id ""0HLVF0M39TV1B:00000050"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1305,8 +1305,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-02T22:20:49.9955158-04:00 0HLVF0M39TV1D:00000031 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1339,8 +1339,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
 2020-05-02T22:20:49.9956042-04:00 0HLVF0M39TV1D:00000031 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T22:20:49.9978186-04:00 0HLVF0M39TV1D:00000031 [ERR] Connection id ""0HLVF0M39TV1D"", Request id ""0HLVF0M39TV1D:00000031"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1373,8 +1373,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-02T22:22:09.7931653-04:00 0HLVF0M39TV1K:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1405,8 +1405,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-02T22:22:09.7933532-04:00 0HLVF0M39TV1K:00000004 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T22:22:09.7965608-04:00 0HLVF0M39TV1K:00000004 [ERR] Connection id ""0HLVF0M39TV1K"", Request id ""0HLVF0M39TV1K:00000004"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1438,8 +1438,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-02T22:22:19.7463531-04:00 0HLVF0M39TV1L:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -1470,8 +1470,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-02T22:22:19.7464326-04:00 0HLVF0M39TV1L:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T22:22:19.7486667-04:00 0HLVF0M39TV1L:00000001 [ERR] Connection id ""0HLVF0M39TV1L"", Request id ""0HLVF0M39TV1L:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -2673,7 +2673,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-02T23:14:34.3944440-04:00 0HLVF2061TVRH:00000016 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.InvalidOperationException: Sequence contains no elements
    at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Models.Contrato.get_EstadoActual() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 75
+   at SGCont.Models.Contrato.get_EstadoActual() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 75
    at Microsoft.Extensions.Internal.PropertyHelper.CallNullSafePropertyGetter[TDeclaringType,TValue](Func`2 getter, Object target)
    at Microsoft.AspNetCore.Mvc.Internal.DefaultComplexObjectValidationStrategy.Enumerator.GetModel(Object container, ModelMetadata property)
    at Microsoft.AspNetCore.Mvc.Internal.DefaultComplexObjectValidationStrategy.Enumerator.<>c__DisplayClass10_0.<MoveNext>b__1()
@@ -2876,8 +2876,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
 
 2020-05-02T23:25:11.4731455-04:00 0HLVF26B1QG38:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -2910,8 +2910,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-02T23:25:11.4732671-04:00 0HLVF26B1QG38:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T23:25:11.4768895-04:00 0HLVF26B1QG38:00000001 [ERR] Connection id ""0HLVF26B1QG38"", Request id ""0HLVF26B1QG38:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -2951,8 +2951,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
 2020-05-02T23:26:37.3038931-04:00 0HLVF26B1QG3E:00000004 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-02T23:26:37.3042101-04:00 0HLVF26B1QG3E:00000004 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-02T23:26:38.9265880-04:00 0HLVF26B1QG3F:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -2983,8 +2983,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-02T23:26:38.9266547-04:00 0HLVF26B1QG3F:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-02T23:26:38.9288991-04:00 0HLVF26B1QG3F:00000001 [ERR] Connection id ""0HLVF26B1QG3F"", Request id ""0HLVF26B1QG3F:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)

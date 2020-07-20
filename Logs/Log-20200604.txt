@@ -2452,7 +2452,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2479,7 +2479,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2506,7 +2506,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2533,7 +2533,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2560,7 +2560,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2587,7 +2587,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2614,7 +2614,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2641,7 +2641,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2668,7 +2668,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2695,7 +2695,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2722,7 +2722,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2752,7 +2752,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -2779,7 +2779,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 472
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 472
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -2805,7 +2805,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 472
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 472
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3106,7 +3106,7 @@ System.InvalidOperationException: The instance of entity type 'ContratoFormaPago
    at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
    at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
    at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 181
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 181
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3144,7 +3144,7 @@ System.InvalidOperationException: The instance of entity type 'ContratoFormaPago
    at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
    at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
    at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 181
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 181
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3263,7 +3263,7 @@ System.InvalidOperationException: The instance of entity type 'ContratoFormaPago
    at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
    at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
    at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 181
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 181
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3464,7 +3464,7 @@ System.InvalidOperationException: The instance of entity type 'ContratoFormaPago
    at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
    at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
    at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 181
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 181
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3600,7 +3600,7 @@ Npgsql.PostgresException (0x80004005): 23502: el valor null para la columna «Fo
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-04T18:18:21.5568130-04:00 0HM08QISPJEMJ:00000042 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:18:21.5568130-04:00 0HM08QISPJEMJ:00000042 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23502: el valor null para la columna «FormaDePagoId» viola la restricción not null
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3646,7 +3646,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 182
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 182
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3679,7 +3679,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 182
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 182
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3717,7 +3717,7 @@ Npgsql.PostgresException (0x80004005): 23502: el valor null para la columna «Fo
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-04T18:18:26.9834215-04:00 0HM08QISPJEMJ:00000044 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:18:26.9834215-04:00 0HM08QISPJEMJ:00000044 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23502: el valor null para la columna «FormaDePagoId» viola la restricción not null
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3763,7 +3763,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 182
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 182
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3803,7 +3803,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 182
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 182
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3937,7 +3937,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-06-04T18:32:23.1897175-04:00 0HM08QSFJPEPH:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:32:23.1897175-04:00 0HM08QSFJPEPH:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoId_DictaminadorId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -3974,7 +3974,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4017,7 +4017,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4064,7 +4064,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-06-04T18:32:29.8890754-04:00 0HM08QSFJPEPI:0000000B [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:32:29.8890754-04:00 0HM08QSFJPEPI:0000000B [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoId_DictaminadorId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4101,7 +4101,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4142,7 +4142,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4185,7 +4185,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-06-04T18:32:31.9569189-04:00 0HM08QSFJPEPJ:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:32:31.9569189-04:00 0HM08QSFJPEPJ:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoId_DictaminadorId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4222,7 +4222,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4263,7 +4263,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4306,7 +4306,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
-2020-06-04T18:34:07.8538540-04:00 0HM08QSFJPEPJ:00000016 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:34:07.8538540-04:00 0HM08QSFJPEPJ:00000016 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoId_DictaminadorId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4343,7 +4343,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4386,7 +4386,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 33
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 33
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4426,7 +4426,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-04T18:34:37.6928687-04:00 0HM08QSFJPEPM:00000027 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:34:37.6928687-04:00 0HM08QSFJPEPM:00000027 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 42P01: no existe la relación «ContratoId_FormaPagoId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4472,7 +4472,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 180
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 180
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4508,7 +4508,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 180
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 180
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4547,7 +4547,7 @@ Npgsql.PostgresException (0x80004005): 42P01: no existe la relación «ContratoI
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-04T18:34:45.8530836-04:00 0HM08QSFJPEPK:0000003B [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-04T18:34:45.8530836-04:00 0HM08QSFJPEPK:0000003B [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 42P01: no existe la relación «ContratoId_FormaPagoId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4593,7 +4593,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 180
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 180
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4631,7 +4631,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 180
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 180
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4740,7 +4740,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4767,7 +4767,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4794,7 +4794,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4821,7 +4821,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4848,7 +4848,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4875,7 +4875,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4902,7 +4902,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4931,7 +4931,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4958,7 +4958,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4985,7 +4985,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -5012,7 +5012,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -5039,7 +5039,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 425
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 425
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -5066,7 +5066,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -5092,7 +5092,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -6705,8 +6705,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-06-04T21:26:14.6300960-04:00 0HM08TGA3G5OK:00000001 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-04T21:27:04.5930614-04:00  [INF] Tarea ejecutada: 04/06/2020 21:27:04 (775b2f9c)
 2020-06-04T21:27:46.0966451-04:00 0HM08TGA3G5OK:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 69
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 69
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -6736,8 +6736,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-04T21:27:46.0970000-04:00 0HM08TGA3G5OK:00000002 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:27:46.1031040-04:00 0HM08TGA3G5OK:00000002 [ERR] Connection id ""0HM08TGA3G5OK"", Request id ""0HM08TGA3G5OK:00000002"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 69
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 69
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -6769,8 +6769,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-06-04T21:29:19.2582878-04:00 0HM08TGA3G5OL:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 69
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 69
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -6801,8 +6801,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-04T21:29:19.2584037-04:00 0HM08TGA3G5OL:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:29:19.2615834-04:00 0HM08TGA3G5OL:00000001 [ERR] Connection id ""0HM08TGA3G5OL"", Request id ""0HM08TGA3G5OL:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 69
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 69
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -6834,8 +6834,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-06-04T21:29:23.4393567-04:00 0HM08TGA3G5OM:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 69
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 69
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -6866,8 +6866,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-04T21:29:23.4394053-04:00 0HM08TGA3G5OM:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:29:23.4410763-04:00 0HM08TGA3G5OM:00000001 [ERR] Connection id ""0HM08TGA3G5OM"", Request id ""0HM08TGA3G5OM:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 69
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 69
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -6982,8 +6982,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-06-04T21:41:12.9214651-04:00 0HM08U63JL6VP:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 71
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 71
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -7015,8 +7015,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
 2020-06-04T21:41:12.9217442-04:00 0HM08U63JL6VP:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:41:12.9266625-04:00 0HM08U63JL6VP:00000001 [ERR] Connection id ""0HM08U63JL6VP"", Request id ""0HM08U63JL6VP:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 71
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 71
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -7048,8 +7048,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-06-04T21:41:29.0213292-04:00 0HM08U63JL6VQ:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 71
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 71
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -7082,8 +7082,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-06-04T21:41:29.0213723-04:00 0HM08U63JL6VQ:00000001 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:41:29.0231255-04:00 0HM08U63JL6VQ:00000001 [ERR] Connection id ""0HM08U63JL6VQ"", Request id ""0HM08U63JL6VQ:00000001"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 71
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 71
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -7277,8 +7277,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-06-04T21:46:19.6629481-04:00 0HM08U8S54FRK:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 71
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 71
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -7308,8 +7308,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-04T21:46:19.6661788-04:00 0HM08U8S54FRK:00000002 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:46:19.6805133-04:00 0HM08U8S54FRK:00000002 [ERR] Connection id ""0HM08U8S54FRK"", Request id ""0HM08U8S54FRK:00000002"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 71
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 71
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -7503,9 +7503,9 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-06-04T21:48:22.2258731-04:00 0HM08U9PMHS9V:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'EstadoActual' on 'ContratacionWebApi.Models.Contrato'. ---> System.InvalidOperationException: Sequence contains no elements
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'EstadoActual' on 'SGCont.Models.Contrato'. ---> System.InvalidOperationException: Sequence contains no elements
    at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Models.Contrato.get_EstadoActual() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 76
+   at SGCont.Models.Contrato.get_EstadoActual() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 76
    at lambda_method(Closure , Object )
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
@@ -7537,9 +7537,9 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'EstadoActu
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-04T21:48:22.2281621-04:00 0HM08U9PMHS9V:00000002 [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-06-04T21:48:22.2453204-04:00 0HM08U9PMHS9V:00000002 [ERR] Connection id ""0HM08U9PMHS9V"", Request id ""0HM08U9PMHS9V:00000002"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'EstadoActual' on 'ContratacionWebApi.Models.Contrato'. ---> System.InvalidOperationException: Sequence contains no elements
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'EstadoActual' on 'SGCont.Models.Contrato'. ---> System.InvalidOperationException: Sequence contains no elements
    at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Models.Contrato.get_EstadoActual() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 76
+   at SGCont.Models.Contrato.get_EstadoActual() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 76
    at lambda_method(Closure , Object )
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
