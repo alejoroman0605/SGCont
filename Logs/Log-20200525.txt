@@ -3209,7 +3209,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-25T15:11:17.8483083-04:00 0HM00RSST5SIL:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.InvalidOperationException: Nullable object must have a value.
    at System.Nullable`1.get_Value()
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 454
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 454
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3393,7 +3393,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-25T15:18:53.1473545-04:00 0HM00S1QQQ9OS:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:18:53.1473545-04:00 0HM00S1QQQ9OS:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -3425,7 +3425,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 419
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 419
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3447,7 +3447,7 @@ System.InvalidCastException: Column is null
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-25T15:19:08.5254285-04:00 0HM00S1QQQ9OT:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:19:08.5254285-04:00 0HM00S1QQQ9OT:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -3468,7 +3468,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 419
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 419
 2020-05-25T15:19:08.5278954-04:00 0HM00S1QQQ9OT:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
@@ -3481,7 +3481,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 419
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 419
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3502,7 +3502,7 @@ System.InvalidCastException: Column is null
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-25T15:19:20.0110622-04:00 0HM00S1QQQ9OT:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:19:20.0110622-04:00 0HM00S1QQQ9OT:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -3523,7 +3523,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 419
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 419
 2020-05-25T15:19:20.0149729-04:00 0HM00S1QQQ9OT:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
@@ -3536,7 +3536,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 419
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 419
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3638,7 +3638,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-25T15:21:20.2290256-04:00 0HM00S36RD3N6:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:21:20.2290256-04:00 0HM00S36RD3N6:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -3659,7 +3659,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 423
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 423
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3675,7 +3675,7 @@ System.InvalidCastException: Column is null
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
    at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at ContratacionWebApi.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 423
+   at SGCont.Controllers.ContratosController.DashboardOfertas() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 423
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -3883,7 +3883,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-25T15:26:10.0602866-04:00 0HM00S56IC6SD:00000007 [WRN] The LINQ expression '"where ([s].ContratoId == [c].Id)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-25T15:26:10.0607027-04:00 0HM00S56IC6SD:00000007 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-25T15:26:10.0609552-04:00 0HM00S56IC6SD:00000007 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
-2020-05-25T15:26:10.1469004-04:00 0HM00S56IC6SD:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:26:10.1469004-04:00 0HM00S56IC6SD:00000007 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -3970,7 +3970,7 @@ System.InvalidCastException: Column is null
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-25T15:26:49.3762977-04:00 0HM00S56IC6SC:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:26:49.3762977-04:00 0HM00S56IC6SC:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -4061,7 +4061,7 @@ System.InvalidCastException: Column is null
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-25T15:26:56.6007466-04:00 0HM00S56IC6SI:00000045 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:26:56.6007466-04:00 0HM00S56IC6SI:00000045 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -4148,7 +4148,7 @@ System.InvalidCastException: Column is null
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-25T15:28:06.8547323-04:00 0HM00S56IC6SL:0000000B [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:28:06.8547323-04:00 0HM00S56IC6SL:0000000B [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -4235,7 +4235,7 @@ System.InvalidCastException: Column is null
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-25T15:28:46.2018778-04:00 0HM00S56IC6SE:00000010 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:28:46.2018778-04:00 0HM00S56IC6SE:00000010 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -4324,7 +4324,7 @@ System.InvalidCastException: Column is null
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-05-25T15:29:12.5361879-04:00 0HM00S56IC6SN:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:29:12.5361879-04:00 0HM00S56IC6SN:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -4505,7 +4505,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 System.ArgumentOutOfRangeException: Ticks must be between DateTime.MinValue.Ticks and DateTime.MaxValue.Ticks.
 Parameter name: ticks
    at System.DateTime..ctor(Int64 ticks)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 34
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 34
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4532,7 +4532,7 @@ Parameter name: ticks
 System.ArgumentOutOfRangeException: Ticks must be between DateTime.MinValue.Ticks and DateTime.MaxValue.Ticks.
 Parameter name: ticks
    at System.DateTime..ctor(Int64 ticks)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 34
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 34
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4558,7 +4558,7 @@ Parameter name: ticks
 System.ArgumentOutOfRangeException: Ticks must be between DateTime.MinValue.Ticks and DateTime.MaxValue.Ticks.
 Parameter name: ticks
    at System.DateTime..ctor(Int64 ticks)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 34
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 34
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4584,7 +4584,7 @@ Parameter name: ticks
 System.ArgumentOutOfRangeException: Ticks must be between DateTime.MinValue.Ticks and DateTime.MaxValue.Ticks.
 Parameter name: ticks
    at System.DateTime..ctor(Int64 ticks)
-   at ContratacionWebApi.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 34
+   at SGCont.Controllers.ContratosController.GetAll(String tipoTramite, String filtro) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 34
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4695,7 +4695,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-25T15:49:23.8410504-04:00 0HM00SISGTCGP:00000001 [WRN] The LINQ expression '"where ([s].ContratoId == [c].Id)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-25T15:49:23.8413526-04:00 0HM00SISGTCGP:00000001 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-25T15:49:23.8415074-04:00 0HM00SISGTCGP:00000001 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
-2020-05-25T15:49:23.9077771-04:00 0HM00SISGTCGP:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:49:23.9077771-04:00 0HM00SISGTCGP:00000001 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )
@@ -4785,7 +4785,7 @@ System.InvalidCastException: Column is null
 2020-05-25T15:52:12.8275545-04:00 0HM00SISGTCGQ:00000003 [WRN] The LINQ expression '"where ([s].ContratoId == [c].Id)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-25T15:52:12.8277203-04:00 0HM00SISGTCGQ:00000003 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-25T15:52:12.8278029-04:00 0HM00SISGTCGQ:00000003 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
-2020-05-25T15:52:18.7126203-04:00 0HM00SISGTCGQ:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-25T15:52:18.7126203-04:00 0HM00SISGTCGQ:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.InvalidCastException: Column is null
    at Npgsql.NpgsqlDefaultDataReader.GetFieldValue[T](Int32 column) in C:\projects\npgsql\src\Npgsql\NpgsqlDefaultDataReader.cs:line 92
    at lambda_method(Closure , DbDataReader )

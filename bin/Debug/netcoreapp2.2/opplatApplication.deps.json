@@ -26,7 +26,7 @@
         "dependencies": {
           "Account.WebApi": "1.0.0",
           "ContabilidadWebApi": "1.0.0",
-          "ContratacionWebApi": "1.0.0",
+          "SGCont": "1.0.0",
           "FinanzasWebApi": "1.0.0",
           "ImportadorDatos": "1.0.0",
           "InventarioWebApi": "1.0.0",
@@ -36,7 +36,7 @@
           "Microsoft.NETCore.App": "2.2.0",
           "Newtonsoft.Json": "12.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
-          "RhWebApi": "1.0.0",
+          "SGCont": "1.0.0",
           "Serilog.Extensions.Logging.File": "2.0.0-dev-00037",
           "Swashbuckle.AspNetCore": "5.0.0",
           "VueCliMiddleware": "2.2.1",
@@ -1231,22 +1231,22 @@
           "ContabilidadWebApi.dll": {}
         }
       },
-      "ContratacionWebApi/1.0.0": {
+      "SGCont/1.0.0": {
         "dependencies": {
           "CsvHelper": "8.0.0-beta01",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
           "Newtonsoft.Json": "12.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
           "Quartz": "3.0.7",
-          "RhWebApi": "1.0.0",
+          "SGCont": "1.0.0",
           "Swashbuckle.AspNetCore": "5.0.0",
           "WorkflowCore": "3.1.5"
         },
         "runtime": {
-          "ContratacionWebApi.dll": {}
+          "SGCont.dll": {}
         },
         "compile": {
-          "ContratacionWebApi.dll": {}
+          "SGCont.dll": {}
         }
       },
       "FinanzasWebApi/1.0.0": {
@@ -1269,9 +1269,9 @@
       "ImportadorDatos/1.0.0": {
         "dependencies": {
           "ContabilidadWebApi": "1.0.0",
-          "ContratacionWebApi": "1.0.0",
+          "SGCont": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
-          "RhWebApi": "1.0.0"
+          "SGCont": "1.0.0"
         },
         "runtime": {
           "ImportadorDatos.dll": {}
@@ -1314,7 +1314,7 @@
           "notificationsWebApi.dll": {}
         }
       },
-      "RhWebApi/1.0.0": {
+      "SGCont/1.0.0": {
         "dependencies": {
           "CsvHelper": "8.0.0-beta01",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
@@ -1324,10 +1324,10 @@
           "Swashbuckle.AspNetCore": "5.0.0"
         },
         "runtime": {
-          "RhWebApi.dll": {}
+          "SGCont.dll": {}
         },
         "compile": {
-          "RhWebApi.dll": {}
+          "SGCont.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4931,7 +4931,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ContratacionWebApi/1.0.0": {
+    "SGCont/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -4956,7 +4956,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "RhWebApi/1.0.0": {
+    "SGCont/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

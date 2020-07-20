@@ -911,7 +911,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-06-06T15:53:15.2502500-04:00 0HM0AACVR4BHR:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T15:53:15.4335757-04:00 0HM0AACVR4BHQ:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.IndexOutOfRangeException: Index was outside the bounds of the array.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 530
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 530
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -935,7 +935,7 @@ System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-06T15:53:15.4336105-04:00 0HM0AACVR4BHR:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.IndexOutOfRangeException: Index was outside the bounds of the array.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 530
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 530
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -959,7 +959,7 @@ System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-06T15:53:37.9611090-04:00 0HM0AACVR4BHR:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.IndexOutOfRangeException: Index was outside the bounds of the array.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 530
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 530
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -983,7 +983,7 @@ System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-06T15:53:43.4108576-04:00 0HM0AACVR4BHR:00000006 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.IndexOutOfRangeException: Index was outside the bounds of the array.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 530
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 530
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1007,7 +1007,7 @@ System.IndexOutOfRangeException: Index was outside the bounds of the array.
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-06-06T15:53:43.4108618-04:00 0HM0AACVR4BHQ:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.IndexOutOfRangeException: Index was outside the bounds of the array.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 530
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 530
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1365,7 +1365,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-06-06T21:08:04.4195795-04:00 0HM0AFSSU7TP0:00000004 [WRN] The LINQ expression '"where ([s].ContratoId == [c].Id)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T21:08:04.4201890-04:00 0HM0AFSSU7TP0:00000004 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T21:08:04.4209242-04:00 0HM0AFSSU7TP0:00000004 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
-2020-06-06T21:08:04.5734790-04:00 0HM0AFSSU7TP0:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:08:04.5734790-04:00 0HM0AFSSU7TP0:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
@@ -1445,7 +1445,7 @@ Parameter name: source
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-06-06T21:12:20.3044036-04:00  [INF] Tarea ejecutada: 06/06/2020 21:12:20 (353d09cf)
-2020-06-06T21:12:24.8586665-04:00 0HM0AFSSU7TP7:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:12:24.8586665-04:00 0HM0AFSSU7TP7:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
@@ -1524,7 +1524,7 @@ Parameter name: source
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-06-06T21:12:31.0974147-04:00 0HM0AFSSU7TPD:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:12:31.0974147-04:00 0HM0AFSSU7TPD:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
@@ -1603,7 +1603,7 @@ Parameter name: source
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-06-06T21:12:45.6256833-04:00 0HM0AFSSU7TP8:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:12:45.6256833-04:00 0HM0AFSSU7TP8:00000014 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
@@ -2054,7 +2054,7 @@ System.AggregateException: One or more errors occurred. (Se ha intentado una ope
 2020-06-06T21:16:18.2347296-04:00 0HM0AG1DAURDC:00000006 [WRN] The LINQ expression '"where ([s].ContratoId == [c].Id)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T21:16:18.2360664-04:00 0HM0AG1DAURDC:00000006 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T21:16:18.2364499-04:00 0HM0AG1DAURDC:00000006 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
-2020-06-06T21:16:18.3359215-04:00 0HM0AG1DAURDC:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:16:18.3359215-04:00 0HM0AG1DAURDC:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
@@ -2141,7 +2141,7 @@ Parameter name: source
 2020-06-06T21:16:19.3410726-04:00 0HM0AG1DAURDJ:00000005 [WRN] The LINQ expression '"where ([s].ContratoId == [c].Id)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T21:16:19.3414714-04:00 0HM0AG1DAURDJ:00000005 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-06-06T21:16:19.3416156-04:00 0HM0AG1DAURDJ:00000005 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
-2020-06-06T21:16:19.3705479-04:00 0HM0AG1DAURDJ:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:16:19.3705479-04:00 0HM0AG1DAURDJ:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
@@ -2223,7 +2223,7 @@ Parameter name: source
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
-2020-06-06T21:16:28.2664878-04:00 0HM0AG1DAURDD:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-06T21:16:28.2664878-04:00 0HM0AG1DAURDD:0000000D [ERR] An exception occurred while iterating over the results of a query for context type '"SGCont.Data.SGContDbContext "'."
 ""System.ArgumentNullException: Value cannot be null.
 Parameter name: source
    at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)

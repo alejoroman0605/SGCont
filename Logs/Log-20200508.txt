@@ -648,7 +648,7 @@ Parameter name: entity
    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
    at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
    at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
-   at ContratacionWebApi.Controllers.DictContratosController.POST(Dictaminador dictaminador) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\DictContratosController.cs:line 42
+   at SGCont.Controllers.DictContratosController.POST(Dictaminador dictaminador) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\DictContratosController.cs:line 42
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -677,7 +677,7 @@ Parameter name: entity
    at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
    at Microsoft.EntityFrameworkCore.DbContext.Add[TEntity](TEntity entity)
    at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
-   at ContratacionWebApi.Controllers.DictContratosController.POST(Dictaminador dictaminador) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\DictContratosController.cs:line 42
+   at SGCont.Controllers.DictContratosController.POST(Dictaminador dictaminador) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\DictContratosController.cs:line 42
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -1172,7 +1172,7 @@ Npgsql.PostgresException (0x80004005): 23503: update o delete en «Documentos» 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-05-08T14:26:20.2591188-04:00 0HLVJFKR1P154:00000010 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-08T14:26:20.2591188-04:00 0HLVJFKR1P154:00000010 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: update o delete en «Documentos» viola la llave foránea «FK_cont_especialidades_Documentos_DocumentoId» en la tabla «cont_especialidades»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1218,7 +1218,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.AdminContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\AdminContratosController.cs:line 82
+   at SGCont.Controllers.AdminContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\AdminContratosController.cs:line 82
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -1259,7 +1259,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.AdminContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\AdminContratosController.cs:line 82
+   at SGCont.Controllers.AdminContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\AdminContratosController.cs:line 82
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)

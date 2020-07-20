@@ -60,4 +60,34 @@ namespace SGCont.Models
         TCP,
         PYME
     }
+    public enum Sexo
+    {
+        Sin_Definir,
+        M,
+        F,
+    }
+     public enum ColorDePiel : int {
+        Sin_Definir,
+        Blanca,
+        Negra,
+        Mestiza,
+    }
+      public enum ColorDeOjos {
+        Sin_Definir,
+        Azules,
+        Verdes,
+        Negros,
+        Marron,
+        Pardos
+    }
+     public enum TallaDeCamisa {
+        Sin_Definir,
+        S,
+        M,
+        X,
+        L,
+        XL,
+        XXL,
+        XXXL
+    }
 }

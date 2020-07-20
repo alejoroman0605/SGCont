@@ -4154,7 +4154,7 @@ Npgsql.PostgresException (0x80004005): 23503: inserción o actualización en la 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-05-07T23:25:46.0013571-04:00 0HLVIVLCNABCT:000000CB [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-07T23:25:46.0013571-04:00 0HLVIVLCNABCT:000000CB [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: inserción o actualización en la tabla «Contratos» viola la llave foránea «FK_Contratos_Entidades_EntidadId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4200,7 +4200,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 134
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 134
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4236,7 +4236,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 134
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 134
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4275,7 +4275,7 @@ Npgsql.PostgresException (0x80004005): 23503: inserción o actualización en la 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-05-07T23:26:24.9513527-04:00 0HLVIVLCNABCT:000000CD [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-05-07T23:26:24.9513527-04:00 0HLVIVLCNABCT:000000CD [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: inserción o actualización en la tabla «Contratos» viola la llave foránea «FK_Contratos_Entidades_EntidadId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -4321,7 +4321,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 134
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 134
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4365,7 +4365,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 134
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 134
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -4720,8 +4720,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-07T23:41:44.9936148-04:00 0HLVJ06T0E9GI:00000006 [WRN] The LINQ expression '"where (([c].FechaDeVenOferta - DateTime.Now).Days > 23)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-07T23:41:44.9938838-04:00 0HLVJ06T0E9GI:00000006 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-07T23:41:52.0119165-04:00 0HLVJ06T0E9GG:0000000D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -4753,8 +4753,8 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
 2020-05-07T23:41:52.0120518-04:00 0HLVJ06T0E9GG:0000000D [WRN] The response has already started, the error page middleware will not be executed. (e1dd4c0d)
 2020-05-07T23:41:52.0176317-04:00 0HLVJ06T0E9GG:0000000D [ERR] Connection id ""0HLVJ06T0E9GG"", Request id ""0HLVJ06T0E9GG:0000000D"": An unhandled exception was thrown by the application. (560e7d32)
-Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'ContratacionWebApi.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Models\Contrato.cs:line 70
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcion' on 'SGCont.Models.Contrato'. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SGCont.Models.Contrato.get_Descripcion() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Models\Contrato.cs:line 70
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
    --- End of inner exception stack trace ---
    at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
@@ -4788,7 +4788,7 @@ Newtonsoft.Json.JsonSerializationException: Error getting value from 'Descripcio
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2020-05-07T23:42:00.2408166-04:00 0HLVJ06T0E9GJ:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 210
+   at SGCont.Controllers.ContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 210
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -4813,7 +4813,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-07T23:46:04.6265442-04:00 0HLVJ06T0E9GQ:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 210
+   at SGCont.Controllers.ContratosController.Delete(Int32 id) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 210
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)

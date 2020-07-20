@@ -388,7 +388,7 @@ System.AggregateException: One or more errors occurred. (Se ha intentado una ope
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -415,7 +415,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -442,7 +442,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -469,7 +469,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -496,7 +496,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -523,7 +523,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -550,7 +550,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -577,7 +577,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -604,7 +604,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -631,7 +631,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -658,7 +658,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -685,7 +685,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 472
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 472
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -711,7 +711,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 472
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 472
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -737,7 +737,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -764,7 +764,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -791,7 +791,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -818,7 +818,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -845,7 +845,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -872,7 +872,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -899,7 +899,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -926,7 +926,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -953,7 +953,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -980,7 +980,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -1007,7 +1007,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 427
+   at SGCont.Controllers.ContratosController.GetVencimientoOferta() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 427
    at lambda_method(Closure , Object , Object[] )
    at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
@@ -1234,7 +1234,7 @@ Npgsql.PostgresException (0x80004005): 23503: inserción o actualización en la 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-08T11:37:12.1324275-04:00 0HM0BNVK9EUJT:00000025 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-08T11:37:12.1324275-04:00 0HM0BNVK9EUJT:00000025 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: inserción o actualización en la tabla «Contratos» viola la llave foránea «FK_Contratos_trabajadores_AdminContratoId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1280,7 +1280,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1317,7 +1317,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1356,7 +1356,7 @@ Npgsql.PostgresException (0x80004005): 23503: inserción o actualización en la 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-08T11:37:18.7311202-04:00 0HM0BNVK9EUJR:00000024 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-08T11:37:18.7311202-04:00 0HM0BNVK9EUJR:00000024 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: inserción o actualización en la tabla «Contratos» viola la llave foránea «FK_Contratos_trabajadores_AdminContratoId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1402,7 +1402,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1438,7 +1438,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1477,7 +1477,7 @@ Npgsql.PostgresException (0x80004005): 23503: inserción o actualización en la 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-08T11:37:49.5162925-04:00 0HM0BNVK9EUJV:00000033 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-08T11:37:49.5162925-04:00 0HM0BNVK9EUJV:00000033 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: inserción o actualización en la tabla «Contratos» viola la llave foránea «FK_Contratos_trabajadores_AdminContratoId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1523,7 +1523,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1562,7 +1562,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1601,7 +1601,7 @@ Npgsql.PostgresException (0x80004005): 23503: inserción o actualización en la 
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-2020-06-08T11:38:22.5519193-04:00 0HM0BNVK9EUJU:00000030 [ERR] An exception occurred in the database while saving changes for context type '"ContratacionWebApi.Data.ContratacionDbContext"'."
+2020-06-08T11:38:22.5519193-04:00 0HM0BNVK9EUJU:00000030 [ERR] An exception occurred in the database while saving changes for context type '"SGCont.Data.SGContDbContext "'."
 ""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> Npgsql.PostgresException: 23503: inserción o actualización en la tabla «Contratos» viola la llave foránea «FK_Contratos_trabajadores_AdminContratoId»
    at Npgsql.NpgsqlConnector.<>c__DisplayClass161_0.<<ReadMessage>g__ReadMessageLong|0>d.MoveNext()
 --- End of stack trace from previous location where exception was thrown ---
@@ -1647,7 +1647,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1686,7 +1686,7 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at ContratacionWebApi.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 172
+   at SGCont.Controllers.ContratosController.POST(ContratoDto contratoDto) in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 172
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -2146,7 +2146,7 @@ System.AggregateException: One or more errors occurred. (Se ha intentado una ope
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 478
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 478
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -2172,7 +2172,7 @@ Parameter name: index
 System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 Parameter name: index
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 478
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 478
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()

@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
-namespace SGCont.Models
- {
+namespace SGCont.Models {
     public class Entidad {
         public int Id { get; set; }
         public string Codigo { get; set; }
         [Required]
         public string Nombre { get; set; }
+        public string Siglas { get; set; }
         
         [Required]
         [Display (Name = "Dirección")]
@@ -35,7 +35,7 @@ namespace SGCont.Models
         [Display (Name = "Correo electrónico")]
         public string Correo { get; set; }
         public string ObjetoSocial { get; set; }
-        public List<Telefono> Telefonos { get; set; }
+        public ICollection<Telefono> Telefonos { get; set; }
         public ICollection<CuentaBancaria> CuentasBancarias { get; set; }
     }
 }

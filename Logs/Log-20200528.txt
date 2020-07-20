@@ -529,7 +529,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:11:28.5850789-04:00 0HM0335IDS94F:00000002 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T11:11:28.6359605-04:00 0HM0335IDS94F:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 465
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 465
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -553,7 +553,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-28T11:11:28.6359877-04:00 0HM0335IDS94E:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 465
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 465
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -669,7 +669,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:14:24.4652941-04:00 0HM03373M2EEA:00000004 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T11:14:24.4992790-04:00 0HM03373M2EEA:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 465
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 465
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -692,7 +692,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-28T11:14:38.0015226-04:00 0HM03373M2EEA:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 465
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 465
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -803,7 +803,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:22:05.9404587-04:00 0HM033BCHSJ3T:00000004 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T11:22:06.1205335-04:00 0HM033BCHSJ3T:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 465
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 465
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -995,7 +995,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:28:58.9583899-04:00  [INF] Tarea ejecutada: 28/05/2020 11:28:58 (18888645)
 2020-05-28T11:29:17.0191802-04:00 0HM033CIB4L2P:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 467
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 467
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1105,7 +1105,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:30:18.0262650-04:00 0HM033G373BNQ:00000001 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T11:30:18.0503886-04:00 0HM033G373BNQ:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1128,7 +1128,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-28T11:30:27.9097174-04:00 0HM033G373BNQ:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1238,7 +1238,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:32:58.6657201-04:00 0HM033HJ312HN:00000001 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T11:32:58.6856897-04:00 0HM033HJ312HN:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1261,7 +1261,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-28T11:33:03.0460262-04:00 0HM033HJ312HN:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -1371,7 +1371,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T11:36:21.4626053-04:00 0HM033JFGT9PK:00000001 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T11:36:21.4851332-04:00 0HM033JFGT9PK:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 470
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 470
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -2087,7 +2087,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-28T12:02:39.1555748-04:00 0HM03425MO5QH:00000001 [WRN] The LINQ expression '"Count()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-28T12:02:39.2167391-04:00 0HM03425MO5QH:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 467
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 467
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
@@ -2110,7 +2110,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-28T12:02:44.0540089-04:00 0HM03425MO5QH:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
 System.NullReferenceException: Object reference not set to an instance of an object.
-   at ContratacionWebApi.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\ContratacionWebApi\Controllers\ContratosController.cs:line 467
+   at SGCont.Controllers.ContratosController.Dashboard() in D:\Alejandro\New Folder\Git\opplat\src\SGCont\Controllers\ContratosController.cs:line 467
    at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at System.Threading.Tasks.ValueTask`1.get_Result()
    at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
