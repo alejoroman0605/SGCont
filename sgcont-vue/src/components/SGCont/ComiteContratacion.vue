@@ -163,7 +163,7 @@ export default {
   },
   methods: {
     getComiteContratacionFromApi() {
-      const url = api.getUrl("contratacion", "ComiteContratacion");
+      const url = api.getUrl("SGCont", "ComiteContratacion");
       this.axios.get(url).then(
         response => {
           this.comiteDeContratacion = response.data;
@@ -174,7 +174,7 @@ export default {
       );
     },
     getTrabajadoresFromApi() {
-      const url = api.getUrl("recursos_humanos", "Trabajadores");
+      const url = api.getUrl("SGCont", "Trabajadores");
       this.axios.get(url).then(
         response => {
           this.trabajadores = response.data;
@@ -185,7 +185,7 @@ export default {
       );
     },
     save(method) {
-      const url = api.getUrl("contratacion", "ComiteContratacion");
+      const url = api.getUrl("SGCont", "ComiteContratacion");
       if (method === "POST") {
         this.axios.post(url, this.nuevoMiembro).then(
           response => {
@@ -224,7 +224,7 @@ export default {
       this.dialog2 = true;
     },
     deleteItem() {
-      const url = api.getUrl("contratacion", "ComiteContratacion");
+      const url = api.getUrl("SGCont", "ComiteContratacion");
       this.axios.delete(`${url}/${this.trabComiteContratacion.id}`).then(
         response => {
           this.getResponse(response);

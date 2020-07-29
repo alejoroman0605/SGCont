@@ -79,7 +79,7 @@ export default {
   },
   methods: {
     getOfertasFromApi() {
-      const url = api.getUrl("contratacion", "contratos/Dashboard");
+      const url = api.getUrl("SGCont", "contratos/Dashboard");
       this.axios.get(url).then(
         response => {
           this.ofertas = [

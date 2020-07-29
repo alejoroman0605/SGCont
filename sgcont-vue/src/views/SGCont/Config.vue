@@ -71,14 +71,14 @@
  
 <script>
 import api from "@/api";
-import AdminContratos from "@/components/contratacion/AdminContratos.vue";
-import DictContratos from "@/components/contratacion/DictContratos.vue";
-import EspExternos from "@/components/contratacion/EspExternos.vue";
-import FormasDePago from "@/components/contratacion/FormasDePago.vue";
-import Entidades from "@/components/contratacion/Entidades.vue";
-import Departamentos from "@/components/contratacion/Departamentos.vue";
-import ComiteContratacion from "@/components/contratacion/ComiteContratacion.vue";
-import TiempoVenContratos from "@/components/contratacion/TiempoVenContratos.vue";
+import AdminContratos from "@/components/SGCont/AdminContratos.vue";
+import DictContratos from "@/components/SGCont/DictContratos.vue";
+import EspExternos from "@/components/SGCont/EspExternos.vue";
+import FormasDePago from "@/components/SGCont/FormasDePago.vue";
+import Entidades from "@/components/SGCont/Entidades.vue";
+import Departamentos from "@/components/SGCont/Departamentos.vue";
+import ComiteContratacion from "@/components/SGCont/ComiteContratacion.vue";
+import TiempoVenContratos from "@/components/SGCont/TiempoVenContratos.vue";
 
 export default {
   components: {

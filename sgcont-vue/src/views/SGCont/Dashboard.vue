@@ -13,10 +13,10 @@
 </template>
 <script>
 import api from "@/api";
-import Ofertas from "@/components/dashboard/contratacion/Ofertas.vue";
-import OfertasTotal from "@/components/dashboard/contratacion/OfertasTotal.vue";
-import ContratosProxVen from "@/components/dashboard/contratacion/ContratosProxVen.vue";
-import ContratosTipo from "@/components/dashboard/contratacion/ContratosTipo.vue";
+import Ofertas from "@/components/dashboard/SGCont/Ofertas.vue";
+import OfertasTotal from "@/components/dashboard/SGCont/OfertasTotal.vue";
+import ContratosProxVen from "@/components/dashboard/SGCont/ContratosProxVen.vue";
+import ContratosTipo from "@/components/dashboard/SGCont/ContratosTipo.vue";
 
 export default {
   components: {

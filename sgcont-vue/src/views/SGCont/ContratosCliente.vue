@@ -425,7 +425,7 @@ export default {
   methods: {
     getContratosFromApi() {
       const url = api.getUrl(
-        "contratacion",
+        "SGCont",
         "Contratos?tipoTramite=contrato&cliente=true"
       );
       this.axios.get(url).then(
@@ -445,7 +445,7 @@ export default {
       this.dialog3 = true;
     },
     getTiempoVenContratosFromApi() {
-      const url = api.getUrl("contratacion", "TiempoVenContratos");
+      const url = api.getUrl("SGCont", "TiempoVenContratos");
       this.axios.get(url).then(
         response => {
           this.tiempoVenContratos = response.data[0];
@@ -470,7 +470,7 @@ export default {
     },
     save(method) {
       this.Contrato.cliente = true;
-      const url = api.getUrl("contratacion", "Contratos");
+      const url = api.getUrl("SGCont", "Contratos");
       if (method === "POST") {
         if (this.$refs.form.validate()) {
           this.axios.post(url, this.contrato).then(
@@ -504,7 +504,7 @@ export default {
       this.dialog2 = true;
     },
     deleteItem(Contrato) {
-      const url = api.getUrl("contratacion", "Contratos");
+      const url = api.getUrl("SGCont", "Contratos");
       this.axios.delete(`${url}/${Contrato.id}`).then(
         response => {
           this.getResponse(response);
@@ -549,7 +549,7 @@ export default {
     },
     GetVencimientoContrato() {
       const url = api.getUrl(
-        "contratacion",
+        "SGCont",
         "contratos/VencimientoContrato?cliente=true"
       );
       this.axios.get(url).then(
@@ -568,28 +568,28 @@ export default {
     filtro(filtro) {
       if (filtro == "contratoTiempo") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
+          "SGCont",
           "Contratos?tipoTramite=contrato&filtro=contratoTiempo&cliente=true"
         );
         this.textByfiltro = "Contratos en Tiempo";
       }
       if (filtro == "contratosProxVencer") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
+          "SGCont",
           "Contratos?tipoTramite=contrato&filtro=contratosProxVencer&cliente=true"
         );
         this.textByfiltro = "Contratos Próximos a Vencer";
       }
       if (filtro == "contratosCasiVenc") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
+          "SGCont",
           "Contratos?tipoTramite=contrato&filtro=contratosCasiVenc&cliente=true"
         );
         this.textByfiltro = "Contratos Casi Vencidos";
       }
       if (filtro == "contratosVenc") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
+          "SGCont",
           "Contratos?tipoTramite=contrato&filtro=contratosVenc&cliente=true"
         );
         this.textByfiltro = "Contratos Vencidos";

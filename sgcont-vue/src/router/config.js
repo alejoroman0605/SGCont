@@ -218,67 +218,67 @@ export const protectedRoute = [
   // Contratacion
   {
     name: 'Contratacion',
-    path: '/contratacion',
+    path: '/SGCont',
     component: DefaultLayout,
-    redirect: '/contratacion/dashboard',
+    redirect: '/SGCont/OfertasClientes',
     meta: {
       title: 'Contratos',
-      group: 'contratacion',
+      group: 'SGCont',
     },
     children: [
+      // {
+      //   path: '/SGCont/dashboard',
+      //   name: 'Dashboard',
+      //   meta: {
+      //     title: 'Cuadro de mando',
+      //     requiresAuth: true,
+      //   },
+      //   component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/Dashboard.vue'),
+      // },
       {
-        path: '/contratacion/dashboard',
-        name: 'Dashboard',
-        meta: {
-          title: 'Cuadro de mando',
-          requiresAuth: true,
-        },
-        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/Dashboard.vue'),
-      },
-      {
-        path: '/contratacion/ContratosCliente',
+        path: '/SGCont/ContratosCliente',
         name: 'ContratosCliente',
         meta: {
           title: 'ContratosCliente',
           requiresAuth: true,
         },
-        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/ContratosCliente.vue'),
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/ContratosCliente.vue'),
       },
       {
-        path: '/contratacion/ContratosPrestador',
+        path: '/SGCont/ContratosPrestador',
         name: 'ContratosPrestador',
         meta: {
           title: 'ContratosPrestador',
           requiresAuth: true,
         },
-        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/ContratosPrestador.vue'),
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/ContratosPrestador.vue'),
       },
       {
-        path: '/contratacion/OfertasClientes',
+        path: '/SGCont/OfertasClientes',
         name: 'OfertasClientes',
         meta: {
           title: 'OfertasClientes',
           requiresAuth: true,
         },
-        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/OfertasClientes.vue'),
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/OfertasClientes.vue'),
       },
       {
-        path: '/contratacion/OfertasPrestador',
+        path: '/SGCont/OfertasPrestador',
         name: 'OfertasPrestador',
         meta: {
           title: 'OfertasPrestador',
           requiresAuth: true,
         },
-        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/OfertasPrestador.vue'),
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/OfertasPrestador.vue'),
       },
       {
-        path: '/contratacion/Config',
+        path: '/SGCont/Config',
         name: 'Config',
         meta: {
           title: 'Config',
           requiresAuth: true,
         },
-        component: () => import(/* webpackChunkName: "table" */ '@/views/contratacion/Config.vue'),
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/Config.vue'),
       },
     ],
   },

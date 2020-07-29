@@ -4,14 +4,12 @@
         "title": "Admistración",
         "icon": "mdi-settings",
         "roles": [
-            "administrador",
-            "usuario",
-            "contratacion"
+            "administrador"
         ]
     },
     {
-        "name": "contratacion",
-        "title": "Contratacion",
+        "name": "SGCont",
+        "title": "Contratación",
         "icon": "mdi-folder-open",
         "roles": [
             "administrador",

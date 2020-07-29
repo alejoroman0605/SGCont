@@ -8,10 +8,8 @@ namespace SGCont.Models
     public class Trabajador {
         public int Id { get; set; }
         public string Codigo { get; set; }
-
         [Required]
         public string Nombre { get; set; }
-
         [Required]
         public string Apellidos { get; set; }
 
@@ -26,10 +24,7 @@ namespace SGCont.Models
         public string Direccion { get; set; }
         public int? MunicipioId { get; set; }
         public virtual Municipio Municipio { get; set; }
-        public int PerfilOcupacionalId { get; set; }
-        public int? PuestoDeTrabajoId { get; set; }
         public virtual CaracteristicasTrab CaracteristicasTrab { get; set; }
-        public int? AperturaSocioId { get; set; }
         public DateTime Fecha_Nac { get; set; }
         public string UserId { get; set; }
 

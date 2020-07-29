@@ -23,8 +23,8 @@ D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\obj\Debug\netcoreapp
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\obj\Debug\netcoreapp2.2\SGCont.xml
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\obj\Debug\netcoreapp2.2\SGCont.pdb
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\obj\Debug\netcoreapp2.2\SGCont.genruntimeconfig.cache
-D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\Data\menus\modulos\contratacion.json
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\package-lock.json
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\package.json
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\public\manifest.json
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\src\api-mapper.json
+D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\Data\menus\modulos\SGCont.json

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class EntidadesController : Controller {
         private readonly SGContDbContext  context;
@@ -203,8 +203,8 @@ namespace SGCont.Controllers {
             context.SaveChanges ();
             return Ok (entidad);
         }
-        // GET: contratacion/Entidades/Sucursales
-        [HttpGet ("/contratacion/Entidades/Sucursales")]
+        // GET: SGCont/Entidades/Sucursales
+        [HttpGet ("/SGCont/Entidades/Sucursales")]
         public IActionResult GetAllSucursales () {
             var tipo = new List<dynamic> () {
                 new { Id = NombreSucursal.BPA, Nombre = "BPA" },
@@ -214,8 +214,8 @@ namespace SGCont.Controllers {
             };
             return Ok (tipo);
         }
-        // GET: contratacion/Entidades/Monedas
-        [HttpGet ("/contratacion/Entidades/Monedas")]
+        // GET: SGCont/Entidades/Monedas
+        [HttpGet ("/SGCont/Entidades/Monedas")]
         public IActionResult GetAllMonedas () {
             var tipo = new List<dynamic> () {
                 new { Id = Moneda.CUP, Nombre = "CUP" },
@@ -224,8 +224,8 @@ namespace SGCont.Controllers {
             };
             return Ok (tipo);
         }
-        // GET: contratacion/Entidades/Monedas
-        [HttpGet ("/contratacion/Entidades/Sectores")]
+        // GET: SGCont/Entidades/Monedas
+        [HttpGet ("/SGCont/Entidades/Sectores")]
         public IActionResult GetAllSectores () {
             var tipo = new List<dynamic> () {
                 new { Id = Sector.Sin_Definir, Nombre = "Sin Definir" },

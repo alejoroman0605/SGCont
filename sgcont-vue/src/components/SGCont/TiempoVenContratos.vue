@@ -206,7 +206,7 @@ export default {
   },
   methods: {
     getTiempoVenOfertasFromApi() {
-      const url = api.getUrl("contratacion", "TiempoVenOfertas");
+      const url = api.getUrl("SGCont", "TiempoVenOfertas");
       this.axios.get(url).then(
         response => {
           this.tiempoVenOfertas = response.data;
@@ -226,7 +226,7 @@ export default {
       );
     },
     getTiempoVenContratosFromApi() {
-      const url = api.getUrl("contratacion", "TiempoVenContratos");
+      const url = api.getUrl("SGCont", "TiempoVenContratos");
       this.axios.get(url).then(
         response => {
           this.tiempoVenContratos = response.data;
@@ -250,7 +250,7 @@ export default {
       );
     },
     inicializarOfertas() {
-      const url = api.getUrl("contratacion", "TiempoVenOfertas");
+      const url = api.getUrl("SGCont", "TiempoVenOfertas");
       this.tiempoVenOferta = {
         ofertaTiempo: 23,
         ofertasProxVencDesde: 7,
@@ -270,7 +270,7 @@ export default {
       );
     },
     inicializarContratos() {
-      const url = api.getUrl("contratacion", "TiempoVenContratos");
+      const url = api.getUrl("SGCont", "TiempoVenContratos");
       this.tiempoVenContrato = {
         contratoTiempo: 23,
         contratosProxVencerDesde: 7,
@@ -290,7 +290,7 @@ export default {
       );
     },
     editTiempoVenOfertas() {
-      const url = api.getUrl("contratacion", "TiempoVenOfertas");
+      const url = api.getUrl("SGCont", "TiempoVenOfertas");
       this.axios
         .put(`${url}/${this.tiempoVenOferta.id}`, this.tiempoVenOferta)
         .then(
@@ -304,7 +304,7 @@ export default {
         );
     },
     editTiempoVenContratos() {
-      const url = api.getUrl("contratacion", "TiempoVenContratos");
+      const url = api.getUrl("SGCont", "TiempoVenContratos");
       this.axios
         .put(`${url}/${this.tiempoVenContrato.id}`, this.tiempoVenContrato)
         .then(

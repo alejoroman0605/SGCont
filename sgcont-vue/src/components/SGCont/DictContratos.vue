@@ -1,13 +1,13 @@
 <template>
   <v-data-table
     :headers="headers"
-    :items="adminContratos"
+    :items="dictaminadoresContratos"
     :search="search"
     class="elevation-1 pa-5"
   >
     <template v-slot:top>
       <v-toolbar flat color="white">
-        <v-toolbar-title>Administradores de Contratos</v-toolbar-title>
+        <v-toolbar-title>Dictaminadores de Contratos</v-toolbar-title>
         <v-divider class="mx-4" inset vertical></v-divider>
         <v-spacer></v-spacer>
         <v-text-field
@@ -21,9 +21,9 @@
         ></v-text-field>
         <v-spacer></v-spacer>
         <template>
-          <v-btn color="primary" dark @click="dialog=true" class="mx-1">Nuevo Administrador</v-btn>
+          <v-btn color="primary" @click="dialog=true">Nuevo Dictaminador</v-btn>
         </template>
-        <!-- Agregar Administrador de Contratos -->
+        <!-- Agregar Dictaminador de Contratos -->
         <v-dialog v-model="dialog" persistent max-width="800">
           <v-card>
             <v-toolbar dark fadeOnScroll color="blue darken-3">
@@ -35,20 +35,20 @@
                 </v-btn>
               </v-toolbar-items>
             </v-toolbar>
-            <v-form>
+            <v-form ref="form">
               <p
                 class="text-center title font-italic mt-12"
-              >Seleccione los Administradores de Contratos</p>
+              >Seleccione los Dictaminadores de Contratos</p>
               <v-container grid-list-md text-xs-center>
                 <v-layout row wrap>
                   <v-flex xs8 class="px-3">
                     <v-autocomplete
-                      v-model="newAdminContratos.administradores"
-                      item-text="nombre_Completo"
+                      v-model="dictContratos.dictaminadores"
+                      item-text="nombreCompleto"
                       item-value="id"
                       :items="trabajadores"
                       cache-items
-                      label="Administradores"
+                      label="Dictaminadores"
                       multiple
                     >
                       <template v-slot:selection="data">
@@ -57,17 +57,17 @@
                           :input-value="data.selected"
                           close
                           @click="data.select"
-                          @click:close="removeAdministradoresContratos(data.item)"
+                          @click:close="removeDictaminadoresContratos(data.item)"
                           outlined
-                        >{{ data.item.nombre_Completo }}</v-chip>
+                        >{{ data.item.nombreCompleto }}</v-chip>
                       </template>
                       <template v-slot:item="data">
                         <template v-if="typeof data.item !== 'object'">
-                          <v-list-item-content p="data.item"></v-list-item-content>
+                          <v-list-item-content v-text="data.item"></v-list-item-content>
                         </template>
                         <template v-else>
                           <v-list-item-content>
-                            <v-list-item-title v-html="data.item.nombre_Completo"></v-list-item-title>
+                            <v-list-item-title v-html="data.item.nombreCompleto"></v-list-item-title>
                           </v-list-item-content>
                         </template>
                       </template>
@@ -75,7 +75,7 @@
                   </v-flex>
                   <v-flex xs4 class="px-3">
                     <v-autocomplete
-                      v-model="newAdminContratos.departamentoId"
+                      v-model="dictContratos.departamentoId"
                       item-text="nombre"
                       item-value="id"
                       :items="departamentos"
@@ -93,8 +93,8 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-        <!-- /Agregar Administrador de Contratos -->
-        <!-- Editar Administrador de Contratos -->
+        <!-- /Agregar Dictaminador de Contratos -->
+        <!-- Editar Dictaminador de Contratos -->
         <v-dialog v-model="dialog1" persistent max-width="800">
           <v-card>
             <v-toolbar dark fadeOnScroll color="blue darken-3">
@@ -106,23 +106,23 @@
                 </v-btn>
               </v-toolbar-items>
             </v-toolbar>
-            <v-form>
+            <v-form ref="form">
               <p
                 class="text-center title font-italic mt-12"
-              >Seleccione los Administradores de Contratos</p>
+              >Seleccione los Dictaminadores de Contratos</p>
               <v-container grid-list-md text-xs-center>
                 <v-layout row wrap>
-                  <v-flex xs8 class="px-3">
-                    <p-field
-                      v-model="adminContrato.nombreCompleto"
+                  <v-flex xs6 class="px-3">
+                    <v-text-field
+                      v-model="dictaminador.nombreCompleto"
                       item-value="id"
-                      label="Administradores"
+                      label="Dictaminador"
                       readonly
-                    ></p-field>
+                    ></v-text-field>
                   </v-flex>
-                  <v-flex xs4 class="px-3">
+                  <v-flex xs6 class="px-3">
                     <v-autocomplete
-                      v-model="adminContrato.departamentoId"
+                      v-model="dictaminador.departamentoId"
                       item-text="nombre"
                       item-value="id"
                       :items="departamentos"
@@ -140,13 +140,18 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-        <!-- /Editar Administrador de Contratos -->
-
-        <!-- Detalles del Administrador -->
-        <v-dialog v-model="dialog2" persistent transition="dialog-bottom-transition" flat>
+        <!-- /Editar Dictaminador de Contratos -->
+        <!-- Detalles del Dictaminador -->
+        <v-dialog
+          v-model="dialog2"
+          persistent
+          transition="dialog-bottom-transition"
+          flat
+          max-width="1100"
+        >
           <v-card>
             <v-toolbar dark fadeOnScroll color="blue darken-3">
-              <v-flex xs12 sm10 md6 lg4>Detalles del Administrador</v-flex>
+              <v-flex xs12 sm10 md6 lg4>Detalles del Dictaminador</v-flex>
               <v-spacer></v-spacer>
               <v-toolbar-items>
                 <v-btn icon dark @click="close()">
@@ -154,10 +159,9 @@
                 </v-btn>
               </v-toolbar-items>
             </v-toolbar>
-
             <v-container fluid>
               <v-row dense>
-                <v-col cols="7">
+                <v-col cols="6">
                   <v-card flat>
                     <v-layout justify-center>
                       <v-layout class="pa-2">
@@ -173,69 +177,65 @@
                     </v-layout>
                   </v-card>
                 </v-col>
-
-                <v-col cols="5">
+                <v-col cols="6">
                   <v-card color="blue darken-3" dark>
                     <v-list-item>
                       <v-layout column align-center xs12 sm10 md6 lg4>
-                        <v-avatar size="120" v-if="adminContrato.sexoName==='M'">
+                        <v-avatar size="120" v-if="dictaminador.sexoName==='M'">
                           <img src="img/default-avatar-man.jpg" class="float-center pa-5" />
                         </v-avatar>
-                        <v-avatar size="120" v-else-if="adminContrato.sexoName==='F'">
+                        <v-avatar size="120" v-else-if="dictaminador.sexoName==='F'">
                           <img src="img/default-avatar-woman.jpg" class="float-center pa-5" />
                         </v-avatar>
                         <v-avatar size="110" v-else>
                           <img src="img/default-avatar.png" class="float-center pa-5" dark />
                         </v-avatar>
                         <v-layout class="pa-2">
-                          <v-toolbar-title class="text-capitalize">{{adminContrato.nombre_Completo}}</v-toolbar-title>
+                          <v-toolbar-title class="text-capitalize">{{dictaminador.nombreCompleto}}</v-toolbar-title>
                         </v-layout>
                       </v-layout>
                     </v-list-item>
                     <v-row dense>
                       <v-col cols="7">
                         <v-layout class="pa-2">
-                          <p>Carnet de Identidad: {{adminContrato.ci}}</p>
+                          <v-text>Carnet de Identidad: {{dictaminador.ci}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Nivel de Escolaridad: {{adminContrato.nivelDeEscolaridadName}}</p>
+                          <v-text>Nivel de Escolaridad: {{dictaminador.nivelDeEscolaridadName}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Perfil Ocupacional: {{adminContrato.perfilOcupacional}}</p>
+                          <v-text>Perfil Ocupacional: {{dictaminador.perfilOcupacional}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Color de Ojos: {{adminContrato.colorDeOjosName}}</p>
+                          <v-text>Color de Ojos: {{dictaminador.colorDeOjosName}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Fecha Nacimiento: {{adminContrato.fecha_Nac}}</p>
+                          <v-text>Fecha Nacimiento: {{dictaminador.fecha_Nac}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Correo: {{adminContrato.correo}}</p>
+                          <v-text>Correo: {{dictaminador.correo}}</v-text>
                         </v-layout>
                       </v-col>
                       <v-col cols="5">
                         <v-layout class="pa-2">
-                          <p>Sexo: {{adminContrato.sexoName}}</p>
+                          <v-text>Sexo: {{dictaminador.sexoName}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Teléfono Fijo: {{adminContrato.telefonoFijo}}</p>
+                          <v-text>Teléfono Fijo: {{dictaminador.telefonoFijo}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Teléfono Movil: {{adminContrato.telefonoMovil}}</p>
+                          <v-text>Teléfono Movil: {{dictaminador.telefonoMovil}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Color de Piel: {{adminContrato.colorDePielName}}</p>
+                          <v-text>Color de Piel: {{dictaminador.colorDePielName}}</v-text>
                         </v-layout>
                         <v-layout class="pa-2">
-                          <p>Edad: {{adminContrato.edad}} Años</p>
+                          <v-text>Edad: {{dictaminador.edad}} Años</v-text>
                         </v-layout>
                       </v-col>
                     </v-row>
                     <v-layout class="pa-2">
-                      <p>Direccion: {{adminContrato.direccion}}</p>
-                    </v-layout>
-                    <v-layout class="pa-2">
-                      <p>Otros Datos de Interes: {{adminContrato.otrasCaracteristicas}}</p>
+                      <v-text>Direccion: {{dictaminador.direccion}}</v-text>
                     </v-layout>
                   </v-card>
                 </v-col>
@@ -243,10 +243,10 @@
             </v-container>
           </v-card>
         </v-dialog>
-        <!-- Detalles del Administrador -->
+        <!-- Detalles del Dictaminador -->
 
-        <!-- Delete Administrador de Contratos -->
-        <v-dialog v-model="dialog3" persistent max-width="600px">
+        <!-- Delete Dictaminador de Contratos -->
+        <v-dialog v-model="dialog3" persistent max-width="500px">
           <v-toolbar dark fadeOnScroll color="red">
             <v-spacer></v-spacer>
             <v-toolbar-items>
@@ -260,18 +260,18 @@
               Seguro de Eliminar a
               <strong>
                 <b>
-                  <u>{{adminContrato.nombreCompleto}}</u>
+                  <u>{{dictaminador.nombre}}</u>
                 </b>
-              </strong> como Administrador de Contratos
+              </strong> como Dictaminador de Contratos
             </p>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn color="red" dark @click="deleteItem(adminContrato)">Aceptar</v-btn>
+              <v-btn color="red" dark @click="deleteItem(dictaminador)">Aceptar</v-btn>
               <v-btn color="primary" @click="close()">Cancelar</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
-        <!-- /Delete Administrador de Contratos -->
+        <!-- /Delete Dictaminador de Contratos -->
       </v-toolbar>
     </template>
     <template v-slot:item.action="{ item }">
@@ -284,7 +284,7 @@
       </v-btn>
 
       <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small teal--text"
+     class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small teal--text"
         small
         @click="getDetalles(item)"
       >
@@ -312,15 +312,16 @@ export default {
     dialog3: false,
     search: "",
     editedIndex: -1,
-    newAdminContratos: {
-      administradores: [],
+    dictContratos: {
+      dictaminadores: [],
       departamentoId: {}
     },
-    adminContratos: [],
-    adminContrato: {},
-    departamentos: [],
+    dictaminadoresContratos: [],
+    dictaminador: {},
     departamento: {},
+    trabajador: {},
     trabajadores: [],
+    departamentos: [],
     tabs: null,
     errors: [],
     headers: [
@@ -328,8 +329,9 @@ export default {
         text: "Nombre",
         align: "left",
         sortable: true,
-        value: "administrador.nombreCompleto"
+        value: "dictaminador.nombreCompleto"
       },
+
       { text: "Departamento", value: "departamento.nombre" },
       { text: "Acciones", value: "action", sortable: false }
     ]
@@ -338,8 +340,8 @@ export default {
   computed: {
     formTitle() {
       return this.editedIndex === -1
-        ? "Nuevo Administrador"
-        : "Editar Administrador";
+        ? "Nuevos Dictaminadores"
+        : "Editar Dictaminador";
     },
     method() {
       return this.editedIndex === -1 ? "POST" : "PUT";
@@ -353,17 +355,17 @@ export default {
   },
 
   created() {
-    this.getAdminContratosFromApi();
+    this.getDictContratosFromApi();
     this.getTrabajadoresFromApi();
     this.getDepartamentosFromApi();
   },
 
   methods: {
-    getAdminContratosFromApi() {
-      const url = api.getUrl("contratacion", "AdminContratos");
+    getDictContratosFromApi() {
+      const url = api.getUrl("SGCont", "DictContratos");
       this.axios.get(url).then(
         response => {
-          this.adminContratos = response.data;
+          this.dictaminadoresContratos = response.data;
         },
         error => {
           console.log(error);
@@ -371,7 +373,10 @@ export default {
       );
     },
     getTrabajadoresFromApi() {
-      const url = api.getUrl("recursos_humanos", "Trabajadores");
+      const url = api.getUrl(
+        "SGCont",
+        "DictContratos/TrabNoDictaminadores"
+      );
       this.axios.get(url).then(
         response => {
           this.trabajadores = response.data;
@@ -382,7 +387,7 @@ export default {
       );
     },
     getDepartamentosFromApi() {
-      const url = api.getUrl("contratacion", "Departamentos");
+      const url = api.getUrl("SGCont", "Departamentos");
       this.axios.get(url).then(
         response => {
           this.departamentos = response.data;
@@ -393,16 +398,16 @@ export default {
       );
     },
     editItem(item) {
-      this.editedIndex = this.adminContratos.indexOf(item);
-      this.adminContrato = item.administrador;
-      this.adminContrato.departamentoId = item.departamento.id;
+      this.editedIndex = 1;
+      this.dictaminador = item.dictaminador;
+      this.dictaminador.departamentoId = item.departamento.id;
       this.dialog1 = true;
     },
     getDetalles(item) {
-      const url = api.getUrl("contratacion", "AdminContratos");
-      this.axios.get(`${url}/${item.administrador.id}`).then(
+      const url = api.getUrl("SGCont", "DictContratos");
+      this.axios.get(`${url}/${item.dictaminador.id}`).then(
         response => {
-          this.adminContrato = response.data;
+          this.dictaminador = response.data;
         },
         error => {
           console.log(error);
@@ -412,38 +417,42 @@ export default {
       this.dialog2 = true;
     },
     save(method) {
-      const url = api.getUrl("contratacion", "AdminContratos");
+      const url = api.getUrl("SGCont", "DictContratos");
       if (method === "POST") {
-        this.axios.post(url, this.newAdminContratos).then(
-          response => {
-            this.getResponse(response);
-            this.getAdminContratosFromApi();
-            this.newAdminContratos = {
-              administradores: [],
-              departamentoId: {}
-            };
-            this.dialog = false;
-          },
-          error => {
-            console.log(error);
-          }
-        );
-      }
-      if (method === "PUT") {
-        this.newAdminContratos.departamentoId = this.adminContrato.departamentoId;
-        this.newAdminContratos.administradores[0] = this.adminContrato.id;
-        this.axios
-          .put(`${url}/${this.adminContrato.id}`, this.newAdminContratos)
-          .then(
+        if (this.$refs.form.validate()) {
+          this.snackbar = true;
+        }
+        if (this.dictContratos == null) {
+          vm.$snotify.error("Faltan campos por llenar que son obligatorios");
+        } else {
+          this.axios.post(url, this.dictContratos).then(
             response => {
               this.getResponse(response);
-              this.getAdminContratosFromApi();
-              this.newAdminContratos = {
-                administradores: [],
+              this.getDictContratosFromApi();
+              this.dictContratos = {};
+              this.dialog = false;
+            },
+            error => {
+              console.log(error);
+            }
+          );
+        }
+      }
+      if (method === "PUT") {
+        this.dictContratos.departamentoId = this.dictaminador.departamentoId;
+        this.dictContratos.dictaminadores[0] = this.dictaminador.id;
+        this.axios
+          .put(`${url}/${this.dictaminador.id}`, this.dictContratos)
+          .then(
+            response => {
+              this.getDictContratosFromApi();
+              this.dictContratos = {
+                dictaminadores: [],
                 departamentoId: {}
               };
-              this.adminContrato = {};
+              this.dictaminador = {};
               this.dialog1 = false;
+              this.getResponse(response);
             },
             error => {
               console.log(error);
@@ -452,16 +461,16 @@ export default {
       }
     },
     confirmDelete(item) {
-      this.adminContrato = item.administrador;
+      this.dictaminador = item.dictaminador;
       this.dialog3 = true;
     },
     deleteItem() {
-      const url = api.getUrl("contratacion", "AdminContratos");
-      this.axios.delete(`${url}/${this.adminContrato.id}`).then(
+      const url = api.getUrl("SGCont", "DictContratos");
+      this.axios.delete(`${url}/${this.dictaminador.id}`).then(
         response => {
           this.getResponse(response);
-          this.getAdminContratosFromApi();
-          this.adminContrato = {};
+          this.getDictContratosFromApi();
+          this.dictaminador={};
           this.dialog3 = false;
         },
         error => {
@@ -474,12 +483,12 @@ export default {
       this.dialog1 = false;
       this.dialog2 = false;
       this.dialog3 = false;
-      this.newAdminContratos = {
-        administradores: [],
+      this.dictContratos = {
+        dictaminadores: [],
         departamentoId: {}
       };
-      this.adminContrato = {};
-      this.administradores = [];
+      this.dictaminador = {};
+      this.departamento = {};
       setTimeout(() => {
         this.editedIndex = -1;
       }, 300);
@@ -489,9 +498,9 @@ export default {
         vm.$snotify.success("Exito al realizar la operación");
       }
     },
-    removeAdministradoresContratos(item) {
-      const index = this.administradores.indexOf(item.id);
-      if (index >= 0) this.administradores.splice(index, 1);
+    removeDictaminadoresContratos(item) {
+      const index = this.dictContratos.indexOf(item.id);
+      if (index >= 0) this.dictContratos.splice(index, 1);
     }
   }
 };

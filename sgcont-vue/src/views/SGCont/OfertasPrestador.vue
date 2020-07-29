@@ -5,20 +5,16 @@
     </template>
     <template v-slot:top>
       <v-toolbar flat color="white">
-        <v-toolbar-title>{{textByfiltro }}</v-toolbar-title>
-        <v-spacer></v-spacer>
-
-        <!-- <div>{{ roles }}</div> -->
-
+        <v-toolbar-title>{{textByfiltro}}</v-toolbar-title>
         <v-divider class="mx-4" inset vertical></v-divider>
         <!-- Agregar y Editar oferta -->
-        <v-dialog v-model="dialog" persistent max-width="1200">
+        <v-dialog v-model="dialog" persistent max-width="1100">
           <template v-slot:activator="{ on }">
             <v-btn color="primary" dark v-on="on" class="ml-5">Nueva Oferta</v-btn>
           </template>
           <v-card>
             <v-toolbar dark fadeOnScroll color="blue darken-3">
-              <v-flex cols="2" sm10 md6 lg4>{{ formTitle }}</v-flex>
+              <v-flex xs12 sm10 md6 lg4>{{ formTitle }}</v-flex>
               <v-spacer></v-spacer>
               <v-toolbar-items>
                 <v-btn icon dark @click=" close()">
@@ -29,10 +25,10 @@
             <v-form ref="form">
               <v-container grid-list-md text-xs-center>
                 <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
+                  <v-flex xs6 class="px-1">
                     <v-text-field v-model="oferta.nombre" label="Nombre" clearable required></v-text-field>
                   </v-flex>
-                  <v-flex cols="2" class="px-1" v-if="editedIndex==-1">
+                  <v-flex xs3 class="px-1" v-if="editedIndex==-1">
                     <v-autocomplete
                       v-model="oferta.tipo"
                       item-text="nombre"
@@ -42,7 +38,7 @@
                       label="tipo"
                     ></v-autocomplete>
                   </v-flex>
-                  <v-flex cols="2" class="px-1" v-if="editedIndex!=-1">
+                  <v-flex xs3 class="px-1" v-if="editedIndex!=-1">
                     <v-autocomplete
                       v-model="oferta.tipo"
                       item-text="nombre"
@@ -52,24 +48,10 @@
                       label="tipo"
                     ></v-autocomplete>
                   </v-flex>
-                  <v-flex cols="2" class="px-1" v-if="editedIndex!=-1">
+                  <v-flex xs3 class="px-1" v-if="editedIndex!=-1">
                     <v-text-field v-model="oferta.numero" label="Número" prefix="#"></v-text-field>
                   </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.adminContrato"
-                      item-text="administrador.nombreCompleto"
-                      item-value="administrador.id"
-                      :items="adminContratos"
-                      cache-items
-                      label="Administrador"
-                    >
-                      <v-icon @click="dialog4=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
-                    </v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
+                  <v-flex xs6 class="px-1">
                     <v-autocomplete
                       v-model="oferta.entidad"
                       item-text="nombre"
@@ -81,7 +63,116 @@
                       <v-icon @click="dialog3=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
                     </v-autocomplete>
                   </v-flex>
-                  <v-flex cols="2" class="px-1">
+                  <v-flex xs3 class="px-1">
+                    <v-text-field v-model="oferta.montoCup" label="Monto CUP" clearable prefix="$"></v-text-field>
+                  </v-flex>
+                  <v-flex xs3 class="px-1">
+                    <v-text-field v-model="oferta.montoCuc" label="Monto CUC" clearable prefix="$"></v-text-field>
+                  </v-flex>
+                  <v-flex xs3 class="px-1">
+                    <v-text-field v-model="oferta.montoUsd" label="Monto USD" clearable prefix="$"></v-text-field>
+                  </v-flex>
+                  <v-flex xs6 class="px-1">
+                    <v-autocomplete
+                      v-model="oferta.formasDePago"
+                      :items="formasDePagos"
+                      label="Formas de Pago"
+                      item-text="nombre"
+                      item-value="id"
+                      multiple
+                    >
+                      <template v-slot:selection="data">
+                        <v-chip
+                          v-bind="data.attrs"
+                          :input-value="data.selected"
+                          close
+                          @click="data.select"
+                          @click:close="removeformasDePago(data.item)"
+                          outlined
+                        >{{ data.item.nombre }}</v-chip>
+                      </template>
+                      <template v-slot:item="data">
+                        <template v-if="typeof data.item !== 'object'">
+                          <v-list-item-content v-text="data.item"></v-list-item-content>
+                        </template>
+                        <template v-else>
+                          <v-list-item-content>
+                            <v-list-item-title v-html="data.item.nombre"></v-list-item-title>
+                          </v-list-item-content>
+                        </template>
+                      </template>
+                    </v-autocomplete>
+                  </v-flex>
+                  <v-flex xs3>
+                    <v-text-field
+                      v-model="oferta.terminoDePago"
+                      label="Término de Pago en Meses"
+                      clearable
+                      required
+                    ></v-text-field>
+                  </v-flex>
+                  <v-flex xs2 class="px-1">
+                    <v-menu
+                      v-model="menu"
+                      :close-on-content-click="false"
+                      :nudge-right="40"
+                      transition="scale-transition"
+                      offset-y
+                      full-width
+                      min-width="290px"
+                    >
+                      <template v-slot:activator="{ on }">
+                        <v-text-field
+                          v-model="oferta.fechaDeRecepcion"
+                          label="Fecha de Recepción"
+                          readonly
+                          clearable
+                          v-on="on"
+                          required
+                        ></v-text-field>
+                      </template>
+                      <v-date-picker v-model="oferta.fechaDeRecepcion" @input="menu = false"></v-date-picker>
+                    </v-menu>
+                  </v-flex>
+                  <v-flex xs2 class="px-1">
+                    <v-menu
+                      v-model="menu1"
+                      :close-on-content-click="false"
+                      :nudge-right="40"
+                      transition="scale-transition"
+                      offset-y
+                      full-width
+                      min-width="290px"
+                    >
+                      <template v-slot:activator="{ on }">
+                        <v-text-field
+                          v-model="oferta.fechaDeVenOferta"
+                          label="Fecha de Vencimiento"
+                          readonly
+                          clearable
+                          v-on="on"
+                          required
+                        ></v-text-field>
+                      </template>
+                      <v-date-picker v-model="oferta.fechaDeVenOferta" @input="menu1 = false"></v-date-picker>
+                    </v-menu>
+                  </v-flex>
+                  <v-flex xs4 class="px-1">
+                    <v-text-field v-model="oferta.objetoDeContrato" label="Objeto Social" clearable></v-text-field>
+                  </v-flex>
+                  <v-flex xs4 class="px-1">
+                    <v-autocomplete
+                      v-model="oferta.adminContrato"
+                      item-text="administrador.nombreCompleto"
+                      item-value="administrador.id"
+                      :items="adminContratos"
+                      cache-items
+                      label="Administrador"
+                    >
+                      <v-icon @click="dialog4=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
+                    </v-autocomplete>
+                  </v-flex>
+                  <v-flex xs5 class="px-1">
                     <v-autocomplete
                       v-model="oferta.departamentos"
                       item-text="nombre"
@@ -114,9 +205,7 @@
                       <v-icon @click="dialog8=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
                     </v-autocomplete>
                   </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
+                  <v-flex xs4 class="px-1">
                     <v-autocomplete
                       v-model="oferta.especialistasExternos"
                       item-text="nombreCompleto"
@@ -130,156 +219,10 @@
                       <v-icon @click="dialog5=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
                     </v-autocomplete>
                   </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-text-field
-                      v-model="montoAndMoneda.cantidad"
-                      label="Monto"
-                      clearable
-                      prefix="$"
-                    ></v-text-field>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
-                    <v-select
-                      v-model="montoAndMoneda.moneda"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="monedas"
-                      label="Moneda"
-                    ></v-select>
-                  </v-flex>
-                  <v-flex cols="2" class="pt-7">
-                    <v-tooltip top color="success">
-                      <template v-slot:activator="{ on }">
-                        <v-icon medium v-on="on" @click="agregar()" color="success">mdi-plus</v-icon>
-                      </template>
-                      <span>Agregar</span>
-                    </v-tooltip>
-                  </v-flex>
-                  <v-flex xs6>
-                    <v-data-table
-                      :headers="headersMonto"
-                      :items="oferta.montos"
-                      hide-default-footer
-                    >
-                      <template v-slot:item.action="{ item }">
-                        <v-btn
-                          class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small primary--text"
-                          small
-                          @click="editar(item)"
-                        >
-                          <v-icon>v-icon notranslate mdi mdi-pen theme--dark</v-icon>
-                        </v-btn>
-                        <v-btn
-                          class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small pink--text"
-                          small
-                          @click="quitar(item)"
-                        >
-                          <v-icon>v-icon notranslate mdi mdi-delete theme--dark</v-icon>
-                        </v-btn>
-                      </template>
-                    </v-data-table>
-                  </v-flex>
-                  <v-flex xs1 class="pt-2"></v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" md="9" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.formasDePago"
-                      :items="formasDePagos"
-                      label="Formas de Pago"
-                      item-text="nombre"
-                      item-value="id"
-                      multiple
-                    >
-                      <template v-slot:selection="data">
-                        <v-chip
-                          v-bind="data.attrs"
-                          :input-value="data.selected"
-                          close
-                          @click="data.select"
-                          @click:close="removeformasDePago(data.item)"
-                          outlined
-                        >{{ data.item.nombre }}</v-chip>
-                      </template>
-                      <template v-slot:item="data">
-                        <template v-if="typeof data.item !== 'object'">
-                          <v-list-item-content v-text="data.item"></v-list-item-content>
-                        </template>
-                        <template v-else>
-                          <v-list-item-content>
-                            <v-list-item-title v-html="data.item.nombre"></v-list-item-title>
-                          </v-list-item-content>
-                        </template>
-                      </template>
-                    </v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2">
-                    <v-text-field
-                      v-model="oferta.terminoDePago"
-                      label="Término de Pago en Meses"
-                      clearable
-                      required
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-textarea v-model="oferta.objetoDeContrato" label="Objeto Social" rows="1"></v-textarea>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-menu
-                      v-model="menu"
-                      :close-on-content-click="false"
-                      :nudge-right="40"
-                      transition="scale-transition"
-                      offset-y
-                      full-width
-                      min-width="290px"
-                    >
-                      <template v-slot:activator="{ on }">
-                        <v-text-field
-                          v-model="oferta.fechaDeRecepcion"
-                          label="Fecha de Recepción"
-                          readonly
-                          clearable
-                          v-on="on"
-                          required
-                        ></v-text-field>
-                      </template>
-                      <v-date-picker v-model="oferta.fechaDeRecepcion" @input="menu = false"></v-date-picker>
-                    </v-menu>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
-                    <v-menu
-                      v-model="menu1"
-                      :close-on-content-click="false"
-                      :nudge-right="40"
-                      transition="scale-transition"
-                      offset-y
-                      full-width
-                      min-width="290px"
-                    >
-                      <template v-slot:activator="{ on }">
-                        <v-text-field
-                          v-model="oferta.fechaDeVenOferta"
-                          label="Fecha de Vencimiento"
-                          readonly
-                          clearable
-                          v-on="on"
-                          required
-                        ></v-text-field>
-                      </template>
-                      <v-date-picker v-model="oferta.fechaDeVenOferta" @input="menu1 = false"></v-date-picker>
-                    </v-menu>
-                  </v-flex>
-                  <!-- <v-flex cols="2" class="px-1">
+                  <!-- <v-flex xs4 class="px-1">
                     <v-file-input v-model="oferta.file" show-size label="Seleccionar Documento"></v-file-input>
                   </v-flex>-->
-                  <v-flex cols="2" class="px-1">
+                  <v-flex x2 class="px-1">
                     <v-autocomplete
                       v-model="oferta.estado"
                       item-text="nombre"
@@ -426,7 +369,7 @@
         >
           <v-card>
             <v-toolbar dark fadeOnScroll :color="getColor(oferta.ofertVence)">
-              <v-flex cols="2" sm10 md6 lg4>Detalles</v-flex>
+              <v-flex xs12 sm10 md6 lg4>Detalles</v-flex>
               <v-spacer></v-spacer>
               <v-toolbar-items>
                 <v-btn icon dark @click="close()">
@@ -679,24 +622,13 @@
         <v-row justify="center">
           <v-dialog v-model="dialog7" persistent max-width="400">
             <v-card>
-              <v-toolbar dark fadeOnScroll color="blue darken-3">
-                <v-spacer></v-spacer>
-                <v-toolbar-items>
-                  <v-btn icon dark @click=" close()">
-                    <v-icon>mdi-close</v-icon>
-                  </v-btn>
-                </v-toolbar-items>
-              </v-toolbar>
-              <v-flex cols="2" class="px-1 mt-10">
+              <v-flex xs12 class="px-1">
                 <v-file-input
                   v-model="file"
                   show-size
                   prepend-icon="mdi-note-multiple"
-                  label="Seleccione el Documento"
+                  label="Seleccionar Documento"
                 ></v-file-input>
-              </v-flex>
-              <v-flex cols="2" class="px-1">
-                <v-alert v-if="message" border="left" color="red" dark>{{ message }}</v-alert>
               </v-flex>
               <v-card-actions>
                 <v-spacer></v-spacer>
@@ -801,7 +733,6 @@
       >
         <v-icon>v-icon notranslate mdi mdi-download theme--dark</v-icon>
       </v-btn>
-
       <v-btn
         class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small teal--text"
         small
@@ -823,11 +754,11 @@
 </template>
 <script>
 import api from "@/api";
-import AdminContratos from "@/components/contratacion/AdminContratos.vue";
-import EspExternos from "@/components/contratacion/EspExternos.vue";
-import FormasDePago from "@/components/contratacion/FormasDePago.vue";
-import Entidades from "@/components/contratacion/Entidades.vue";
-import DictContratos from "@/components/contratacion/DictContratos.vue";
+import AdminContratos from "@/components/SGCont/AdminContratos.vue";
+import EspExternos from "@/components/SGCont/EspExternos.vue";
+import FormasDePago from "@/components/SGCont/FormasDePago.vue";
+import Entidades from "@/components/SGCont/Entidades.vue";
+import DictContratos from "@/components/SGCont/DictContratos.vue";
 
 export default {
   components: {
@@ -857,11 +788,11 @@ export default {
     oferta: {
       entidad: {},
       adminContrato: {},
-      montos: []
+      dictaminadores: [],
+      especialistasExternos: []
     },
     file: null,
     entidades: [],
-    entidadObjetc: {},
     especialistasExternosAll: [],
     dictaminadoresContratos: [],
     adminContratos: [],
@@ -874,8 +805,6 @@ export default {
     vencidos: 0,
     todasLasOfertas: false,
     vencimientoOfertas: [],
-    departamentos: [],
-    monedas: [],
     ofertaTiempo: "ofertaTiempo",
     ofertasProxVencer: "ofertasProxVencer",
     ofertasCasiVenc: "ofertasCasiVenc",
@@ -890,10 +819,7 @@ export default {
       class: null
     },
     trabajadores: [],
-    montoAndMoneda: {
-      cantidad: "",
-      moneda: { id: "", nombre: "" }
-    },
+    departamentos: [],
     errors: [],
     headers: [
       { text: "Número", sortable: true, value: "numero" },
@@ -904,11 +830,6 @@ export default {
       { text: "Estado", value: "estadoNombre" },
       { text: "Acciones", value: "action", sortable: false }
     ],
-    headersMonto: [
-      { text: "Monto", sortable: true, value: "cantidad" },
-      { text: "Moneda", align: "left", sortable: true, value: "moneda.nombre" },
-      { text: "Acciones", value: "action", sortable: false }
-    ],
     headersCuentas: [
       {
         text: "Número de Cuenta",
@@ -917,11 +838,9 @@ export default {
         value: "numeroCuenta"
       },
       { text: "Número Sucursal", value: "numeroSucursal" },
-      { text: "Nombre Sucursal", value: "nombreSucursalString" },
-      { text: "Moneda", value: "monedaString" }
-    ],
-    roles: null,
-    message: ""
+      { text: "Nombre Sucursal", value: "nombreSucursal" },
+      { text: "Moneda", value: "moneda" }
+    ]
   }),
 
   computed: {
@@ -930,13 +849,6 @@ export default {
     },
     method() {
       return this.editedIndex === -1 ? "POST" : "PUT";
-    },
-    monto() {
-      if (this.oferta.entidad != 0) {
-        this.entidadObjetc = this.entidades.find(
-          x => x.id === this.oferta.entidad
-        );
-      }
     }
   },
 
@@ -957,20 +869,14 @@ export default {
     this.getFormasDePagosFromApi();
     this.getTrabajadoresFromApi();
     this.getTiempoVenOfertasFromApi();
-    this.getDepartamentosFromApi();
-    this.getMonedasFromApi();
-    this.roles = this.$store.getters.roles;
   },
 
   methods: {
     getOfertasFromApi() {
-      const url = api.getUrl(
-        "contratacion",
-        "Contratos?tipoTramite=oferta&cliente=true"
-      );
+      const url = api.getUrl("SGCont", "Contratos?tipoTramite=oferta");
       this.axios.get(url).then(
         response => {
-          this.textByfiltro = "Ofertas de los Clientes";
+          this.textByfiltro = "Ofertas Como Prestador";
           this.ofertas = response.data;
           this.cantOfertas = this.ofertas.length;
         },
@@ -980,7 +886,7 @@ export default {
       );
     },
     getEstadosFromApi() {
-      const url = api.getUrl("contratacion", "contratos/Estados");
+      const url = api.getUrl("SGCont", "contratos/Estados");
       this.axios.get(url).then(
         response => {
           this.estados = response.data;
@@ -991,7 +897,7 @@ export default {
       );
     },
     getTiposFromApi() {
-      const url = api.getUrl("contratacion", "contratos/Tipos");
+      const url = api.getUrl("SGCont", "contratos/Tipos");
       this.axios.get(url).then(
         response => {
           this.tipos = response.data;
@@ -1002,7 +908,7 @@ export default {
       );
     },
     getEntidadesFromApi() {
-      const url = api.getUrl("contratacion", "Entidades");
+      const url = api.getUrl("SGCont", "Entidades");
       this.axios.get(url).then(
         response => {
           this.entidades = response.data;
@@ -1013,7 +919,7 @@ export default {
       );
     },
     getEspecialistasExternosFromApi() {
-      const url = api.getUrl("contratacion", "EspecialistasExternos");
+      const url = api.getUrl("SGCont", "EspecialistasExternos");
       this.axios.get(url).then(
         response => {
           this.especialistasExternosAll = response.data;
@@ -1024,7 +930,7 @@ export default {
       );
     },
     getFormasDePagosFromApi() {
-      const url = api.getUrl("contratacion", "FormasDePagos");
+      const url = api.getUrl("SGCont", "FormasDePagos");
       this.axios.get(url).then(
         response => {
           this.formasDePagos = response.data;
@@ -1035,7 +941,7 @@ export default {
       );
     },
     getAdminContratosFromApi() {
-      const url = api.getUrl("contratacion", "AdminContratos");
+      const url = api.getUrl("SGCont", "AdminContratos");
       this.axios.get(url).then(
         response => {
           this.adminContratos = response.data;
@@ -1046,7 +952,7 @@ export default {
       );
     },
     getDictContratosFromApi() {
-      const url = api.getUrl("contratacion", "DictContratos");
+      const url = api.getUrl("SGCont", "DictContratos");
       this.axios.get(url).then(
         response => {
           this.dictaminadoresContratos = response.data;
@@ -1057,7 +963,7 @@ export default {
       );
     },
     getTrabajadoresFromApi() {
-      const url = api.getUrl("recursos_humanos", "Trabajadores");
+      const url = api.getUrl("SGCont", "Trabajadores");
       this.axios.get(url).then(
         response => {
           this.trabajadores = response.data;
@@ -1068,32 +974,10 @@ export default {
       );
     },
     getTiempoVenOfertasFromApi() {
-      const url = api.getUrl("contratacion", "TiempoVenOfertas");
+      const url = api.getUrl("SGCont", "TiempoVenOfertas");
       this.axios.get(url).then(
         response => {
           this.tiempoVenOfertas = response.data[0];
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getDepartamentosFromApi() {
-      const url = api.getUrl("contratacion", "Departamentos");
-      this.axios.get(url).then(
-        response => {
-          this.departamentos = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getMonedasFromApi() {
-      const url = api.getUrl("contratacion", "Entidades/Monedas");
-      this.axios.get(url).then(
-        response => {
-          this.monedas = response.data;
         },
         error => {
           console.log(error);
@@ -1109,6 +993,7 @@ export default {
       for (let index = 0; index < this.oferta.formasDePago.length; index++) {
         this.oferta.formasDePago[index] = item.formasDePago[index].id;
       }
+
       this.dialog = true;
     },
     getDetalles(item) {
@@ -1144,12 +1029,9 @@ export default {
       }
     },
     save(method) {
-      this.oferta.cliente = true;
-      const url = api.getUrl("contratacion", "Contratos");
+      this.oferta.cliente = false;
+      const url = api.getUrl("SGCont", "Contratos");
       if (method === "POST") {
-        if (this.oferta.montos.length == 0) {
-          this.oferta.montos.push(this.montoAndMoneda);
-        }
         this.axios.post(url, this.oferta).then(
           response => {
             this.getResponse(response);
@@ -1162,7 +1044,7 @@ export default {
         );
       }
       if (method === "PUT") {
-        this.oferta.cliente = true;
+        this.oferta.cliente = false;
         this.axios.put(`${url}/${this.oferta.id}`, this.oferta).then(
           response => {
             this.getResponse(response);
@@ -1180,14 +1062,9 @@ export default {
       this.dialog7 = true;
     },
     upload() {
-      if (!this.file) {
-        this.message = "Por favor seleccione un archivo!";
-        return;
-      }
-      this.message = "";
       const formData = new FormData();
       formData.append("file", this.file);
-      const url = api.getUrl("contratacion", "contratos/UploadFile");
+      const url = api.getUrl("SGCont", "contratos/UploadFile");
       this.axios
         .post(`${url}/${this.oferta.id}`, formData, {
           headers: {
@@ -1197,8 +1074,8 @@ export default {
         .then(
           response => {
             this.getResponse(response);
-            this.close();
             this.getOfertasFromApi();
+            this.dialog7 = false;
           },
           error => {
             console.log(error);
@@ -1206,7 +1083,7 @@ export default {
         );
     },
     download(item) {
-      const url = api.getUrl("contratacion", "contratos/DownloadFile");
+      const url = api.getUrl("SGCont", "contratos/DownloadFile");
       this.axios.get(`${url}/${item.id}`).then(
         response => {
           window.open(url + "/" + item.id);
@@ -1221,7 +1098,7 @@ export default {
       this.dialog2 = true;
     },
     deleteItem(oferta) {
-      const url = api.getUrl("contratacion", "Contratos");
+      const url = api.getUrl("SGCont", "Contratos");
       this.axios.delete(`${url}/${oferta.id}`).then(
         response => {
           this.getResponse(response);
@@ -1239,12 +1116,10 @@ export default {
       this.dialog6 = false;
       this.dialog7 = false;
       this.dialog9 = false;
-      this.oferta.entidad = {};
-      this.oferta.montos = [];
-      this.oferta.adminContrato = {};
-      this.entidadObjetc = {};
-      this.getOfertasFromApi();
-      this.message = "";
+      this.oferta = {
+        entidad: {},
+        adminContrato: {}
+      };
       setTimeout(() => {
         this.editedIndex = -1;
       }, 300);
@@ -1254,7 +1129,6 @@ export default {
       this.getEspecialistasExternosFromApi();
       this.getAdminContratosFromApi();
       this.getDictContratosFromApi();
-      this.getDepartamentosFromApi();
       this.dialog3 = false;
       this.dialog4 = false;
       this.dialog5 = false;
@@ -1285,8 +1159,8 @@ export default {
     },
     GetVencimientoOferta() {
       const url = api.getUrl(
-        "contratacion",
-        "contratos/VencimientoOferta?cliente=true"
+        "SGCont",
+        "contratos/VencimientoOferta?cliente=false"
       );
       this.axios.get(url).then(
         response => {
@@ -1312,29 +1186,29 @@ export default {
     filtro(filtro) {
       if (filtro == "ofertaTiempo") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
-          "Contratos?tipoTramite=oferta&filtro=ofertaTiempo&cliente=true"
+          "SGCont",
+          "Contratos?tipoTramite=oferta&filtro=ofertaTiempo&cliente=false"
         );
         this.textByfiltro = "Ofertas en Tiempo";
       }
       if (filtro == "ofertasProxVencer") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
-          "Contratos?tipoTramite=oferta&filtro=ofertasProxVencer&cliente=true"
+          "SGCont",
+          "Contratos?tipoTramite=oferta&filtro=ofertasProxVencer&cliente=false"
         );
         this.textByfiltro = "Ofertas Próximas a Vencer";
       }
       if (filtro == "ofertasCasiVenc") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
-          "Contratos?tipoTramite=oferta&filtro=ofertasCasiVenc&cliente=true"
+          "SGCont",
+          "Contratos?tipoTramite=oferta&filtro=ofertasCasiVenc&cliente=false"
         );
         this.textByfiltro = "Ofertas Casi Vencidas";
       }
       if (filtro == "ofertasVenc") {
         this.urlByfiltro = api.getUrl(
-          "contratacion",
-          "Contratos?tipoTramite=oferta&filtro=ofertasVenc&cliente=true"
+          "SGCont",
+          "Contratos?tipoTramite=oferta&filtro=ofertasVenc&cliente=false"
         );
         this.textByfiltro = "Ofertas Vencidas";
       }
@@ -1352,33 +1226,6 @@ export default {
     confirmAprobarOferta(item) {
       this.oferta = Object.assign({}, item);
       this.dialog9 = true;
-    },
-    agregar() {
-      const monedaId = this.montoAndMoneda.moneda;
-      if (typeof monedaId === "number") {
-        const m = this.monedas.find(x => x.id === monedaId);
-        const moneda = { id: "", nombre: "" };
-        moneda.id = monedaId;
-        moneda.nombre = m.nombre;
-        this.montoAndMoneda.moneda = moneda;
-      }
-      this.oferta.montos.push(this.montoAndMoneda);
-      this.montoAndMoneda = {
-        cantidad: "",
-        moneda: ""
-      };
-    },
-    editar(item) {
-      const index = this.oferta.montos.indexOf(item.id);
-      if (index >= -1) this.oferta.montos.splice(index, 1);
-      this.montoAndMoneda = {
-        cantidad: item.cantidad,
-        moneda: item.moneda
-      };
-    },
-    quitar(item) {
-      const index = this.oferta.montos.indexOf(item.id);
-      if (index >= -1) this.oferta.montos.splice(index, 1);
     },
     aprobarOferta(item) {}
   }

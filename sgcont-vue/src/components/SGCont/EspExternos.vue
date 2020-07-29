@@ -206,7 +206,7 @@ export default {
 
   methods: {
     getEspecialistasExternosFromApi() {
-      const url = api.getUrl("contratacion", "EspecialistasExternos");
+      const url = api.getUrl("SGCont", "EspecialistasExternos");
       this.axios.get(url).then(
         response => {
           this.EspecialistasExternos = response.data;
@@ -217,7 +217,7 @@ export default {
       );
     },
     getEntidadesFromApi() {
-      const url = api.getUrl("contratacion", "Entidades");
+      const url = api.getUrl("SGCont", "Entidades");
       this.axios.get(url).then(
         response => {
           this.entidades = response.data;
@@ -233,7 +233,7 @@ export default {
       this.dialog = true;
     },
     save(method) {
-      const url = api.getUrl("contratacion", "EspecialistasExternos");
+      const url = api.getUrl("SGCont", "EspecialistasExternos");
       if (method === "POST") {
         if (this.$refs.form.validate()) {
           this.snackbar = true;
@@ -287,7 +287,7 @@ export default {
       this.dialog2 = true;
     },
     deleteItem(especialistaExterno) {
-      const url = api.getUrl("contratacion", "EspecialistasExternos");
+      const url = api.getUrl("SGCont", "EspecialistasExternos");
       this.axios.delete(`${url}/${especialistaExterno.id}`).then(
         response => {
           this.getResponse(response);

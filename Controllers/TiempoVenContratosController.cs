@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class TiempoVenContratosController : Controller {
         private readonly SGContDbContext  context;
@@ -14,13 +14,13 @@ namespace SGCont.Controllers {
             this.context = context;
         }
 
-        // GET contratacion/TiempoVenContratos
+        // GET SGCont/TiempoVenContratos
         [HttpGet]
         public IEnumerable<TiempoVenContrato> GetAll () {
             return context.TiempoVenContratos.ToList ();
         }
 
-        // GET: contratacion/TiempoVenContratos/Id
+        // GET: SGCont/TiempoVenContratos/Id
         [HttpGet ("{id}", Name = "GetTiempoVenContrato")]
         public IActionResult GetbyId (int id) {
             var tiempoVenContrato = context.TiempoVenContratos.FirstOrDefault (s => s.Id == id);
@@ -31,7 +31,7 @@ namespace SGCont.Controllers {
             return Ok (tiempoVenContrato);
         }
 
-        // POST contratacion/TiempoVenContratos
+        // POST SGCont/TiempoVenContratos
         [HttpPost]
         public IActionResult POST ([FromBody] TiempoVenContrato tiempoVenContrato) {
             if (ModelState.IsValid) {
@@ -46,7 +46,7 @@ namespace SGCont.Controllers {
             return BadRequest (ModelState);
         }
 
-        // PUT contratacion/TiempoVenContratos/id
+        // PUT SGCont/TiempoVenContratos/id
         [HttpPut ("{id}")]
         public IActionResult PUT ([FromBody] TiempoVenContrato tiempoVenContrato, int id) {
             if (tiempoVenContrato.Id != id) {
@@ -58,7 +58,7 @@ namespace SGCont.Controllers {
             return Ok ();
         }
 
-        // DELETE contratacion/TiempoVenContratos/id
+        // DELETE SGCont/TiempoVenContratos/id
         [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var tiempoVenContrato = context.TiempoVenContratos.FirstOrDefault (s => s.Id == id);

@@ -1757,16 +1757,16 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T19:00:14.8614250-04:00 0HLVH908MQ5PU:00000005 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:00:16.5942801-04:00 0HLVH908MQ5PU:00000006 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:00:17.2714854-04:00 0HLVH908MQ5PU:00000007 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:00:17.4161091-04:00 0HLVH908MQ5PU:00000008 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:00:17.5324977-04:00 0HLVH908MQ5PU:00000009 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:00:17.6644327-04:00 0HLVH908MQ5PU:0000000A [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:00:17.7795914-04:00 0HLVH908MQ5PU:0000000B [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:04:11.4629769-04:00 0HLVH908MQ5Q1:00000002 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:04:11.7987957-04:00 0HLVH908MQ5Q1:00000003 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:04:11.9470134-04:00 0HLVH908MQ5Q1:00000004 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:14.8614250-04:00 0HLVH908MQ5PU:00000005 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:16.5942801-04:00 0HLVH908MQ5PU:00000006 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:17.2714854-04:00 0HLVH908MQ5PU:00000007 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:17.4161091-04:00 0HLVH908MQ5PU:00000008 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:17.5324977-04:00 0HLVH908MQ5PU:00000009 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:17.6644327-04:00 0HLVH908MQ5PU:0000000A [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:00:17.7795914-04:00 0HLVH908MQ5PU:0000000B [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:04:11.4629769-04:00 0HLVH908MQ5Q1:00000002 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:04:11.7987957-04:00 0HLVH908MQ5Q1:00000003 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:04:11.9470134-04:00 0HLVH908MQ5Q1:00000004 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T19:04:33.4289627-04:00  [INF] Tarea ejecutada: 05/05/2020 19:04:33 (27c68589)
 2020-05-05T19:04:34.7228986-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T19:04:34.7231821-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -1848,13 +1848,13 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T19:04:50.3706862-04:00 0HLVH92QMO46K:00000005 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:05:21.6564895-04:00 0HLVH92QMO46K:0000000F [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:05:23.7549372-04:00 0HLVH92QMO46K:00000010 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:05:24.6222322-04:00 0HLVH92QMO46K:00000011 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:05:24.6466492-04:00 0HLVH92QMO46K:00000012 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:05:25.0515522-04:00 0HLVH92QMO46K:00000013 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:05:25.0581093-04:00 0HLVH92QMO46K:00000014 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:04:50.3706862-04:00 0HLVH92QMO46K:00000005 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:05:21.6564895-04:00 0HLVH92QMO46K:0000000F [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:05:23.7549372-04:00 0HLVH92QMO46K:00000010 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:05:24.6222322-04:00 0HLVH92QMO46K:00000011 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:05:24.6466492-04:00 0HLVH92QMO46K:00000012 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:05:25.0515522-04:00 0HLVH92QMO46K:00000013 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:05:25.0581093-04:00 0HLVH92QMO46K:00000014 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T19:06:11.0968354-04:00  [INF] Tarea ejecutada: 05/05/2020 19:06:11 (a23e8175)
 2020-05-05T19:06:12.3501421-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T19:06:12.3504026-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -1936,11 +1936,11 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T19:06:29.6520724-04:00 0HLVH93OA9L00:00000005 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:06:30.8881888-04:00 0HLVH93OA9L00:00000006 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:06:30.8938694-04:00 0HLVH93OA9L00:00000007 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:06:31.1750750-04:00 0HLVH93OA9L00:00000008 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T19:06:31.1829659-04:00 0HLVH93OA9L00:00000009 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:06:29.6520724-04:00 0HLVH93OA9L00:00000005 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:06:30.8881888-04:00 0HLVH93OA9L00:00000006 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:06:30.8938694-04:00 0HLVH93OA9L00:00000007 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:06:31.1750750-04:00 0HLVH93OA9L00:00000008 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T19:06:31.1829659-04:00 0HLVH93OA9L00:00000009 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T19:11:19.5469912-04:00  [INF] Tarea ejecutada: 05/05/2020 19:11:19 (142aa43b)
 2020-05-05T19:16:20.6972412-04:00  [INF] Tarea ejecutada: 05/05/2020 19:16:20 (83066617)
 2020-05-05T19:21:30.8051847-04:00  [INF] Tarea ejecutada: 05/05/2020 19:21:30 (6fff716a)
@@ -2034,7 +2034,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T20:12:31.3537479-04:00 0HLVHA8CFQQJM:00000001 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:12:31.3537479-04:00 0HLVHA8CFQQJM:00000001 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T20:13:52.6676808-04:00  [INF] Tarea ejecutada: 05/05/2020 20:13:52 (5547963b)
 2020-05-05T20:13:53.8075139-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T20:13:53.8077727-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -2197,8 +2197,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T20:15:38.2702299-04:00 0HLVHAA0C7KHE:00000001 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T20:15:46.7886399-04:00 0HLVHAA0C7KHE:00000003 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:15:38.2702299-04:00 0HLVHAA0C7KHE:00000001 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:15:46.7886399-04:00 0HLVHAA0C7KHE:00000003 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T20:16:09.3450842-04:00  [INF] Tarea ejecutada: 05/05/2020 20:16:09 (5120fd4a)
 2020-05-05T20:16:10.5349147-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T20:16:10.5351599-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -2361,7 +2361,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T20:17:18.4915528-04:00 0HLVHAB7MGLMS:00000005 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:17:18.4915528-04:00 0HLVHAB7MGLMS:00000005 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T20:19:20.9344140-04:00  [INF] Tarea ejecutada: 05/05/2020 20:19:20 (55bdb6bf)
 2020-05-05T20:19:22.2894520-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T20:19:22.2920406-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -2605,8 +2605,8 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T20:30:42.5139402-04:00 0HLVHAIQ69I7K:00000005 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T20:30:46.4036736-04:00 0HLVHAIQ69I7K:00000008 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:30:42.5139402-04:00 0HLVHAIQ69I7K:00000005 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:30:46.4036736-04:00 0HLVHAIQ69I7K:00000008 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T20:31:20.8004507-04:00  [INF] Tarea ejecutada: 05/05/2020 20:31:20 (5fcea272)
 2020-05-05T20:31:22.2729842-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T20:31:22.2755163-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -2769,7 +2769,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T20:34:51.4196688-04:00 0HLVHAKMRVK5R:00000001 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:34:51.4196688-04:00 0HLVHAKMRVK5R:00000001 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T20:37:02.2406339-04:00  [INF] Tarea ejecutada: 05/05/2020 20:37:02 (5ad9d0db)
 2020-05-05T20:37:03.4215501-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T20:37:03.4218084-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -3109,9 +3109,9 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 <---
 
-2020-05-05T20:58:42.0712593-04:00 0HLVHB2F9KHN1:00000001 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T20:58:47.8187630-04:00 0HLVHB2F9KHN1:00000004 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T20:58:58.1364736-04:00 0HLVHB2F9KHN1:00000006 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:58:42.0712593-04:00 0HLVHB2F9KHN1:00000001 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:58:47.8187630-04:00 0HLVHB2F9KHN1:00000004 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T20:58:58.1364736-04:00 0HLVHB2F9KHN1:00000006 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T21:03:18.7780202-04:00  [INF] Tarea ejecutada: 05/05/2020 21:03:18 (987c8504)
 2020-05-05T21:04:36.1687645-04:00  [INF] Tarea ejecutada: 05/05/2020 21:04:36 (887c0223)
 2020-05-05T21:04:37.4345148-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
@@ -4821,8 +4821,8 @@ System.AggregateException: One or more errors occurred. (Se ha intentado una ope
    at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
    at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)<---
 
-2020-05-05T21:47:27.6895212-04:00 0HLVHBTL6LQB8:00000004 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
-2020-05-05T21:47:29.5890039-04:00 0HLVHBTL6LQB8:00000005 [ERR] Error cargando menus del modulo contratacion. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T21:47:27.6895212-04:00 0HLVHBTL6LQB8:00000004 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
+2020-05-05T21:47:29.5890039-04:00 0HLVHBTL6LQB8:00000005 [ERR] Error cargando menus del modulo SGCont. Object reference not set to an instance of an object. (becd5624)
 2020-05-05T21:48:38.8305788-04:00  [INF] Tarea ejecutada: 05/05/2020 21:48:38 (241b202b)
 2020-05-05T21:48:40.4059096-04:00  [WRN] No type was specified for the decimal column '"Signo"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)
 2020-05-05T21:48:40.4084690-04:00  [WRN] No type was specified for the decimal column '"n_importe"' on entity type '"AsientosView"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'. (3a0db05f)

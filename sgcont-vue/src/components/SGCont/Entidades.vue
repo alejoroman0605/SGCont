@@ -780,7 +780,7 @@ export default {
 
   methods: {
     getEntidadesFromApi() {
-      const url = api.getUrl("contratacion", "Entidades");
+      const url = api.getUrl("SGCont", "Entidades");
       this.axios.get(url).then(
         response => {
           this.entidades = response.data;
@@ -791,7 +791,7 @@ export default {
       );
     },
     getnombreSucesFromApi() {
-      const url = api.getUrl("contratacion", "Entidades/Sucursales");
+      const url = api.getUrl("SGCont", "Entidades/Sucursales");
       this.axios.get(url).then(
         response => {
           this.nombreSuces = response.data;
@@ -802,7 +802,7 @@ export default {
       );
     },
     getMonedasFromApi() {
-      const url = api.getUrl("contratacion", "Entidades/Monedas");
+      const url = api.getUrl("SGCont", "Entidades/Monedas");
       this.axios.get(url).then(
         response => {
           this.monedas = response.data;
@@ -813,7 +813,7 @@ export default {
       );
     },
     getSectoresFromApi() {
-      const url = api.getUrl("contratacion", "Entidades/Sectores");
+      const url = api.getUrl("SGCont", "Entidades/Sectores");
       this.axios.get(url).then(
         response => {
           this.sectores = response.data;
@@ -1262,7 +1262,7 @@ export default {
       this.dialog = true;
     },
     save(method) {
-      const url = api.getUrl("contratacion", "entidades");
+      const url = api.getUrl("SGCont", "entidades");
       this.modelstate = {};
       if (method === "POST") {
         if (this.$refs.form.validate()) {
@@ -1397,7 +1397,7 @@ export default {
       this.dialog2 = true;
     },
     deleteItem() {
-      const url = api.getUrl("contratacion", "entidades");
+      const url = api.getUrl("SGCont", "entidades");
       this.axios.delete(`${url}/${this.entidad.id}`).then(
         response => {
           this.getResponse(response);

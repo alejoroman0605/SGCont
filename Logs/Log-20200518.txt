@@ -840,7 +840,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 <---
 
 2020-05-18T15:02:04.5132526-04:00 0HLVRBNPQC1UN:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.NotSupportedException: Conflicting method/path combination "GET contratacion/contratos/Dashboard" for actions - SGCont.Controllers.ContratosController.Dashboard (SGCont),SGCont.Controllers.ContratosController.Filtro (SGCont). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+System.NotSupportedException: Conflicting method/path combination "GET SGCont/contratos/Dashboard" for actions - SGCont.Controllers.ContratosController.Dashboard (SGCont),SGCont.Controllers.ContratosController.Filtro (SGCont). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
@@ -848,7 +848,7 @@ System.NotSupportedException: Conflicting method/path combination "GET contratac
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2020-05-18T15:02:08.8285445-04:00 0HLVRBNPQC1UN:00000008 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.NotSupportedException: Conflicting method/path combination "GET contratacion/contratos/Dashboard" for actions - SGCont.Controllers.ContratosController.Dashboard (SGCont),SGCont.Controllers.ContratosController.Filtro (SGCont). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+System.NotSupportedException: Conflicting method/path combination "GET SGCont/contratos/Dashboard" for actions - SGCont.Controllers.ContratosController.Dashboard (SGCont),SGCont.Controllers.ContratosController.Filtro (SGCont). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
@@ -949,7 +949,7 @@ System.AggregateException: One or more errors occurred. (One or more errors occu
 2020-05-18T15:02:37.0245128-04:00 0HLVRBO3E3PD7:00000003 [WRN] The LINQ expression '"where ([d].Id == [s].DictaminadorContratoId)"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-18T15:02:37.0248059-04:00 0HLVRBO3E3PD7:00000003 [WRN] The LINQ expression '"FirstOrDefault()"' could not be translated and will be evaluated locally. (011792c6)
 2020-05-18T15:02:39.0431498-04:00 0HLVRBO3E3PDC:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
-System.NotSupportedException: Conflicting method/path combination "GET contratacion/contratos/Dashboard" for actions - SGCont.Controllers.ContratosController.Dashboard (SGCont),SGCont.Controllers.ContratosController.Filtro (SGCont). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+System.NotSupportedException: Conflicting method/path combination "GET SGCont/contratos/Dashboard" for actions - SGCont.Controllers.ContratosController.Dashboard (SGCont),SGCont.Controllers.ContratosController.Filtro (SGCont). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)

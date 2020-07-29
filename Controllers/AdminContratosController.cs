@@ -5,10 +5,11 @@ using SGCont.Dtos;
 using SGCont.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace SGCont.Controllers
 {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class AdminContratosController : Controller {
         private readonly SGContDbContext  context;
@@ -109,6 +110,18 @@ namespace SGCont.Controllers
             context.AdminContratos.Remove (adminContrato);
             context.SaveChanges ();
             return Ok (adminContrato);
+        }
+         //Get :SGCont/DictContratos/TrabNoDictaminadores
+        [HttpGet ("/SGCont/AdminContratos/TrabNoAdmin")]
+        public IActionResult GetTrabNoAdmin () {
+            var trabajadores = context.Trabajadores.ToList ();
+            var admin = context.AdminContratos.ToList ();
+            var administradores = new List<Trabajador> ();
+
+            foreach (var item in admin) {
+                administradores.Add (trabajadores.FirstOrDefault (s => s.Id == item.AdminContratoId));
+            }
+            return Ok (trabajadores.Except (administradores));
         }
     }
 }

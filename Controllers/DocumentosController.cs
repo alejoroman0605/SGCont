@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers
 {
-    [Route("contratacion/[controller]")]
+    [Route("SGCont/[controller]")]
     [ApiController]
     public class DocumentosController : Controller
     {
@@ -17,14 +17,14 @@ namespace SGCont.Controllers
             this.context = context;
         }
 
-        // GET contratacion/Documentos
+        // GET SGCont/Documentos
         [HttpGet]
         public IEnumerable<Documento> GetAll()
         {
             return context.Documentos.ToList();
         }
 
-        // GET: contratacion/Documentos/Id
+        // GET: SGCont/Documentos/Id
         [HttpGet("{id}", Name = "GetDocumento")]
         public IActionResult GetbyId(int id)
         {
@@ -37,7 +37,7 @@ namespace SGCont.Controllers
             return Ok(documento);
         }
 
-        // POST contratacion/Documentos
+        // POST SGCont/Documentos
         [HttpPost]
         public IActionResult POST([FromBody] Documento documento)
         {
@@ -50,7 +50,7 @@ namespace SGCont.Controllers
             return BadRequest(ModelState);
         }
 
-        // PUT contratacion/Documentos/id
+        // PUT SGCont/Documentos/id
         [HttpPut("{id}")]
         public IActionResult PUT([FromBody] Documento documento, int id)
         {
@@ -64,7 +64,7 @@ namespace SGCont.Controllers
             return Ok();
         }
 
-        // DELETE contratacion/Documentos/id
+        // DELETE SGCont/Documentos/id
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

@@ -6,14 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class FormasDePagosController : Controller {
         private readonly SGContDbContext  context;
         public FormasDePagosController (SGContDbContext  context) {
             this.context = context;
         }
-        // GET contratacion/FormasDePagos
+        // GET SGCont/FormasDePagos
         [HttpGet]
         public IActionResult GetAll () {
             var formasDePagos = new List<dynamic> () {
@@ -24,14 +24,14 @@ namespace SGCont.Controllers {
             return Ok (formasDePagos);
         }
 
-        //     // GET contratacion/FormasDePagos
+        //     // GET SGCont/FormasDePagos
         //     [HttpGet]
         //     public IEnumerable<FormaDePago> GetAll()
         //     {
         //         return context.FormasDePagos.ToList();
         //     }
 
-        //     // GET: contratacion/FormasDePagos/Id
+        //     // GET: SGCont/FormasDePagos/Id
         //     [HttpGet("{id}", Name = "GetformaDePago")]
         //     public IActionResult GetbyId(int id)
         //     {
@@ -44,7 +44,7 @@ namespace SGCont.Controllers {
         //         return Ok(formaDePago);
         //     }
 
-        //     // POST contratacion/FormasDePagos
+        //     // POST SGCont/FormasDePagos
         //     [HttpPost]
         //     public IActionResult POST([FromBody] FormaDePago formaDePago)
         //     {
@@ -57,7 +57,7 @@ namespace SGCont.Controllers {
         //         return BadRequest(ModelState);
         //     }
 
-        //     // PUT contratacion/formaDePago/id
+        //     // PUT SGCont/formaDePago/id
         //     [HttpPut("{id}")]
         //     public IActionResult PUT([FromBody] FormaDePago formaDePago, int id)
         //     {
@@ -71,7 +71,7 @@ namespace SGCont.Controllers {
         //         return Ok();
         //     }
 
-        //     // DELETE contratacion/formaDePago/id
+        //     // DELETE SGCont/formaDePago/id
         //     [HttpDelete("{id}")]
         //     public IActionResult Delete(int id)
         //     {
