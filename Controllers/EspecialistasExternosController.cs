@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class EspecialistasExternosController : Controller {
         private readonly SGContDbContext  context;

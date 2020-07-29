@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers
 {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class DictContratosController : Controller {
         private readonly SGContDbContext  context;
@@ -18,7 +18,7 @@ namespace SGCont.Controllers
             this.context = context;
         }
 
-        // GET contratacion/DictContratos
+        // GET SGCont/DictContratos
         [HttpGet]
         public IActionResult GetAll () {
             var trabajadores = context.Trabajadores.ToList ();
@@ -32,7 +32,7 @@ namespace SGCont.Controllers
             return Ok (dictaminadores);
         }
 
-        // GET: contratacion/DictContratos/Id
+        // GET: SGCont/DictContratos/Id
         [HttpGet ("{id}", Name = "Getdictaminador")]
         public IActionResult GetbyId (int id) {
             var trabajadores = context.Trabajadores.Select (t => new {
@@ -68,7 +68,7 @@ namespace SGCont.Controllers
             return Ok (dictaminador);
         }
 
-        // POST contratacion/DictContratos
+        // POST SGCont/DictContratos
         [HttpPost]
         public IActionResult POST ([FromBody] DictContratosDto dictContratosDto) {
             if (ModelState.IsValid) {
@@ -87,7 +87,7 @@ namespace SGCont.Controllers
             return BadRequest (ModelState);
         }
 
-        // PUT contratacion/DictContratos/id
+        // PUT SGCont/DictContratos/id
         [HttpPut ("{id}")]
         public IActionResult PUT ([FromBody] DictContratosDto dictContratosDto, int id) {
             var dictaminador = context.DictaminadoresContratos.FirstOrDefault (s => s.DictaminadorId == id);
@@ -100,7 +100,7 @@ namespace SGCont.Controllers
             return Ok ();
         }
 
-        // DELETE contratacion/DictContratos/id
+        // DELETE SGCont/DictContratos/id
         [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var dictaminador = context.DictaminadoresContratos.FirstOrDefault (s => s.DictaminadorId == id);
@@ -112,8 +112,8 @@ namespace SGCont.Controllers
             context.SaveChanges ();
             return Ok (dictaminador);
         }
-        //Get :contratacion/DictContratos/TrabNoDictaminadores
-        [HttpGet ("/contratacion/DictContratos/TrabNoDictaminadores")]
+        //Get :SGCont/DictContratos/TrabNoDictaminadores
+        [HttpGet ("/SGCont/DictContratos/TrabNoDictaminadores")]
         public IActionResult GetTrabNoDictaminadores () {
             var trabajadores = context.Trabajadores.ToList ();
             var dictaminador = context.DictaminadoresContratos.ToList ();

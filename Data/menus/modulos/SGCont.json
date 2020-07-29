@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Contratos",
+        "group": "sgcont",
+        "icon": "mdi-note-multiple-outline",
+        "name": "SGCont",
+        "component": "SGCont",
+        "roles": [
+            "administrador",
+            "contratacion"
+        ],
+        "items": [
+            {
+                "title": "Como Cliente",
+                "group": "sgcont",
+                "icon": "mdi-note-multiple",
+                "component": "ContratosCliente",
+                "name": "ContratosCliente",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            },
+            {
+                "title": "Como Prestador",
+                "group": "sgcont",
+                "icon": "mdi-note-multiple",
+                "component": "ContratosPrestador",
+                "name": "ContratosPrestador",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Ofertas",
+        "group": "sgcont",
+        "icon": "mdi-note-multiple",
+        "component": "Ofertas",
+        "name": "Ofertas",
+        "roles": [
+            "administrador",
+            "contratacion"
+        ],
+        "items": [
+            {
+                "title": "Como Cliente",
+                "group": "sgcont",
+                "icon": "mdi-note-multiple",
+    
+                "component": "OfertasClientes",
+                "name": "OfertasClientes",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            },
+            {
+                "title": "Como Prestador",
+                "group": "sgcont",
+                "icon": "mdi-note-multiple",
+    
+                "component": "OfertasPrestador",
+                "name": "OfertasPrestador",
+                "roles": [
+                    "administrador",
+                    "contratacion"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Configuraciones",
+        "group": "sgcont",
+        "icon": "mdi-cogs",
+        "component": "Config",
+        "name": "Config",
+        "roles": [
+            "administrador",
+            "contratacion"
+        ]
+    }
+]

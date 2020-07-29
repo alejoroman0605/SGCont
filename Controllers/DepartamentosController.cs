@@ -6,20 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class DepartamentosController : Controller {
         private readonly SGContDbContext  context;
         public DepartamentosController (SGContDbContext  context) {
             this.context = context;
         }
-        // GET contratacion/Departamentos
+        // GET SGCont/Departamentos
         [HttpGet]
         public IEnumerable<Departamento> GetAll () {
             return context.Departamentos.ToList ();
         }
 
-        // GET: contratacion/Departamentos/Id
+        // GET: SGCont/Departamentos/Id
         [HttpGet ("{id}", Name = "GetDeparatmentos")]
         public IActionResult GetbyId (int id) {
             var departamento = context.Departamentos.FirstOrDefault (s => s.Id == id);
@@ -30,7 +30,7 @@ namespace SGCont.Controllers {
             return Ok (departamento);
         }
 
-        // POST contratacion/Departamentos
+        // POST SGCont/Departamentos
         [HttpPost]
         public IActionResult POST ([FromBody] Departamento departamento) {
             if (ModelState.IsValid) {
@@ -41,7 +41,7 @@ namespace SGCont.Controllers {
             return BadRequest (ModelState);
         }
 
-        // PUT contratacion/departamento/id
+        // PUT SGCont/departamento/id
         [HttpPut ("{id}")]
         public IActionResult PUT ([FromBody] Departamento departamento, int id) {
             if (departamento.Id != id) {
@@ -53,7 +53,7 @@ namespace SGCont.Controllers {
             return Ok ();
         }
 
-        // DELETE contratacion/departamento/id
+        // DELETE SGCont/departamento/id
         [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var departamento = context.Departamentos.FirstOrDefault (s => s.Id == id);

@@ -215,4 +215,71 @@ export const protectedRoute = [
       component: () => import(/* webpackChunkName: "table" */ '@/views/auth/PerfilDeUsuario.vue'),
     }],
   },
+  // Contratacion
+  {
+    name: 'Contratacion',
+    path: '/SGCont',
+    component: DefaultLayout,
+    redirect: '/SGCont/OfertasClientes',
+    meta: {
+      title: 'Contratos',
+      group: 'SGCont',
+    },
+    children: [
+      // {
+      //   path: '/SGCont/dashboard',
+      //   name: 'Dashboard',
+      //   meta: {
+      //     title: 'Cuadro de mando',
+      //     requiresAuth: true,
+      //   },
+      //   component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/Dashboard.vue'),
+      // },
+      {
+        path: '/SGCont/ContratosCliente',
+        name: 'ContratosCliente',
+        meta: {
+          title: 'ContratosCliente',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/ContratosCliente.vue'),
+      },
+      {
+        path: '/SGCont/ContratosPrestador',
+        name: 'ContratosPrestador',
+        meta: {
+          title: 'ContratosPrestador',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/ContratosPrestador.vue'),
+      },
+      {
+        path: '/SGCont/OfertasClientes',
+        name: 'OfertasClientes',
+        meta: {
+          title: 'OfertasClientes',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/OfertasClientes.vue'),
+      },
+      {
+        path: '/SGCont/OfertasPrestador',
+        name: 'OfertasPrestador',
+        meta: {
+          title: 'OfertasPrestador',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/OfertasPrestador.vue'),
+      },
+      {
+        path: '/SGCont/Config',
+        name: 'Config',
+        meta: {
+          title: 'Config',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/Config.vue'),
+      },
+    ],
+  },
 ];

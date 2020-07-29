@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers
 {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class ContratosController : Controller {
         private IHostingEnvironment _hostingEnvironment;
@@ -24,7 +24,7 @@ namespace SGCont.Controllers
             _hostingEnvironment = environment;
         }
 
-        // GET contratacion/Contratos/tipoTramite(Oferta o contrato)
+        // GET SGCont/Contratos/tipoTramite(Oferta o contrato)
         [HttpGet]
         public ActionResult GetAll (string tipoTramite, string filtro, bool cliente) {
             var trabajadores = context.Trabajadores.ToList ();
@@ -142,7 +142,7 @@ namespace SGCont.Controllers
             return Ok (contratos);
         }
 
-        // GET: contratacion/Contratos/Id
+        // GET: SGCont/Contratos/Id
         [HttpGet ("{id}", Name = "GetContrato")]
         public IActionResult GetbyId (int id) {
             var contrato = context.Contratos.FirstOrDefault (c => c.Id == id);
@@ -153,7 +153,7 @@ namespace SGCont.Controllers
 
         }
 
-        // POST contratacion/Contratos
+        // POST SGCont/Contratos
         [HttpPost]
         public async Task<IActionResult> POST (ContratoDto contratoDto) {
             if (ModelState.IsValid) {
@@ -235,7 +235,7 @@ namespace SGCont.Controllers
             return BadRequest (ModelState);
         }
 
-        // PUT contratacion/contrato/id
+        // PUT SGCont/contrato/id
         [HttpPut ("{id}")]
         public IActionResult PUT ([FromBody] ContratoEditDto contrato, int id) {
 
@@ -323,7 +323,7 @@ namespace SGCont.Controllers
             return Ok ();
         }
 
-        // DELETE contratacion/contrato/id
+        // DELETE SGCont/contrato/id
         [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var contrato = context.Contratos.FirstOrDefault (s => s.Id == id);
@@ -334,7 +334,7 @@ namespace SGCont.Controllers
             context.SaveChanges ();
             return Ok (contrato);
         }
-        // PUT contratacion/contrato/AprobContrato/id
+        // PUT SGCont/contrato/AprobContrato/id
         [HttpPut ("/contratos/contrato/AprobContrato/id")]
         public IActionResult AprobContrato ([FromBody] AproContratoDto aproContratoDto, int id) {
             var c = context.Contratos.Find (id);
@@ -357,8 +357,8 @@ namespace SGCont.Controllers
             return NotFound ();
         }
 
-        // GET: contratacion/contratos/Tipos
-        [HttpGet ("/contratacion/contratos/Tipos")]
+        // GET: SGCont/contratos/Tipos
+        [HttpGet ("/SGCont/contratos/Tipos")]
         public IActionResult GetAllTiposContratos () {
             var tipo = new List<dynamic> () {
                 new { Id = Tipo.Marco, Nombre = Tipo.Marco.ToString () },
@@ -376,8 +376,8 @@ namespace SGCont.Controllers
             };
             return Ok (tipo);
         }
-        // GET: contratacion/contratos/Tipos
-        [HttpGet ("/contratacion/contratos/Estados")]
+        // GET: SGCont/contratos/Tipos
+        [HttpGet ("/SGCont/contratos/Estados")]
         public IActionResult GetAllEstadosContratos () {
             var estadosContratos = new List<dynamic> () {
                 new { Id = Estado.Nuevo, Nombre = Estado.Nuevo.ToString () },
@@ -393,8 +393,8 @@ namespace SGCont.Controllers
             return Ok (estadosContratos);
         }
 
-        // GET: contratacion/contratos/VencimientoContrato 
-        [HttpGet ("/contratacion/contratos/VencimientoContrato")]
+        // GET: SGCont/contratos/VencimientoContrato 
+        [HttpGet ("/SGCont/contratos/VencimientoContrato")]
         public IActionResult GetVencimientoContrato (bool cliente) {
             DateTime FechaPorDefecto = new DateTime (0001, 01, 01);
             List<int> cantSegunFecha = new List<int> ();
@@ -426,8 +426,8 @@ namespace SGCont.Controllers
             return Ok (cantSegunFecha);
         }
 
-        // GET: contratacion/contratos/VencimientoOferta 
-        [HttpGet ("/contratacion/contratos/VencimientoOferta")]
+        // GET: SGCont/contratos/VencimientoOferta 
+        [HttpGet ("/SGCont/contratos/VencimientoOferta")]
         public IActionResult GetVencimientoOferta (bool cliente) {
             DateTime FechaPorDefecto = new DateTime (0001, 01, 01);
             List<int> cantSegunFecha = new List<int> ();
@@ -459,8 +459,8 @@ namespace SGCont.Controllers
             return Ok (cantSegunFecha);
         }
 
-        //Post :contratacion/contratos/UploadFile
-        [HttpPost ("/contratacion/contratos/UploadFile/{id}")]
+        //Post :SGCont/contratos/UploadFile
+        [HttpPost ("/SGCont/contratos/UploadFile/{id}")]
         public async Task<IActionResult> UploadFile (IFormFile file, int id) {
             var contrato = context.Contratos.FirstOrDefault (s => s.Id == id);
             var adminContrato = context.AdminContratos.FirstOrDefault (c => c.AdminContratoId == contrato.AdminContratoId);
@@ -501,8 +501,8 @@ namespace SGCont.Controllers
             };
         }
 
-        //Post :contratacion/contratos/downloadFile
-        [HttpGet ("/contratacion/contratos/DownloadFile/{id}")]
+        //Post :SGCont/contratos/downloadFile
+        [HttpGet ("/SGCont/contratos/DownloadFile/{id}")]
         public async Task<IActionResult> DownloadFile (int id) {
             var contrato = context.Contratos.FirstOrDefault (c => c.Id == id);
             var path = contrato.FilePath;
@@ -513,8 +513,8 @@ namespace SGCont.Controllers
             return File (memory, GetMimeTypes () [ext], Path.GetFileName (path));
         }
 
-        // GET: contratacion/contratos/Dashboard 
-        [HttpGet ("/contratacion/contratos/Dashboard")]
+        // GET: SGCont/contratos/Dashboard 
+        [HttpGet ("/SGCont/contratos/Dashboard")]
         public async Task<IActionResult> Dashboard () {
             var dashboard = new Dashboard ();
             DateTime FechaPorDefecto = new DateTime (0001, 01, 01);

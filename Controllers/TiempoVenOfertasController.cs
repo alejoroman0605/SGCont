@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace SGCont.Controllers {
-    [Route ("contratacion/[controller]")]
+    [Route ("SGCont/[controller]")]
     [ApiController]
     public class TiempoVenOfertasController : Controller {
         private readonly SGContDbContext  context;
@@ -14,13 +14,13 @@ namespace SGCont.Controllers {
             this.context = context;
         }
 
-        // GET contratacion/TiempoVenOfertas
+        // GET SGCont/TiempoVenOfertas
         [HttpGet]
         public IEnumerable<TiempoVenOferta> GetAll () {
             return context.TiempoVenOfertas.ToList ();
         }
 
-        // GET: contratacion/TiempoVenOfertas/Id
+        // GET: SGCont/TiempoVenOfertas/Id
         [HttpGet ("{id}", Name = "GetTiempoVenOferta")]
         public IActionResult GetbyId (int id) {
             var tiempoVenOferta = context.TiempoVenOfertas.FirstOrDefault (s => s.Id == id);
@@ -31,7 +31,7 @@ namespace SGCont.Controllers {
             return Ok (tiempoVenOferta);
         }
 
-        // POST contratacion/TiempoVenOfertas
+        // POST SGCont/TiempoVenOfertas
         [HttpPost]
         public IActionResult POST ([FromBody] TiempoVenOferta tiempoVenOferta) {
             if (ModelState.IsValid) {
@@ -48,7 +48,7 @@ namespace SGCont.Controllers {
             return BadRequest (ModelState);
         }
 
-        // PUT contratacion/TiempoVenOfertas/id
+        // PUT SGCont/TiempoVenOfertas/id
         [HttpPut ("{id}")]
         public IActionResult PUT ([FromBody] TiempoVenOferta tiempoVenOferta, int id) {
             if (tiempoVenOferta.Id != id) {
@@ -60,7 +60,7 @@ namespace SGCont.Controllers {
             return Ok ();
         }
 
-        // DELETE contratacion/TiempoVenOfertas/id
+        // DELETE SGCont/TiempoVenOfertas/id
         [HttpDelete ("{id}")]
         public IActionResult Delete (int id) {
             var tiempoVenOferta = context.TiempoVenOfertas.FirstOrDefault (s => s.Id == id);
