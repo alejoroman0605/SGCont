@@ -12,7 +12,7 @@ namespace SGCont.Models {
         public Tipo Tipo { get; set; }
         //Trabajador
         public int AdminContratoId { get; set; }
-        public Trabajador AdminContrato { get; set; }
+        // public Trabajador AdminContrato { get; set; }
         public int EntidadId { get; set; }
         public virtual Entidad Entidad { get; set; }
         public string ObjetoDeContrato { get; set; }
@@ -40,10 +40,10 @@ namespace SGCont.Models {
         public virtual ICollection<FormaDePago> FormasDePago { get; set; }
 
         [NotMapped]
-        public ICollection<DictaminadorContrato> Dictaminadores { get; set; }
+        public ICollection<Departamento> Departamentos { get; set; }
 
         [NotMapped]
-        public List<EspExternoId_ContratoId> EspExternoId_ContratoId { get; set; }
+        public List<EspecialistaExterno> EspecialistasExternos { get; set; }
         //Término de pago en días
         [Display (Name = "Término de Pago")]
         public int TerminoDePago { get; set; }
@@ -57,22 +57,5 @@ namespace SGCont.Models {
         public bool Cliente { get; set; }
         public virtual ICollection<Suplemento> Suplementos { get; set; }
 
-        // [NotMapped]
-        // public string Descripcion => $"{Entidad.Nombre}-{Tipo} ({Numero})";
-
-        // [NotMapped]
-        // public Estado EstadoActual {
-        //     get {
-        //         var estadoActual = Estados.OrderBy (e => e.Fecha).Last ();
-        //         if (estadoActual == null) {
-        //             return Estado.SinEstado;
-        //         }
-        //         return estadoActual.Estado;
-        //     }
-        // }
-
-        public Contrato () {
-            Estados = new HashSet<HistoricoEstadoContrato> ();
-        }
     }
 }

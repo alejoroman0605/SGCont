@@ -27,6 +27,19 @@ namespace SGCont.Models
         Revision,
         SinEstado
     }
+    public enum EstadoTrabajador {
+     Sin_Definir,
+        Activo,
+        Aprobado,
+        Baja,
+        Interrupto,
+        Disponible,
+        Licencia_Maternidad,
+        Licencia_Sin_Sueldo,
+        Certificado,
+        Bolsa,
+        Descartado
+    }
     public enum EstadoSolicitud {
         Nueva,
         Aprobada,

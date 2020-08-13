@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using SGCont.Data;
-using SGCont.Dtos;
-using SGCont.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SGCont.Data;
+using SGCont.Dtos;
+using SGCont.Models;
 
-namespace SGCont.Controllers
-{
+namespace SGCont.Controllers {
     [Route ("SGCont/[controller]")]
     [ApiController]
     public class ContratosController : Controller {
         private IHostingEnvironment _hostingEnvironment;
-        private readonly SGContDbContext  context;
-        public ContratosController (SGContDbContext  context, IHostingEnvironment environment) {
+        private readonly SGContDbContext context;
+        public ContratosController (SGContDbContext context, IHostingEnvironment environment) {
 
             this.context = context;
             _hostingEnvironment = environment;
@@ -43,7 +42,12 @@ namespace SGCont.Controllers
                     }),
                     ObjetoDeContrato = c.ObjetoDeContrato,
                     Numero = c.Numero,
-                    Montos = c.Montos,
+                    Montos = c.Montos.Select (d => new {
+                        ContratoId = d.ContratoId,
+                            Cantidad = d.Cantidad,
+                            Moneda = d.Moneda,
+                            NombreString = d.Moneda.ToString ()
+                    }),
                     FechaDeRecepcion = c.FechaDeRecepcion,
                     FechaDeVenOferta = c.FechaDeVenOferta,
                     FechaVenContrato = c.FechaVenContrato,
@@ -166,7 +170,8 @@ namespace SGCont.Controllers
                     ObjetoDeContrato = contratoDto.ObjetoDeContrato,
                     Numero = contratoDto.Numero,
                     TerminoDePago = contratoDto.TerminoDePago,
-                    Cliente = contratoDto.Cliente
+                    Cliente = contratoDto.Cliente,
+                    Estado = Estado.Circulando
                 };
                 if (contratoDto.FechaDeRecepcion != null) {
                     contrato.FechaDeRecepcion = contratoDto.FechaDeRecepcion;
@@ -181,6 +186,17 @@ namespace SGCont.Controllers
                 context.Contratos.Add (contrato);
                 context.SaveChanges ();
 
+                if (contratoDto.Montos != null) {
+                    foreach (var item in contratoDto.Montos) {
+                    var monto = new Monto {
+                    Cantidad = item.Cantidad,
+                    Moneda = item.Moneda,
+                    ContratoId = contrato.Id
+                        };
+                        context.Montos.Add (monto);
+                    }
+                    context.SaveChanges ();
+                }
                 foreach (var item in contratoDto.FormasDePago) {
                     var contratoId_FormaPagoId = new ContratoId_FormaPagoId {
                         ContratoId = contrato.Id,
@@ -264,6 +280,23 @@ namespace SGCont.Controllers
             }
             context.Entry (c).State = EntityState.Modified;
 
+            //   Agregar monto por monedas
+            if (contrato.Montos != null) {
+                var montos = context.Montos.Where (s => s.ContratoId == contrato.Id);
+                foreach (var item in montos) {
+                    context.Montos.Remove (item);
+                }
+                foreach (var item in contrato.Montos) {
+                    var monto = new Monto {
+                        Cantidad = item.Cantidad,
+                        Moneda = item.Moneda,
+                        ContratoId = contrato.Id
+                    };
+                    context.Montos.Add (monto);
+                    context.SaveChanges ();
+                }
+            }
+
             if (contrato.FormasDePago != null) {
                 var formasDePago = context.ContratoId_FormaPagoId.Where (s => s.ContratoId == contrato.Id);
                 foreach (var item in formasDePago) {
@@ -314,7 +347,7 @@ namespace SGCont.Controllers
             }
             var HistoricoEstadoContrato = new HistoricoEstadoContrato {
                 ContratoId = contrato.Id,
-                Estado = Estado.Circulando,
+                Estado = contrato.Estado,
                 Fecha = DateTime.Now,
                 Usuario = contrato.Usuario,
             };
@@ -334,24 +367,27 @@ namespace SGCont.Controllers
             context.SaveChanges ();
             return Ok (contrato);
         }
-        // PUT SGCont/contrato/AprobContrato/id
-        [HttpPut ("/contratos/contrato/AprobContrato/id")]
-        public IActionResult AprobContrato ([FromBody] AproContratoDto aproContratoDto, int id) {
+      
+        // PUT SGCont/contratos/AprobContrato/id
+        [HttpPut ("/SGCont/contratos/AprobContrato/{id}")]
+        public IActionResult AprobContrato ([FromBody] AproContratoDto aprobarContratoDto, int id) {
+            if (aprobarContratoDto.ContratoId != id) {
+                return BadRequest (ModelState);
+            }
             var c = context.Contratos.Find (id);
-
-            if (c != null) {
-                if (aproContratoDto.AprobEconomico == true) {
+            if (c != null && aprobarContratoDto.roles != null) {
+                if (aprobarContratoDto.roles.Contains ("economico")) {
                     c.AprobEconomico = true;
-                }
-                if (aproContratoDto.AprobJuridico == true) {
+                } else if (aprobarContratoDto.roles.Contains ("juridico")) {
                     c.AprobJuridico = true;
-                }
-                if (aproContratoDto.AprobComitContratacion == true) {
+                } else if (aprobarContratoDto.roles.Contains ("comite de contratacion") && aprobarContratoDto.FechaDeFirmado != null) {
                     c.AprobComitContratacion = true;
+                    c.FechaDeFirmado = aprobarContratoDto.FechaDeFirmado;
+                    c.FechaVenContrato = aprobarContratoDto.FechaDeVencimiento;
+                    c.Estado = Estado.Aprobado;
                 }
-
                 context.Update (c);
-                context.SaveChanges ();
+                context.SaveChanges (); 
                 return Ok ();
             }
             return NotFound ();
@@ -505,12 +541,16 @@ namespace SGCont.Controllers
         [HttpGet ("/SGCont/contratos/DownloadFile/{id}")]
         public async Task<IActionResult> DownloadFile (int id) {
             var contrato = context.Contratos.FirstOrDefault (c => c.Id == id);
-            var path = contrato.FilePath;
-            var memory = new MemoryStream ();
-            using (var stream = new FileStream (path, FileMode.Open)) { await stream.CopyToAsync (memory); }
-            memory.Position = 0;
-            var ext = Path.GetExtension (path).ToLowerInvariant ();
-            return File (memory, GetMimeTypes () [ext], Path.GetFileName (path));
+            if (contrato.FilePath != null) {
+                var path = contrato.FilePath;
+                var memory = new MemoryStream ();
+                using (var stream = new FileStream (path, FileMode.Open)) { await stream.CopyToAsync (memory); }
+                memory.Position = 0;
+                var ext = Path.GetExtension (path).ToLowerInvariant ();
+                return File (memory, GetMimeTypes () [ext], Path.GetFileName (path));
+            }
+            return NotFound ($"No tiene un documento guardado");
+
         }
 
         // GET: SGCont/contratos/Dashboard 

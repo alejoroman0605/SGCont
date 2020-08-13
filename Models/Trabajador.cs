@@ -21,6 +21,7 @@ namespace SGCont.Models
         public string TelefonoMovil { get; set; }
         public string Correo { get; set; }
         public Sexo? Sexo { get; set; }
+        public EstadoTrabajador? EstadoTrabajador { get; set; }
         public string Direccion { get; set; }
         public int? MunicipioId { get; set; }
         public virtual Municipio Municipio { get; set; }

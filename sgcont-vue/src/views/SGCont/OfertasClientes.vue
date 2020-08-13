@@ -1,432 +1,151 @@
 <template>
-  <v-data-table :headers="headers" :items="ofertas" :search="search" dense class="elevation-1 pa-5">
-    <template v-slot:item.ofertVence="{ item }">
-      <v-chip :color="getColor(item.ofertVence)" dark>{{ item.ofertVence }} días</v-chip>
-    </template>
-    <template v-slot:top>
-      <v-toolbar flat color="white">
-        <v-toolbar-title>{{textByfiltro }}</v-toolbar-title>
-        <v-spacer></v-spacer>
+  <v-container>
+    <v-data-table
+      :headers="headers"
+      :items="ofertas"
+      :search="search"
+      dense
+      class="elevation-1 pa-5"
+    >
+      <template v-slot:item.ofertVence="{ item }">
+        <v-chip :color="getColor(item.ofertVence)" dark>{{ item.ofertVence }} días</v-chip>
+      </template>
+      <template v-slot:top>
+        <v-toolbar flat color="white">
+          <v-toolbar-title>{{textByfiltro }}</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-divider class="mx-4" inset vertical></v-divider>
+          <v-btn
+            color="primary"
+            @click="newContrato()"
+            class="ml-5"
+            v-if="(roles.includes('administrador de contratos')||roles.includes('administrador'))"
+          >Nueva Oferta</v-btn>
+          <!-- Buscar -->
+          <v-spacer></v-spacer>
+          <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Buscar"
+            single-line
+            hide-details
+            clearable
+            dense
+          ></v-text-field>
+          <!-- /Buscar -->
 
-        <!-- <div>{{ roles }}</div> -->
+          <v-spacer></v-spacer>
 
-        <v-divider class="mx-4" inset vertical></v-divider>
-        <!-- Agregar y Editar oferta -->
-        <v-dialog v-model="dialog" persistent max-width="1200">
-          <template v-slot:activator="{ on }">
-            <v-btn color="primary" dark v-on="on" class="ml-5">Nueva Oferta</v-btn>
-          </template>
-          <v-card>
-            <v-toolbar dark fadeOnScroll color="blue darken-3">
-              <v-flex cols="2" sm10 md6 lg4>{{ formTitle }}</v-flex>
-              <v-spacer></v-spacer>
-              <v-toolbar-items>
-                <v-btn icon dark @click=" close()">
-                  <v-icon>mdi-close</v-icon>
-                </v-btn>
-              </v-toolbar-items>
-            </v-toolbar>
-            <v-form ref="form">
-              <v-container grid-list-md text-xs-center>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-text-field v-model="oferta.nombre" label="Nombre" clearable required></v-text-field>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1" v-if="editedIndex==-1">
-                    <v-autocomplete
-                      v-model="oferta.tipo"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="tipos"
-                      cache-items
-                      label="tipo"
-                    ></v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1" v-if="editedIndex!=-1">
-                    <v-autocomplete
-                      v-model="oferta.tipo"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="tipos"
-                      cache-items
-                      label="tipo"
-                    ></v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1" v-if="editedIndex!=-1">
-                    <v-text-field v-model="oferta.numero" label="Número" prefix="#"></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.adminContrato"
-                      item-text="administrador.nombreCompleto"
-                      item-value="administrador.id"
-                      :items="adminContratos"
-                      cache-items
-                      label="Administrador"
-                    >
-                      <v-icon @click="dialog4=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
-                    </v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.entidad"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="entidades"
-                      cache-items
-                      label="Proveedor"
-                    >
-                      <v-icon @click="dialog3=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
-                    </v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.departamentos"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="departamentos"
-                      cache-items
-                      label="Departamentos que van a dictaminar la oferta"
-                      multiple
-                    >
-                      <template v-slot:selection="data">
-                        <v-chip
-                          v-bind="data.attrs"
-                          :input-value="data.selected"
-                          close
-                          @click="data.select"
-                          @click:close="removeDictaminadores(data.item)"
-                          outlined
-                        >{{ data.item.nombre }}</v-chip>
-                      </template>
-                      <template v-slot:item="data">
-                        <template v-if="typeof data.item !== 'object'">
-                          <v-list-item-content v-text="data.item"></v-list-item-content>
-                        </template>
-                        <template v-else>
-                          <v-list-item-content>
-                            <v-list-item-title v-html="data.item.nombre"></v-list-item-title>
-                          </v-list-item-content>
-                        </template>
-                      </template>
-                      <v-icon @click="dialog8=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
-                    </v-autocomplete>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.especialistasExternos"
-                      item-text="nombreCompleto"
-                      item-value="id"
-                      :items="especialistasExternosAll"
-                      cache-items
-                      label="Especialistas Externos"
-                      placeholder="Dictaminadores Externos"
-                      multiple
-                    >
-                      <v-icon @click="dialog5=true" slot="append" color="blue darken-2">mdi-plus</v-icon>
-                    </v-autocomplete>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-text-field
-                      v-model="montoAndMoneda.cantidad"
-                      label="Monto"
-                      clearable
-                      prefix="$"
-                    ></v-text-field>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
-                    <v-select
-                      v-model="montoAndMoneda.moneda"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="monedas"
-                      label="Moneda"
-                    ></v-select>
-                  </v-flex>
-                  <v-flex cols="2" class="pt-7">
-                    <v-tooltip top color="success">
-                      <template v-slot:activator="{ on }">
-                        <v-icon medium v-on="on" @click="agregar()" color="success">mdi-plus</v-icon>
-                      </template>
-                      <span>Agregar</span>
-                    </v-tooltip>
-                  </v-flex>
-                  <v-flex xs6>
-                    <v-data-table
-                      :headers="headersMonto"
-                      :items="oferta.montos"
-                      hide-default-footer
-                    >
-                      <template v-slot:item.action="{ item }">
-                        <v-btn
-                          class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small primary--text"
-                          small
-                          @click="editar(item)"
-                        >
-                          <v-icon>v-icon notranslate mdi mdi-pen theme--dark</v-icon>
-                        </v-btn>
-                        <v-btn
-                          class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small pink--text"
-                          small
-                          @click="quitar(item)"
-                        >
-                          <v-icon>v-icon notranslate mdi mdi-delete theme--dark</v-icon>
-                        </v-btn>
-                      </template>
-                    </v-data-table>
-                  </v-flex>
-                  <v-flex xs1 class="pt-2"></v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" md="9" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.formasDePago"
-                      :items="formasDePagos"
-                      label="Formas de Pago"
-                      item-text="nombre"
-                      item-value="id"
-                      multiple
-                    >
-                      <template v-slot:selection="data">
-                        <v-chip
-                          v-bind="data.attrs"
-                          :input-value="data.selected"
-                          close
-                          @click="data.select"
-                          @click:close="removeformasDePago(data.item)"
-                          outlined
-                        >{{ data.item.nombre }}</v-chip>
-                      </template>
-                      <template v-slot:item="data">
-                        <template v-if="typeof data.item !== 'object'">
-                          <v-list-item-content v-text="data.item"></v-list-item-content>
-                        </template>
-                        <template v-else>
-                          <v-list-item-content>
-                            <v-list-item-title v-html="data.item.nombre"></v-list-item-title>
-                          </v-list-item-content>
-                        </template>
-                      </template>
-                    </v-autocomplete>
-                  </v-flex>
-                  <v-flex cols="2">
-                    <v-text-field
-                      v-model="oferta.terminoDePago"
-                      label="Término de Pago en Meses"
-                      clearable
-                      required
-                    ></v-text-field>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-textarea v-model="oferta.objetoDeContrato" label="Objeto Social" rows="1"></v-textarea>
-                  </v-flex>
-                </v-layout>
-                <v-layout row wrap>
-                  <v-flex cols="2" class="px-1">
-                    <v-menu
-                      v-model="menu"
-                      :close-on-content-click="false"
-                      :nudge-right="40"
-                      transition="scale-transition"
-                      offset-y
-                      full-width
-                      min-width="290px"
-                    >
-                      <template v-slot:activator="{ on }">
-                        <v-text-field
-                          v-model="oferta.fechaDeRecepcion"
-                          label="Fecha de Recepción"
-                          readonly
-                          clearable
-                          v-on="on"
-                          required
-                        ></v-text-field>
-                      </template>
-                      <v-date-picker v-model="oferta.fechaDeRecepcion" @input="menu = false"></v-date-picker>
-                    </v-menu>
-                  </v-flex>
-                  <v-flex cols="2" class="px-1">
-                    <v-menu
-                      v-model="menu1"
-                      :close-on-content-click="false"
-                      :nudge-right="40"
-                      transition="scale-transition"
-                      offset-y
-                      full-width
-                      min-width="290px"
-                    >
-                      <template v-slot:activator="{ on }">
-                        <v-text-field
-                          v-model="oferta.fechaDeVenOferta"
-                          label="Fecha de Vencimiento"
-                          readonly
-                          clearable
-                          v-on="on"
-                          required
-                        ></v-text-field>
-                      </template>
-                      <v-date-picker v-model="oferta.fechaDeVenOferta" @input="menu1 = false"></v-date-picker>
-                    </v-menu>
-                  </v-flex>
-                  <!-- <v-flex cols="2" class="px-1">
-                    <v-file-input v-model="oferta.file" show-size label="Seleccionar Documento"></v-file-input>
-                  </v-flex>-->
-                  <v-flex cols="2" class="px-1">
-                    <v-autocomplete
-                      v-model="oferta.estado"
-                      item-text="nombre"
-                      item-value="id"
-                      :items="estados"
-                      cache-items
-                      label="Estado"
-                    ></v-autocomplete>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-form>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="green darken-1" text @click="save(method)">Aceptar</v-btn>
-              <v-btn color="blue darken-1" text @click=" close()">Cancelar</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
-        <!-- /Agregar y Editar oferta -->
-        <!-- Buscar -->
-        <v-spacer></v-spacer>
-        <v-text-field
-          v-model="search"
-          append-icon="mdi-magnify"
-          label="Buscar"
-          single-line
-          hide-details
-          clearable
-          dense
-        ></v-text-field>
-        <!-- /Buscar -->
-
-        <v-spacer></v-spacer>
-
-        <!-- Todas las Ofertas -->
-        <v-badge :content="cantOfertas" :value="cantOfertas" color="primary" overlap class="mt-4">
-          <template v-slot:badge>
-            <span v-if="enTiempo > 0">{{ cantOfertas }}</span>
-          </template>
-          <v-tooltip top color="primary">
-            <template v-slot:activator="{ on }">
-              <v-icon
-                medium
-                v-on="on"
-                color="primary"
-                @click="getOfertasFromApi()"
-              >mdi-file-document-box-multiple-outline</v-icon>
+          <!-- Todas las Ofertas -->
+          <v-badge :content="cantOfertas" :value="cantOfertas" color="primary" overlap class="mt-4">
+            <template v-slot:badge>
+              <span v-if="enTiempo > 0">{{ cantOfertas }}</span>
             </template>
-            <span>Todas las Ofertas</span>
-          </v-tooltip>
-        </v-badge>
-        <!-- /Todas las Ofertas -->
+            <v-tooltip top color="primary">
+              <template v-slot:activator="{ on }">
+                <v-icon
+                  medium
+                  v-on="on"
+                  color="primary"
+                  @click="getOfertasFromApi()"
+                >mdi-file-document-box-multiple-outline</v-icon>
+              </template>
+              <span>Todas las Ofertas</span>
+            </v-tooltip>
+          </v-badge>
+          <!-- /Todas las Ofertas -->
 
-        <!-- Cantidad de Ofertas Ok -->
-        <v-badge :content="enTiempo" :value="enTiempo" color="green" overlap class="mt-4 ml-4">
-          <template v-slot:badge>
-            <span v-if="enTiempo > 0">{{ enTiempo }}</span>
-          </template>
-          <v-tooltip top color="green">
-            <template v-slot:activator="{ on }">
-              <v-icon
-                medium
-                v-on="on"
-                color="green"
-                @click="filtro(ofertaTiempo)"
-              >mdi-file-document-box-multiple-outline</v-icon>
+          <!-- Cantidad de Ofertas Ok -->
+          <v-badge :content="enTiempo" :value="enTiempo" color="green" overlap class="mt-4 ml-4">
+            <template v-slot:badge>
+              <span v-if="enTiempo > 0">{{ enTiempo }}</span>
             </template>
-            <span>Ofertas en Tiempo</span>
-          </v-tooltip>
-        </v-badge>
-        <!-- /Cantidad de Ofertas Ok -->
+            <v-tooltip top color="green">
+              <template v-slot:activator="{ on }">
+                <v-icon
+                  medium
+                  v-on="on"
+                  color="green"
+                  @click="filtro(ofertaTiempo)"
+                >mdi-file-document-box-multiple-outline</v-icon>
+              </template>
+              <span>Ofertas en Tiempo</span>
+            </v-tooltip>
+          </v-badge>
+          <!-- /Cantidad de Ofertas Ok -->
 
-        <!-- Cantidad de Ofertas Casi Vencidos -->
-        <v-badge :content="proxVencer" :value="proxVencer" color="orange" overlap class="mt-4 ml-4">
-          <template v-slot:badge>
-            <span v-if="proxVencer > 0">{{ proxVencer}}</span>
-          </template>
-          <v-tooltip top color="orange">
-            <template v-slot:activator="{ on }">
-              <v-icon
-                medium
-                v-on="on"
-                color="orange"
-                @click="filtro(ofertasProxVencer)"
-              >mdi-file-document-box-multiple-outline</v-icon>
+          <!-- Cantidad de Ofertas Casi Vencidos -->
+          <v-badge
+            :content="proxVencer"
+            :value="proxVencer"
+            color="orange"
+            overlap
+            class="mt-4 ml-4"
+          >
+            <template v-slot:badge>
+              <span v-if="proxVencer > 0">{{ proxVencer}}</span>
             </template>
-            <span>Ofertas Próximas a vencer</span>
-          </v-tooltip>
-        </v-badge>
-        <!-- /Cantidad de Ofertas Casi Vencidos -->
+            <v-tooltip top color="orange">
+              <template v-slot:activator="{ on }">
+                <v-icon
+                  medium
+                  v-on="on"
+                  color="orange"
+                  @click="filtro(ofertasProxVencer)"
+                >mdi-file-document-box-multiple-outline</v-icon>
+              </template>
+              <span>Ofertas Próximas a vencer</span>
+            </v-tooltip>
+          </v-badge>
+          <!-- /Cantidad de Ofertas Casi Vencidos -->
 
-        <!-- Cantidad de Ofertas proxVencer -->
-        <v-badge
-          :content="casiVenc"
-          :value="casiVenc"
-          color="deep-orange"
-          overlap
-          class="mt-4 ml-4"
-        >
-          <template v-slot:badge>
-            <span v-if="casiVenc > 0">{{ casiVenc }}</span>
-          </template>
-          <v-tooltip top color="deep-orange">
-            <template v-slot:activator="{ on }">
-              <v-icon
-                medium
-                v-on="on"
-                color="deep-orange"
-                @click="filtro(ofertasCasiVenc)"
-              >mdi-file-document-box-multiple-outline</v-icon>
+          <!-- Cantidad de Ofertas proxVencer -->
+          <v-badge
+            :content="casiVenc"
+            :value="casiVenc"
+            color="deep-orange"
+            overlap
+            class="mt-4 ml-4"
+          >
+            <template v-slot:badge>
+              <span v-if="casiVenc > 0">{{ casiVenc }}</span>
             </template>
-            <span>Ofertas casi vencidas</span>
-          </v-tooltip>
-        </v-badge>
-        <!-- /Cantidad de Ofertas proxVencer -->
+            <v-tooltip top color="deep-orange">
+              <template v-slot:activator="{ on }">
+                <v-icon
+                  medium
+                  v-on="on"
+                  color="deep-orange"
+                  @click="filtro(ofertasCasiVenc)"
+                >mdi-file-document-box-multiple-outline</v-icon>
+              </template>
+              <span>Ofertas casi vencidas</span>
+            </v-tooltip>
+          </v-badge>
+          <!-- /Cantidad de Ofertas proxVencer -->
 
-        <!-- Cantidad de Ofertas Vencidas -->
-        <v-badge :content="vencidos" :value="vencidos" color="red" overlap class="mt-4 ml-4">
-          <template v-slot:badge>
-            <span v-if="vencidos > 0">{{ vencidos }}</span>
-          </template>
-          <v-tooltip top color="red">
-            <template v-slot:activator="{ on }">
-              <v-icon
-                medium
-                v-on="on"
-                color="red"
-                @click="filtro(ofertasVenc)"
-              >mdi-file-document-box-multiple-outline</v-icon>
+          <!-- Cantidad de Ofertas Vencidas -->
+          <v-badge :content="vencidos" :value="vencidos" color="red" overlap class="mt-4 ml-4">
+            <template v-slot:badge>
+              <span v-if="vencidos > 0">{{ vencidos }}</span>
             </template>
-            <span>Ofertas Vencidas</span>
-          </v-tooltip>
-        </v-badge>
-        <!-- /Cantidad de Ofertas Vencidas -->
+            <v-tooltip top color="red">
+              <template v-slot:activator="{ on }">
+                <v-icon
+                  medium
+                  v-on="on"
+                  color="red"
+                  @click="filtro(ofertasVenc)"
+                >mdi-file-document-box-multiple-outline</v-icon>
+              </template>
+              <span>Ofertas Vencidas</span>
+            </v-tooltip>
+          </v-badge>
+          <!-- /Cantidad de Ofertas Vencidas -->
 
-        <!-- Detalles de la oferta -->
-        <v-dialog
-          v-model="dialog6"
-          persistent
-          transition="dialog-bottom-transition"
-          flat
-          max-width="1200"
-        >
-          <v-card>
-            <v-toolbar dark fadeOnScroll :color="getColor(oferta.ofertVence)">
-              <v-flex cols="2" sm10 md6 lg4>Detalles</v-flex>
+          <!-- Aprobar oferta -->
+          <v-dialog v-model="dialog5" persistent max-width="350px">
+            <v-toolbar dark fadeOnScroll color="red">
               <v-spacer></v-spacer>
               <v-toolbar-items>
                 <v-btn icon dark @click="close()">
@@ -434,420 +153,229 @@
                 </v-btn>
               </v-toolbar-items>
             </v-toolbar>
-            <v-container>
-              <p
-                class="text-center text-uppercase headline font-weight-black"
-              >OFERTA DE {{oferta.tipoNombre}} DE {{oferta.nombre}}.</p>
-              <v-row>
-                <!-- DATOS DE LA OFERTA -->
-                <v-col cols="6">
-                  <v-card :elevation="2" flat>
-                    <v-card-text>
-                      <v-row>
-                        <v-col cols="12" md="6" class="pa-2 headline">
-                          <div>Oferta</div>
-                        </v-col>
-                        <v-col cols="12" md="6" :class="textOfertaVence.class">
-                          <strong>{{textOfertaVence.text}}</strong>
-                          {{oferta.ofertVence}} Días
-                        </v-col>
-                      </v-row>
-                      <v-row>
-                        <v-col cols="12" md="12" class="pa-2">
-                          <strong>Número :</strong>
-                          <u class="pl-2">{{oferta.numero}}</u>
-                        </v-col>
-                        <v-col cols="12" md="12" class="pa-2">
-                          <strong>Administrador del Contrato :</strong>
-                          <u class="pl-2">{{oferta.adminContrato.nombreCompleto}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Fecha de Recepción:</strong>
-                          <u class="pl-2">{{oferta.fechaDeRece}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>La Oferta Vence el:</strong>
-                          <u class="pl-2">{{oferta.fechaDeVenOfer}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Objeto Social :</strong>
-                          <u class="pl-2">{{oferta.objetoDeContrato}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Término de Pago :</strong>
-                          <u class="pl-1">{{oferta.terminoDePagoDet}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2" v-if="oferta.montoCup!=null">
-                          <strong>Monto en CUP :</strong>
-                          <u class="pl-2">{{oferta.montoCup}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2" v-if="oferta.montoCuc!=null">
-                          <strong>Monto en CUC :</strong>
-                          <u class="pl-2">{{oferta.montoCuc}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2" v-if="oferta.montoUsd!=null">
-                          <strong>Monto en USD :</strong>
-                          <u class="pl-2">{{oferta.montoUsd}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Estado :</strong>
-                          <u class="pl-2">{{oferta.estadoNombre}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Formas e Pago :</strong>
-                          <v-spacer></v-spacer>
-                          <span v-for="item in oferta.formasDePago" :key="item.nombre">
-                            <v-spacer></v-spacer>-
-                            <u class="pl-2">{{item.nombre}}</u>
-                          </span>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Especialistas Externos:</strong>
-                          <span
-                            v-for="item in oferta.especialistasExternos"
-                            :key="item.nombreCompleto"
-                            class="pl-2"
-                          >
-                            <v-spacer></v-spacer>-
-                            <u class="pl-2">{{item.nombreCompleto}}</u>
-                          </span>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Especialistas Internos:</strong>
-                          <span
-                            v-for="item in oferta.especialistasExternos"
-                            :key="item.nombreCompleto"
-                            class="pl-2"
-                          >
-                            <v-spacer></v-spacer>-
-                            <u class="pl-2">{{item.nombreCompleto}}</u>
-                          </span>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Aprobado por el Jurídico :</strong>
-                          <span v-if="oferta.aprobJuridico">
-                            <v-icon color="success">mdi-check-underline</v-icon>
-                            <v-text :class="`success--text`">Sí</v-text>
-                          </span>
-                          <span v-else>
-                            <v-icon color="red">mdi-close-outline</v-icon>
-                            <v-text :class="`red--text`">No</v-text>
-                          </span>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Aprobado por el Económico :</strong>
-                          <span v-if="oferta.aprobEconomico">
-                            <v-icon color="success">mdi-check-underline</v-icon>
-                            <v-text :class="`success--text`">Sí</v-text>
-                          </span>
-                          <span v-else>
-                            <v-icon color="red">mdi-close-outline</v-icon>
-                            <v-text :class="`red--text`">No</v-text>
-                          </span>
-                        </v-col>
-                        <v-col cols="12" md="12" class="pa-2">
-                          <strong>Aprobado por el Comité Contratación:</strong>
-                          <span v-if="oferta.aprobComitContratacion">
-                            <v-text :class="`success--text`">Sí</v-text>
-                            <v-icon color="success">mdi-check-underline</v-icon>
-                          </span>
-                          <span v-else>
-                            <v-icon color="red">mdi-close-outline</v-icon>
-                            <v-text :class="`red--text`">No</v-text>
-                          </span>
-                        </v-col>
-                      </v-row>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-                <!-- /DATOS DE LA OFERTA -->
-
-                <!-- DATOS DE LA ENTIDAD PROVEEDORA -->
-                <v-col cols="6">
-                  <v-card :elevation="2" flat>
-                    <v-card-text>
-                      <v-row>
-                        <v-col cols="12" md="12" class="pa-2">
-                          <div class="headline">Entidad Proveedora</div>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Nombre :</strong>
-                          <u class="pl-2">{{oferta.entidad.nombre}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Dirección :</strong>
-                          <u class="pl-2">{{oferta.entidad.direccion}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>NIT :</strong>
-                          <u class="pl-2">{{oferta.entidad.nit}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Sector :</strong>
-                          <u class="pl-2">{{oferta.entidad.sectorNombre}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Fax :</strong>
-                          <u class="pl-2">{{oferta.entidad.fax}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Correo :</strong>
-                          <u class="pl-2">{{oferta.entidad.correo}}</u>
-                        </v-col>
-                        <v-col cols="12" md="6" class="pa-2">
-                          <strong>Objeto Social :</strong>
-                          <u class="pl-2">{{oferta.entidad.objetoSocial}}</u>
-                        </v-col>
-                        <v-col cols="8" md="8" class="pa-2">
-                          <strong>Teléfonos :</strong>
-                          <v-spacer></v-spacer>
-                          <span v-for="item in oferta.entidad.telefonos" :key="item.numero">
-                            <strong class="pl-4">Número:</strong>
-                            {{item.numero}}
-                            <strong
-                              class="pl-12"
-                            >Extensión:</strong>
-                            {{item.extension}}
-                            <v-divider></v-divider>
-                          </span>
-                        </v-col>
-                        <v-col cols="12" md="12" class="pa-2">
-                          <strong>Cuentas Bancarias :</strong>
-                          <v-data-table
-                            :headers="headersCuentas"
-                            :items="oferta.entidad.cuentasBancarias"
-                            hide-default-footer
-                            fixed-header
-                            class="pt-3"
-                          ></v-data-table>
-                        </v-col>
-                      </v-row>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-              <!-- /DATOS DE LA ENTIDAD PROVEEDORA -->
-            </v-container>
-          </v-card>
-        </v-dialog>
-        <!-- /Detalles de la oferta -->
-
-        <!-- Aprobar oferta -->
-        <v-dialog v-model="dialog9" persistent max-width="350px">
-          <v-toolbar dark fadeOnScroll color="red">
-            <v-spacer></v-spacer>
-            <v-toolbar-items>
-              <v-btn icon dark @click="close()">
-                <v-icon>mdi-close</v-icon>
-              </v-btn>
-            </v-toolbar-items>
-          </v-toolbar>
-          <v-card>
-            <v-card-title class="headline text-center">Seguro que deseas aprobar la Oferta</v-card-title>
-            <v-card-text class="text-center">{{oferta.nombre}}</v-card-text>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="red" dark @click="aprobarOferta(oferta)">Aceptar</v-btn>
-              <v-btn color="primary" @click="close()">Cancelar</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
-        <!-- /Aprobar oferta -->
-        <!-- Delete oferta -->
-        <v-dialog v-model="dialog2" persistent max-width="350px">
-          <v-toolbar dark fadeOnScroll color="red">
-            <v-spacer></v-spacer>
-            <v-toolbar-items>
-              <v-btn icon dark @click="dialog2 = false">
-                <v-icon>mdi-close</v-icon>
-              </v-btn>
-            </v-toolbar-items>
-          </v-toolbar>
-          <v-card>
-            <v-card-title class="headline text-center">Seguro que deseas eliminar la Oferta</v-card-title>
-            <v-card-text class="text-center">{{oferta.nombre}}</v-card-text>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="red" dark @click="deleteItem(oferta)">Aceptar</v-btn>
-              <v-btn color="primary" @click="close()">Cancelar</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
-        <!-- /Delete oferta -->
-
-        <!-- Subir Documento -->
-        <v-row justify="center">
-          <v-dialog v-model="dialog7" persistent max-width="400">
             <v-card>
-              <v-toolbar dark fadeOnScroll color="blue darken-3">
-                <v-spacer></v-spacer>
-                <v-toolbar-items>
-                  <v-btn icon dark @click=" close()">
-                    <v-icon>mdi-close</v-icon>
-                  </v-btn>
-                </v-toolbar-items>
-              </v-toolbar>
-              <v-flex cols="2" class="px-1 mt-10">
-                <v-file-input
-                  v-model="file"
-                  show-size
-                  prepend-icon="mdi-note-multiple"
-                  label="Seleccione el Documento"
-                ></v-file-input>
+              <v-card-title class="headline text-center">Seguro que deseas aprobar la Oferta</v-card-title>
+              <v-card-text class="text-center">{{oferta.nombre}}</v-card-text>
+              <v-flex
+                cols="2"
+                class="px-12"
+                v-if="(roles.includes('comite de SGCont')||roles.includes('administrador'))"
+              >
+                <v-menu
+                  v-model="menu"
+                  :close-on-content-click="false"
+                  :nudge-right="40"
+                  transition="scale-transition"
+                  offset-y
+                  min-width="290px"
+                >
+                  <template v-slot:activator="{ on }">
+                    <v-text-field
+                      v-model="aprobarContrato.fechaDeFirmado"
+                      label="Fecha de Firmado"
+                      readonly
+                      clearable
+                      v-on="on"
+                      required
+                    ></v-text-field>
+                  </template>
+                  <v-date-picker v-model="aprobarContrato.fechaDeFirmado" @input="menu = false"></v-date-picker>
+                </v-menu>
               </v-flex>
-              <v-flex cols="2" class="px-1">
-                <v-alert v-if="message" border="left" color="red" dark>{{ message }}</v-alert>
+              <v-flex
+                cols="2"
+                class="px-12"
+                v-if="(roles.includes('comite de SGCont')||roles.includes('administrador'))"
+              >
+                <v-menu
+                  v-model="menu1"
+                  :close-on-content-click="false"
+                  :nudge-right="40"
+                  transition="scale-transition"
+                  offset-y
+                  min-width="290px"
+                >
+                  <template v-slot:activator="{ on }">
+                    <v-text-field
+                      v-model="aprobarContrato.FechaDeVencimiento"
+                      label="Fecha de Vencimiento"
+                      readonly
+                      clearable
+                      v-on="on"
+                      required
+                    ></v-text-field>
+                  </template>
+                  <v-date-picker
+                    v-model="aprobarContrato.FechaDeVencimiento"
+                    @input="menu1 = false"
+                  ></v-date-picker>
+                </v-menu>
               </v-flex>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="green darken-1" text @click="upload()">Aceptar</v-btn>
-                <v-btn color="blue darken-1" text @click=" close()">Cancelar</v-btn>
+                <v-btn color="red" dark @click="aprobarOferta()">Aceptar</v-btn>
+                <v-btn color="primary" @click="close()">Cancelar</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
-        </v-row>
-        <!-- /Subir Documento -->
-
-        <!-- Agregar Entidad-->
-        <v-dialog v-model="dialog3" persistent max-width="1000">
-          <v-card>
-            <v-toolbar dark fadeOnScroll color="blue darken-3">
+          <!-- /Aprobar oferta -->
+          <!-- Delete oferta -->
+          <v-dialog v-model="dialog2" persistent max-width="350px">
+            <v-toolbar dark fadeOnScroll color="red">
               <v-spacer></v-spacer>
               <v-toolbar-items>
-                <v-btn icon dark @click="closeAdd()">
+                <v-btn icon dark @click="dialog2 = false">
                   <v-icon>mdi-close</v-icon>
                 </v-btn>
               </v-toolbar-items>
             </v-toolbar>
-            <Entidades></Entidades>
-          </v-card>
-        </v-dialog>
-        <!-- /Agregar Entidad-->
+            <v-card>
+              <v-card-title class="headline text-center">Seguro que deseas eliminar la Oferta</v-card-title>
+              <v-card-text class="text-center">{{oferta.nombre}}</v-card-text>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="red" dark @click="deleteItem(oferta)">Aceptar</v-btn>
+                <v-btn color="primary" @click="close()">Cancelar</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+          <!-- /Delete oferta -->
 
-        <!-- Agregar AdminContrato-->
-        <v-dialog v-model="dialog4" persistent max-width="1000">
-          <v-card>
-            <v-toolbar dark fadeOnScroll color="blue darken-3">
-              <v-spacer></v-spacer>
-              <v-toolbar-items>
-                <v-btn icon dark @click="closeAdd()">
-                  <v-icon>mdi-close</v-icon>
-                </v-btn>
-              </v-toolbar-items>
-            </v-toolbar>
-            <AdminContratos></AdminContratos>
-          </v-card>
-        </v-dialog>
-        <!-- /Agregar AdminContrato-->
-        <!-- Agregar EspExternos-->
-        <v-dialog v-model="dialog5" persistent max-width="1000">
-          <v-card>
-            <v-toolbar dark fadeOnScroll color="blue darken-3">
-              <v-spacer></v-spacer>
-              <v-toolbar-items>
-                <v-btn icon dark @click="closeAdd()">
-                  <v-icon>mdi-close</v-icon>
-                </v-btn>
-              </v-toolbar-items>
-            </v-toolbar>
-            <EspExternos></EspExternos>
-          </v-card>
-        </v-dialog>
-        <!-- /Agregar EspExternos-->
-        <!-- Agregar Dictaminadores Contrato-->
-        <v-dialog v-model="dialog8" persistent max-width="1000">
-          <v-card>
-            <v-toolbar dark fadeOnScroll color="blue darken-3">
-              <v-spacer></v-spacer>
-              <v-toolbar-items>
-                <v-btn icon dark @click="closeAdd()">
-                  <v-icon>mdi-close</v-icon>
-                </v-btn>
-              </v-toolbar-items>
-            </v-toolbar>
-            <DictContratos></DictContratos>
-          </v-card>
-        </v-dialog>
-        <!-- /Agregar Dictaminadores Contrato-->
-      </v-toolbar>
-    </template>
-    <!-- Actions -->
-    <template v-slot:item.action="{ item }">
-      <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small primary--text"
-        small
-        @click="editItem(item)"
-      >
-        <v-icon>v-icon notranslate mdi mdi-pen theme--dark</v-icon>
-      </v-btn>
-      <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small primary--text"
-        small
-        @click="confirmAprobarOferta(item)"
-      >
-        <v-icon>v-icon notranslate mdi mdi-check-box-multiple-outline theme--dark</v-icon>
-      </v-btn>
-      <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small secondary--text"
-        small
-        @click="confirmUpload(item)"
-      >
-        <v-icon>v-icon notranslate mdi mdi-upload theme--dark</v-icon>
-      </v-btn>
-      <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small secondary--text"
-        small
-        @click="download(item)"
-      >
-        <v-icon>v-icon notranslate mdi mdi-download theme--dark</v-icon>
-      </v-btn>
-
-      <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small teal--text"
-        small
-        @click="getDetalles(item)"
-      >
-        <v-icon>mdi-format-list-bulleted</v-icon>
-      </v-btn>
-
-      <v-btn
-        class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small pink--text"
-        small
-        @click="confirmDelete(item)"
-      >
-        <v-icon>v-icon notranslate mdi mdi-delete theme--dark</v-icon>
-      </v-btn>
-    </template>
-    <!-- /Actions -->
-  </v-data-table>
+          <!-- Subir Documento -->
+          <v-row justify="center">
+            <v-dialog v-model="dialog3" persistent max-width="400">
+              <v-card>
+                <v-toolbar dark fadeOnScroll color="blue darken-3">
+                  <v-spacer></v-spacer>
+                  <v-toolbar-items>
+                    <v-btn icon dark @click=" close()">
+                      <v-icon>mdi-close</v-icon>
+                    </v-btn>
+                  </v-toolbar-items>
+                </v-toolbar>
+                <v-flex cols="2" class="px-1 mt-10">
+                  <v-file-input
+                    v-model="file"
+                    show-size
+                    prepend-icon="mdi-note-multiple"
+                    label="Seleccione el Documento"
+                  ></v-file-input>
+                </v-flex>
+                <v-flex cols="2" class="px-1">
+                  <v-alert v-if="message" border="left" color="red" dark>{{ message }}</v-alert>
+                </v-flex>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn color="green darken-1" text @click="upload()">Aceptar</v-btn>
+                  <v-btn color="blue darken-1" text @click=" close()">Cancelar</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-dialog>
+          </v-row>
+          <!-- /Subir Documento -->
+        </v-toolbar>
+      </template>
+      <!-- Actions -->
+      <template v-slot:item.action="{ item }">
+        <v-tooltip top color="primary">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small primary--text"
+              small
+              v-on="on"
+              @click="editItem(item)"
+              slot="activator"
+              v-if="(roles.includes('administrador de contratos')||roles.includes('administrador'))"
+            >
+              <v-icon>v-icon notranslate mdi mdi-pen theme--dark</v-icon>
+            </v-btn>
+          </template>
+          <span>Editar</span>
+        </v-tooltip>
+        <v-tooltip top color="primary">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small primary--text"
+              small
+              v-on="on"
+              @click="confirmAprobarOferta(item)"
+              v-if="(roles.includes('administrador')||roles.includes('economico')||roles.includes('juridico')
+              ||roles.includes('comite de SGCont'))"
+            >
+              <v-icon>v-icon notranslate mdi mdi-check-box-multiple-outline theme--dark</v-icon>
+            </v-btn>
+          </template>
+          <span>Aprobar la Oferta</span>
+        </v-tooltip>
+        <v-tooltip top color="black">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small secondary--text"
+              small
+              v-on="on"
+              @click="confirmUpload(item)"
+              v-if="(roles.includes('administrador de contratos')||roles.includes('administrador'))"
+            >
+              <v-icon>v-icon notranslate mdi mdi-upload theme--dark</v-icon>
+            </v-btn>
+          </template>
+          <span>Guardar Documento</span>
+        </v-tooltip>
+        <v-tooltip top color="black">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small secondary--text"
+              small
+              v-on="on"
+              @click="download(item)"
+            >
+              <v-icon>v-icon notranslate mdi mdi-download theme--dark</v-icon>
+            </v-btn>
+          </template>
+          <span>Descargar Documento</span>
+        </v-tooltip>
+        <v-tooltip top color="teal">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small teal--text"
+              small
+              v-on="on"
+              @click="getDetalles(item)"
+            >
+              <v-icon>mdi-format-list-bulleted</v-icon>
+            </v-btn>
+          </template>
+          <span>Detalles</span>
+        </v-tooltip>
+        <v-tooltip top color="pink">
+          <template v-slot:activator="{ on }">
+            <v-btn
+              class="v-btn v-btn--depressed v-btn--fab v-btn--flat v-btn--icon v-btn--outlined v-btn--round theme--dark v-size--small pink--text"
+              small
+              v-on="on"
+              @click="confirmDelete(item)"
+              v-if="(roles.includes('administrador de contratos')||roles.includes('administrador'))"
+            >
+              <v-icon>v-icon notranslate mdi mdi-delete theme--dark</v-icon>
+            </v-btn>
+          </template>
+          <span>Eliminar</span>
+        </v-tooltip>
+      </template>
+      <!-- /Actions -->
+    </v-data-table>
+  </v-container>
 </template>
 <script>
 import api from "@/api";
-import AdminContratos from "@/components/SGCont/AdminContratos.vue";
-import EspExternos from "@/components/SGCont/EspExternos.vue";
-import FormasDePago from "@/components/SGCont/FormasDePago.vue";
-import Entidades from "@/components/SGCont/Entidades.vue";
-import DictContratos from "@/components/SGCont/DictContratos.vue";
 
 export default {
-  components: {
-    AdminContratos,
-    EspExternos,
-    FormasDePago,
-    Entidades,
-    DictContratos
-  },
   data: () => ({
-    dialog: false,
     dialog1: false,
     dialog2: false,
     dialog3: false,
     dialog4: false,
     dialog5: false,
-    dialog6: false,
-    dialog7: false,
-    dialog8: false,
-    dialog9: false,
     menu: false,
     menu1: false,
     search: "",
@@ -860,21 +388,14 @@ export default {
       montos: []
     },
     file: null,
-    entidades: [],
-    entidadObjetc: {},
-    especialistasExternosAll: [],
-    dictaminadoresContratos: [],
-    adminContratos: [],
     estados: [],
     tipos: [],
-    formasDePagos: [],
     enTiempo: 0,
     casiVenc: 0,
     proxVencer: 0,
     vencidos: 0,
     todasLasOfertas: false,
     vencimientoOfertas: [],
-    departamentos: [],
     monedas: [],
     ofertaTiempo: "ofertaTiempo",
     ofertasProxVencer: "ofertasProxVencer",
@@ -885,16 +406,13 @@ export default {
     textByfiltro: "",
     show: false,
     tabs: null,
-    textOfertaVence: {
-      text: null,
-      class: null
-    },
-    trabajadores: [],
-    montoAndMoneda: {
-      cantidad: "",
-      moneda: { id: "", nombre: "" }
-    },
     errors: [],
+    aprobarContrato: {
+      roles: null,
+      contratoId: null,
+      fechaDeFirmado: null,
+      FechaDeVencimiento: null
+    },
     headers: [
       { text: "Número", sortable: true, value: "numero" },
       { text: "Nombre", align: "left", sortable: true, value: "nombre" },
@@ -904,62 +422,19 @@ export default {
       { text: "Estado", value: "estadoNombre" },
       { text: "Acciones", value: "action", sortable: false }
     ],
-    headersMonto: [
-      { text: "Monto", sortable: true, value: "cantidad" },
-      { text: "Moneda", align: "left", sortable: true, value: "moneda.nombre" },
-      { text: "Acciones", value: "action", sortable: false }
-    ],
-    headersCuentas: [
-      {
-        text: "Número de Cuenta",
-        align: "left",
-        sortable: true,
-        value: "numeroCuenta"
-      },
-      { text: "Número Sucursal", value: "numeroSucursal" },
-      { text: "Nombre Sucursal", value: "nombreSucursalString" },
-      { text: "Moneda", value: "monedaString" }
-    ],
-    roles: null,
+    roles: [],
+    usuario: {},
     message: ""
   }),
-
-  computed: {
-    formTitle() {
-      return this.editedIndex === -1 ? "Nueva Oferta" : "Editar Oferta";
-    },
-    method() {
-      return this.editedIndex === -1 ? "POST" : "PUT";
-    },
-    monto() {
-      if (this.oferta.entidad != 0) {
-        this.entidadObjetc = this.entidades.find(
-          x => x.id === this.oferta.entidad
-        );
-      }
-    }
-  },
-
-  watch: {
-    dialog(val) {
-      val || this.close();
-    }
-  },
+  computed: {},
+  watch: {},
 
   created() {
-    this.getOfertasFromApi();
-    this.getEstadosFromApi();
-    this.getTiposFromApi();
-    this.getEntidadesFromApi();
-    this.getEspecialistasExternosFromApi();
-    this.getAdminContratosFromApi();
-    this.getDictContratosFromApi();
-    this.getFormasDePagosFromApi();
-    this.getTrabajadoresFromApi();
     this.getTiempoVenOfertasFromApi();
-    this.getDepartamentosFromApi();
+    this.getOfertasFromApi();
     this.getMonedasFromApi();
     this.roles = this.$store.getters.roles;
+    console.log(this.roles);
   },
 
   methods: {
@@ -979,110 +454,11 @@ export default {
         }
       );
     },
-    getEstadosFromApi() {
-      const url = api.getUrl("SGCont", "contratos/Estados");
-      this.axios.get(url).then(
-        response => {
-          this.estados = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getTiposFromApi() {
-      const url = api.getUrl("SGCont", "contratos/Tipos");
-      this.axios.get(url).then(
-        response => {
-          this.tipos = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getEntidadesFromApi() {
-      const url = api.getUrl("SGCont", "Entidades");
-      this.axios.get(url).then(
-        response => {
-          this.entidades = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getEspecialistasExternosFromApi() {
-      const url = api.getUrl("SGCont", "EspecialistasExternos");
-      this.axios.get(url).then(
-        response => {
-          this.especialistasExternosAll = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getFormasDePagosFromApi() {
-      const url = api.getUrl("SGCont", "FormasDePagos");
-      this.axios.get(url).then(
-        response => {
-          this.formasDePagos = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getAdminContratosFromApi() {
-      const url = api.getUrl("SGCont", "AdminContratos");
-      this.axios.get(url).then(
-        response => {
-          this.adminContratos = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getDictContratosFromApi() {
-      const url = api.getUrl("SGCont", "DictContratos");
-      this.axios.get(url).then(
-        response => {
-          this.dictaminadoresContratos = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getTrabajadoresFromApi() {
-      const url = api.getUrl("SGCont", "Trabajadores");
-      this.axios.get(url).then(
-        response => {
-          this.trabajadores = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
     getTiempoVenOfertasFromApi() {
       const url = api.getUrl("SGCont", "TiempoVenOfertas");
       this.axios.get(url).then(
         response => {
           this.tiempoVenOfertas = response.data[0];
-        },
-        error => {
-          console.log(error);
-        }
-      );
-    },
-    getDepartamentosFromApi() {
-      const url = api.getUrl("SGCont", "Departamentos");
-      this.axios.get(url).then(
-        response => {
-          this.departamentos = response.data;
         },
         error => {
           console.log(error);
@@ -1100,6 +476,22 @@ export default {
         }
       );
     },
+    newContrato() {
+      const contrato = {
+        cliente: true,
+        entidad: {},
+        adminContrato: {},
+        dictaminadores: [],
+        montos: [],
+        especialistasExternos: []
+      };
+      this.$router.push({
+        name: "Nuevo_Contrato",
+        query: {
+          contrato
+        }
+      });
+    },
     editItem(item) {
       this.editedIndex = this.ofertas.indexOf(item);
       this.oferta = Object.assign({}, item);
@@ -1109,75 +501,30 @@ export default {
       for (let index = 0; index < this.oferta.formasDePago.length; index++) {
         this.oferta.formasDePago[index] = item.formasDePago[index].id;
       }
-      this.dialog = true;
+      const contrato = this.oferta;
+      this.$router.push({
+        name: "Nuevo_Contrato",
+        query: {
+          contrato
+        }
+      });
     },
     getDetalles(item) {
       this.oferta = Object.assign({}, item);
       this.oferta.entidad = item.entidad[0];
-      this.dialog6 = true;
-      if (this.oferta.ofertVence < this.tiempoVenOfertas.ofertasVencidas) {
-        this.textOfertaVence.text = "La Oferta ya se Venció Tiene";
-        this.textOfertaVence.class = "pa-2 pt-3 red--text";
-      }
-      if (this.oferta.ofertVence == this.tiempoVenOfertas.ofertasVencidas) {
-        this.textOfertaVence.text = "La Oferta se Vence Hoy";
-        this.textOfertaVence.class = "pa-2 pt-3 red--text";
-      }
-      if (
-        this.oferta.ofertVence > this.tiempoVenOfertas.ofertasCasiVencDesde &&
-        this.oferta.ofertVence <= this.tiempoVenOfertas.ofertasCasiVencHasta
-      ) {
-        this.textOfertaVence.text = "La Oferta está casi a vencida le quedan";
-        this.textOfertaVence.class = "pa-2 pt-3 deep-orange--text";
-      }
-      if (
-        this.oferta.ofertVence > this.tiempoVenOfertas.ofertasProxVencDesde &&
-        this.oferta.ofertVence <= this.tiempoVenOfertas.ofertasProxVencHasta
-      ) {
-        this.textOfertaVence.text =
-          "La Oferta está próxima a vencerce le quedan";
-        this.textOfertaVence.class = "pa-2 pt-3 orange--text";
-      }
-      if (this.oferta.ofertVence > this.tiempoVenOfertas.ofertaTiempo) {
-        this.textOfertaVence.text = "La Oferta Vence en";
-        this.textOfertaVence.class = "pa-2 pt-3 green--text";
-      }
-    },
-    save(method) {
-      this.oferta.cliente = true;
-      const url = api.getUrl("SGCont", "Contratos");
-      if (method === "POST") {
-        if (this.oferta.montos.length == 0) {
-          this.oferta.montos.push(this.montoAndMoneda);
+      this.oferta.adminContrato = item.adminContrato;
+      this.oferta.montos = item.montos;
+      const contrato = this.oferta;
+      this.$router.push({
+        name: "Detalles_Contrato",
+        query: {
+          contrato
         }
-        this.axios.post(url, this.oferta).then(
-          response => {
-            this.getResponse(response);
-            this.getOfertasFromApi();
-            this.dialog = false;
-          },
-          error => {
-            console.log(error);
-          }
-        );
-      }
-      if (method === "PUT") {
-        this.oferta.cliente = true;
-        this.axios.put(`${url}/${this.oferta.id}`, this.oferta).then(
-          response => {
-            this.getResponse(response);
-            this.getOfertasFromApi();
-            this.dialog = false;
-          },
-          error => {
-            console.log(error);
-          }
-        );
-      }
+      });
     },
     confirmUpload(item) {
       this.oferta = Object.assign({}, item);
-      this.dialog7 = true;
+      this.dialog3 = true;
     },
     upload() {
       if (!this.file) {
@@ -1201,6 +548,7 @@ export default {
             this.getOfertasFromApi();
           },
           error => {
+            vm.$snotify.error(error.response.data);
             console.log(error);
           }
         );
@@ -1212,6 +560,7 @@ export default {
           window.open(url + "/" + item.id);
         },
         error => {
+          vm.$snotify.error(error.response.data);
           console.log(error);
         }
       );
@@ -1234,31 +583,20 @@ export default {
       );
     },
     close() {
-      this.dialog = false;
+      this.dialog1 = false;
       this.dialog2 = false;
-      this.dialog6 = false;
-      this.dialog7 = false;
-      this.dialog9 = false;
-      this.oferta.entidad = {};
-      this.oferta.montos = [];
-      this.oferta.adminContrato = {};
-      this.entidadObjetc = {};
-      this.getOfertasFromApi();
-      this.message = "";
-      setTimeout(() => {
-        this.editedIndex = -1;
-      }, 300);
-    },
-    closeAdd() {
-      this.getEntidadesFromApi();
-      this.getEspecialistasExternosFromApi();
-      this.getAdminContratosFromApi();
-      this.getDictContratosFromApi();
-      this.getDepartamentosFromApi();
       this.dialog3 = false;
       this.dialog4 = false;
       this.dialog5 = false;
-      this.dialog8 = false;
+      this.aprobarContrato = {
+        roles: null,
+        contratoId: null,
+        fechaDeFirmado: null
+      };
+      this.getOfertasFromApi();
+      setTimeout(() => {
+        this.editedIndex = -1;
+      }, 300);
     },
     getResponse(response) {
       if (response.status === 200 || response.status === 201) {
@@ -1266,7 +604,7 @@ export default {
       }
     },
     getColor(ofertVence) {
-      this.GetVencimientoOferta();
+      this.getVencimientoOferta();
       if (ofertVence < this.tiempoVenOfertas.ofertasVencidas) {
         return "red";
       } else if (
@@ -1283,7 +621,7 @@ export default {
         return "green";
       }
     },
-    GetVencimientoOferta() {
+    getVencimientoOferta() {
       const url = api.getUrl(
         "SGCont",
         "contratos/VencimientoOferta?cliente=true"
@@ -1300,14 +638,6 @@ export default {
           console.log(error);
         }
       );
-    },
-    removeformasDePago(item) {
-      const index = this.oferta.formasDePago.indexOf(item.id);
-      if (index >= 0) this.oferta.formasDePago.splice(index, 1);
-    },
-    removeDictaminadores(item) {
-      const index = this.oferta.dictaminadores.indexOf(item.id);
-      if (index >= 0) this.oferta.dictaminadores.splice(index, 1);
     },
     filtro(filtro) {
       if (filtro == "ofertaTiempo") {
@@ -1351,36 +681,32 @@ export default {
     },
     confirmAprobarOferta(item) {
       this.oferta = Object.assign({}, item);
-      this.dialog9 = true;
-    },
-    agregar() {
-      const monedaId = this.montoAndMoneda.moneda;
-      if (typeof monedaId === "number") {
-        const m = this.monedas.find(x => x.id === monedaId);
-        const moneda = { id: "", nombre: "" };
-        moneda.id = monedaId;
-        moneda.nombre = m.nombre;
-        this.montoAndMoneda.moneda = moneda;
+      if (typeof(this.roles)!="") {
+         this.aprobarContrato.roles = this.roles
       }
-      this.oferta.montos.push(this.montoAndMoneda);
-      this.montoAndMoneda = {
-        cantidad: "",
-        moneda: ""
-      };
+      this.aprobarContrato.roles = this.roles;
+      console.log(typeof(this.roles))
+      console.log(typeof(this.ofertas))
+      this.dialog5 = true;
     },
-    editar(item) {
-      const index = this.oferta.montos.indexOf(item.id);
-      if (index >= -1) this.oferta.montos.splice(index, 1);
-      this.montoAndMoneda = {
-        cantidad: item.cantidad,
-        moneda: item.moneda
-      };
-    },
-    quitar(item) {
-      const index = this.oferta.montos.indexOf(item.id);
-      if (index >= -1) this.oferta.montos.splice(index, 1);
-    },
-    aprobarOferta(item) {}
+    aprobarOferta() {
+      const url = api.getUrl("SGCont", "contratos/AprobContrato");
+      this.aprobarContrato.contratoId = this.oferta.id;
+      this.axios
+        .put(`${url}/${this.aprobarContrato.contratoId}`, this.aprobarContrato)
+        .then(
+          response => {
+            this.getResponse(response);
+            this.close();
+          },
+          error => {
+            console.log(error);
+          }
+        )
+        .catch(e => {
+          vm.$snotify.error(e.response.data.errors);
+        });
+    }
   }
 };
 </script>

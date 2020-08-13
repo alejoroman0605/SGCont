@@ -8,8 +8,9 @@ using SGCont.Models;
 namespace SGCont.Dtos {
     public class AproContratoDto
     {
-        public bool AprobJuridico { get; set; }
-        public bool AprobEconomico { get; set; }
-        public bool AprobComitContratacion { get; set; }
+       public List<string> roles { get; set; }
+        public int ContratoId { get; set; }
+        public DateTime FechaDeFirmado { get; set; }
+        public DateTime FechaDeVencimiento { get; set; }
     }
 }
