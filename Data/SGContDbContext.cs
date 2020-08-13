@@ -1,10 +1,10 @@
-using LicenceChecker;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SGCont.Models;
 
-namespace SGCont.Data {
+namespace SGCont.Data
+{
     public class SGContDbContext : IdentityDbContext {
         public SGContDbContext (DbContextOptions<SGContDbContext> options) : base (options) {
 
@@ -63,5 +63,7 @@ namespace SGCont.Data {
         public DbSet<TiempoVenContrato> TiempoVenContratos { get; set; }
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<ComiteContratacion> ComiteContratacion { get; set; }
+        public DbSet<Monto> Montos { get; set; }
+        public DbSet<Municipio> Municipio { get; set; }
     }
 }

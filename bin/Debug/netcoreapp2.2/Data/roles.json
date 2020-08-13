@@ -8,5 +8,16 @@
             "consultor",
             "contratacion"
         ]
+    },
+    {
+        "Modulo": "Contratación",
+        "Roles": [
+            "economico",
+            "juridico",
+            "comite de contratacion",
+            "dictaminador",
+            "administrador de contratos",
+            "administrador contratacion"
+        ]
     }
 ]

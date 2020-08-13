@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using SGCont.Data;
@@ -9,9 +10,10 @@ using SGCont.Data;
 namespace SGCont.Migrations
 {
     [DbContext(typeof(SGContDbContext))]
-    partial class SGContDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200813145710_Montos")]
+    partial class Montos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,7 +47,7 @@ namespace SGCont.Migrations
                         new
                         {
                             Id = "1",
-                            ConcurrencyStamp = "009da871-1a31-434c-bdee-279545f4f75f",
+                            ConcurrencyStamp = "efa77b46-3582-4c7b-b3e8-7dc60f7ee1d4",
                             Name = "administrador",
                             NormalizedName = "ADMINISTRADOR"
                         });
@@ -718,8 +720,6 @@ namespace SGCont.Migrations
                     b.Property<string>("Correo");
 
                     b.Property<string>("Direccion");
-
-                    b.Property<int?>("EstadoTrabajador");
 
                     b.Property<DateTime>("Fecha_Nac");
 

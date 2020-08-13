@@ -280,6 +280,30 @@ export const protectedRoute = [
         },
         component: () => import(/* webpackChunkName: "table" */ '@/views/SGCont/Config.vue'),
       },
+      {
+        path: '/SGCont/contrato/nuevo',
+        name: 'Nuevo_Contrato',
+        props: route => ({
+          contrato: route.query.contrato,
+        }),
+        meta: {
+          title: 'Nuevo_Contrato',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/components/SGCont/NuevoContrato.vue'),
+      },
+      {
+        path: '/SGCont/contrato/detalles',
+        name: 'Detalles_Contrato',
+        props: route => ({
+          contrato: route.query.contrato,
+        }),
+        meta: {
+          title: 'Detalles_Contrato',
+          requiresAuth: true,
+        },
+        component: () => import(/* webpackChunkName: "table" */ '@/components/SGCont/DetallesContrato.vue'),
+      },
     ],
   },
 ];
