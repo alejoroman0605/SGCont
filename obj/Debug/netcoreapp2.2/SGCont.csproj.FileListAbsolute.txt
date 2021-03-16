@@ -28,3 +28,4 @@ D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\public\manifest.json
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\src\api-mapper.json
 D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\Data\menus\modulos\SGCont.json
+D:\Alejandro\Proyectos VS Code\Proyecto 4to Año V-1\SGCont\bin\Debug\netcoreapp2.2\sgcont-vue\dist\manifest.json
